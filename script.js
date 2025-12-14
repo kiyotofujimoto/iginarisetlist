@@ -1,12 +1,13 @@
 async function loadData() {
-  const res = await fetch("setlist.json");
+  const res = await fetch("./setlist.json");
   return await res.json();
 }
 
 loadData().then(lives => {
-  const list = document.getElementById("list");
+  const select = document.getElementById("liveSelect");
+  const result = document.getElementById("result");
 
-  // 日付順にソート
+  // 日付順 + 昼夜順に並べる
   lives.sort((a, b) => {
     if (a.date === b.date) {
       return a.slot.localeCompare(b.slot);
@@ -14,17 +15,32 @@ loadData().then(lives => {
     return a.date.localeCompare(b.date);
   });
 
+  // プルダウン生成
   lives.forEach(live => {
-    const div = document.createElement("div");
-    div.className = "live";
+    const opt = document.createElement("option");
+    opt.value = live.id;
+    opt.textContent = `${live.date}（${live.slot}） / ${live.type} / ${live.venue}`;
+    select.appendChild(opt);
+  });
 
-    div.innerHTML = `
+  // 選択時
+  select.addEventListener("change", () => {
+    const id = select.value;
+    if (!id) {
+      result.innerHTML = "";
+      return;
+    }
+
+    const live = lives.find(l => l.id === id);
+
+    result.innerHTML = `
       <h2>${live.date}（${live.slot}）</h2>
-      <div class="meta">
-        ${live.type} / ${live.venue}<br>
-        ${live.tour ? `ツアー：${live.tour}<br>` : ""}
-        ${live.title}
-      </div>
+      <p>
+        <strong>形態：</strong>${live.type}<br>
+        <strong>会場：</strong>${live.venue}<br>
+        ${live.tour ? `<strong>ツアー：</strong>${live.tour}<br>` : ""}
+        <strong>イベント名：</strong>${live.title}
+      </p>
 
       <ol>
         ${live.setlist.map(song => `
@@ -35,7 +51,5 @@ loadData().then(lives => {
         `).join("")}
       </ol>
     `;
-
-    list.appendChild(div);
   });
 });
