@@ -65,12 +65,16 @@ async function init() {
   renderLiveSelect();
 
   // 年度切替
-  yearSelect.addEventListener("change", async () => {
-    const year = yearSelect.value;
-    lives = await loadYear(year);
-    renderLiveSelect();
-    document.getElementById("result").innerHTML = "";
-  });
+yearSelect.addEventListener("change", async () => {
+  const year = yearSelect.value;
+  console.log("SELECTED YEAR:", year);
+
+  lives = await loadYear(year);
+  console.log("LOADED LIVES:", lives);
+
+  renderLiveSelect();
+  document.getElementById("result").innerHTML = "";
+});
 
   // ライブ選択
   liveSelect.addEventListener("change", () => {
