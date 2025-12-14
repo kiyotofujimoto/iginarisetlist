@@ -1,5 +1,5 @@
-async function loadData() {
-  const res = await fetch("data.json");
+listasync function loadData() {
+  const res = await fetch("setlist.json");
   return await res.json();
 }
 
