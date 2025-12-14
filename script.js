@@ -11,6 +11,8 @@ async function loadYear(year) {
 }
 
 function renderLiveSelect() {
+    console.log("RENDER LIVE SELECT:", lives);
+
   const select = document.getElementById("liveSelect");
   select.innerHTML = `<option value="">-- 選択してください --</option>`;
 
@@ -70,7 +72,8 @@ yearSelect.addEventListener("change", async () => {
   console.log("SELECTED YEAR:", year);
 
   lives = await loadYear(year);
-  console.log("LOADED LIVES:", lives);
+  console.log("INIT YEAR:", currentYear);
+　console.log("INIT LIVES:", lives);
 
   renderLiveSelect();
   document.getElementById("result").innerHTML = "";
