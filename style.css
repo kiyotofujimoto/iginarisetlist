@@ -4,21 +4,6 @@ body {
   margin: 40px auto;
 }
 
-.live {
-  border: 1px solid #ddd;
-  padding: 12px;
-  margin-bottom: 20px;
-}
-
-.live h2 {
-  margin: 0 0 5px;
-}
-
-.meta {
-  font-size: 0.9em;
-  color: #555;
-}
-
 .note {
   color: #666;
   font-size: 0.85em;
