@@ -1,14 +1,53 @@
-{
-  "2025-02-10": [
-    "Overture",
-    "曲A",
-    "曲B",
-    "曲C"
-  ],
-  "2025-02-12": [
-    "Opening",
-    "恋するフォーチュンクッキー",
-    "MC",
-    "新曲D"
-  ]
-}
+[
+  {
+    "id": "2025-07-09",
+    "date": "2025.07.09",
+    "slot": "",
+    "type": "単独ライブ",
+    "tour": "",
+    "title": "日本武道館公演『TOHOKU9』",
+    "venue": "日本武道館",
+    "setlist": [
+      { "title": "東京アレルギー", "note": "" },
+      { "title": "わざとあざとエキスパート", "note": "" },
+      { "title": "百花繚乱物語", "note": "" },
+      { "title": "あーぐれす", "note": "" },
+      { "title": "ワンダフル東北", "note": "" },
+      { "title": "ツンデレラ", "note": "" },
+      { "title": "チョコスプレー♡", "note": "" },
+      { "title": "feeling", "note": "" },
+      { "title": "3000days", "note": "" },
+      { "title": "負けないうた", "note": "" },
+      { "title": "背徳のエビデンス", "note": "" },
+      { "title": "Let’s シンガソング", "note": "" },
+      { "title": "ナイツオブナインズ", "note": "" },
+      { "title": "おのぼりガール", "note": "" },
+      { "title": "BUBBLE POPPIN", "note": "" },
+      { "title": "Viper", "note": "" },
+      { "title": "いただきランチャー", "note": "" },
+      { "title": "シャチョサン", "note": "" },
+      { "title": "Trophy Girl", "note": "" },
+      { "title": "No Make", "note": "" },
+      { "title": "服を着て、恋したい", "note": "" },
+      { "title": "沼れ！マイラバー", "note": "" },
+      { "title": "伊達サンバ", "note": "" },
+      { "title": "うぢらとおめだづ", "note": "" },
+      { "title": "天下一品 ～みちのく革命～", "note": "" }
+    ]
+  },
+  {
+    "id": "2025-07-13",
+    "date": "2025.07.13",
+    "slot": "",
+    "type": "フリイベ／リリイベ",
+    "tour": "",
+    "title": "メジャーデビュー記念フリーイベント",
+    "venue": "ららぽーと立川立飛",
+    "setlist": [
+      { "title": "ツンデレラ", "note": "" },
+      { "title": "天下一品 〜みちのく革命〜", "note": "" },
+      { "title": "背徳のエビデンス", "note": "" },
+      { "title": "あーぐれす", "note": "" }
+    ]
+  }
+]
