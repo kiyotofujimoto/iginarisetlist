@@ -1,10 +1,39 @@
 body {
-  font-family: sans-serif;
-  max-width: 800px;
-  margin: 40px auto;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 12px;
+}
+
+select {
+  font-size: 16px; /* iOS ズーム防止 */
+  padding: 8px;
+  margin: 4px 0;
+  width: 100%;
+  max-width: 100%;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+
+#result h2 {
+  font-size: 18px;
+  margin-top: 16px;
+}
+
+#result p {
+  font-size: 14px;
+}
+
+#result ol {
+  padding-left: 20px;
 }
 
 .note {
+  font-size: 12px;
   color: #666;
-  font-size: 0.85em;
 }
+
