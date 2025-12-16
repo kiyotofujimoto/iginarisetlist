@@ -28,7 +28,7 @@ function renderResult(live) {
   const result = document.getElementById("result");
 
   result.innerHTML = `
-    <h2>${live.date}（${live.slot}）</h2>
+    <h2>${live.date}　${live.slot}</h2>
     <p>
       <strong>形態：</strong>${live.type}<br>
       <strong>会場：</strong>${live.venue}<br>
