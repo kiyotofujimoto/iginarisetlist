@@ -37,3 +37,14 @@ label {
   color: #666;
 }
 
+.filters {
+  display: flex;
+  gap: 12px;
+}
+
+@media (max-width: 600px) {
+  .filters {
+    flex-direction: column;
+  }
+}
+
