@@ -78,7 +78,7 @@ result.innerHTML = `
     </div>
 
     <ol class="setlist">
-      {live.setlist.map((song, index) => `
+      ${live.setlist.map((song, index) => `
   <li>
     <span class="track-no">${index + 1}</span>
     <span class="track-title">${song.title}</span>
@@ -88,7 +88,6 @@ result.innerHTML = `
     </ol>
   </div>
 `;
-
 }
 
 
