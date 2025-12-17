@@ -78,13 +78,13 @@ result.innerHTML = `
     </div>
 
     <ol class="setlist">
-      ${live.setlist.map(song => `
-        <li>
-          <span class="track-no"></span>
-          <span class="track-title">${song.title}</span>
-          ${song.note ? `<span class="note">（${song.note}）</span>` : ""}
-        </li>
-      `).join("")}
+      {live.setlist.map((song, index) => `
+  <li>
+    <span class="track-no">${index + 1}</span>
+    <span class="track-title">${song.title}</span>
+    ${song.note ? `<span class="note">（${song.note}）</span>` : ""}
+  </li>
+`).join("")}
     </ol>
   </div>
 `;
