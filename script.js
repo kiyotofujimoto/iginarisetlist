@@ -39,6 +39,19 @@ function renderLiveSelect() {
   });
 }
 
+function renderLiveSelect() {
+  const select = document.getElementById("liveSelect");
+  select.innerHTML = `<option value="">-- 選択してください --</option>`;
+
+  filteredLives.forEach(live => {
+    const opt = document.createElement("option");
+    opt.value = live.id;
+    opt.textContent = `${live.date}（${live.slot}） / ${live.type} / ${live.venue}`;
+    select.appendChild(opt);
+  });
+}
+
+
 function renderResult(live) {
   const result = document.getElementById("result");
 
