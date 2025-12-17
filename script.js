@@ -1,4 +1,5 @@
 let lives = [];
+let filteredLives = [];
 
 async function loadYears() {
   const res = await fetch("./data/index.json");
@@ -8,6 +9,20 @@ async function loadYears() {
 async function loadYear(year) {
   const res = await fetch(`./data/${year}.json`);
   return await res.json();
+}
+
+function renderTypeSelect() {
+  const typeSelect = document.getElementById("typeSelect");
+  typeSelect.innerHTML = `<option value="">-- 全て --</option>`;
+
+  const types = [...new Set(lives.map(l => l.type))];
+
+  types.forEach(type => {
+    const opt = document.createElement("option");
+    opt.value = type;
+    opt.textContent = type;
+    typeSelect.appendChild(opt);
+  });
 }
 
 function renderLiveSelect() {
@@ -48,12 +63,11 @@ function renderResult(live) {
 
 async function init() {
   const yearSelect = document.getElementById("yearSelect");
+  const typeSelect = document.getElementById("typeSelect");
   const liveSelect = document.getElementById("liveSelect");
 
-  // 年度一覧取得
   const { years } = await loadYears();
 
-  // 年度プルダウン生成（新しい年を上に）
   years.sort((a, b) => b - a).forEach(year => {
     const opt = document.createElement("option");
     opt.value = year;
@@ -64,28 +78,45 @@ async function init() {
   // 初期表示：最新年
   const currentYear = years.sort((a, b) => b - a)[0];
   lives = await loadYear(currentYear);
+  filteredLives = lives;
+
+  renderTypeSelect();
   renderLiveSelect();
 
   // 年度切替
-yearSelect.addEventListener("change", async () => {
-  const year = yearSelect.value;
-  console.log("SELECTED YEAR:", year);
+  yearSelect.addEventListener("change", async () => {
+    const year = yearSelect.value;
+    lives = await loadYear(year);
+    filteredLives = lives;
 
-  lives = await loadYear(year);
-  console.log("INIT YEAR:", currentYear);
-　console.log("INIT LIVES:", lives);
+    renderTypeSelect();
+    renderLiveSelect();
 
-  renderLiveSelect();
-  document.getElementById("result").innerHTML = "";
-});
+    typeSelect.value = "";
+    document.getElementById("result").innerHTML = "";
+  });
+
+  // 形態切替
+  typeSelect.addEventListener("change", () => {
+    const type = typeSelect.value;
+
+    filteredLives = type
+      ? lives.filter(l => l.type === type)
+      : lives;
+
+    renderLiveSelect();
+    document.getElementById("result").innerHTML = "";
+  });
 
   // ライブ選択
   liveSelect.addEventListener("change", () => {
     const id = liveSelect.value;
     if (!id) return;
-    const live = lives.find(l => l.id === id);
+
+    const live = filteredLives.find(l => l.id === id);
     renderResult(live);
   });
 }
+
 
 init();
