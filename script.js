@@ -68,24 +68,27 @@ function renderLiveSelect() {
 // 選択されたライブのセットリストを表示
 function renderResult(live) {
   const result = document.getElementById("result");
+result.innerHTML = `
+  <div class="live-card">
+    <div class="live-date">${live.date}</div>
+    <div class="live-title">${live.title}</div>
 
-  result.innerHTML = `
-    <h2>${live.date}　${live.slot}</h2>
-    <p>
-      <strong>形態：</strong>${live.type}<br>
-      <strong>会場：</strong>${live.venue}<br>
-      ${live.tour ? `<strong>ツアー：</strong>${live.tour}<br>` : ""}
-      <strong>イベント名：</strong>${live.title}
-    </p>
-    <ol>
+    <div class="live-meta">
+      ${live.venue} ・ ${live.type}
+    </div>
+
+    <ol class="setlist">
       ${live.setlist.map(song => `
         <li>
-          ${song.title}
+          <span class="track-no"></span>
+          <span class="track-title">${song.title}</span>
           ${song.note ? `<span class="note">（${song.note}）</span>` : ""}
         </li>
       `).join("")}
     </ol>
-  `;
+  </div>
+`;
+
 }
 
 
