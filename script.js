@@ -55,7 +55,7 @@ function renderLiveSelect() {
   filteredLives.forEach(live => {
     const opt = document.createElement("option");
     opt.value = live.id;
-    opt.textContent = `${live.date}（${live.slot}） / ${live.type} / ${live.venue}`;
+    opt.textContent = `${live.date}${live.slot} / ${live.title}`;
     select.appendChild(opt);
   });
 }
