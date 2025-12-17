@@ -68,6 +68,9 @@ function renderLiveSelect() {
 // 選択されたライブのセットリストを表示
 function renderResult(live) {
   const result = document.getElementById("result");
+  console.log("LIVE:", live);
+console.log("SETLIST:", live.setlist);
+
 result.innerHTML = `
   <div class="live-card">
     <div class="live-date">${live.date}</div>
