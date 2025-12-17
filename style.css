@@ -58,33 +58,45 @@
 
 .setlist li {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   gap: 10px;
   padding: 6px 0;
 }
 
-.setlist li::before {
-  content: counter(item);
-  counter-increment: item;
-  width: 28px;
+.track-no {
+  min-width: 28px;
   text-align: center;
   font-size: 12px;
   color: #fff;
   background: #2563eb;
   border-radius: 6px;
   padding: 2px 0;
-}
-
-.setlist {
-  counter-reset: item;
+  flex-shrink: 0;
 }
 
 .track-title {
   font-weight: bold;
 }
 
+
 .note {
   font-size: 12px;
   color: #888;
   margin-left: 4px;
 }
+
+.live-card {
+  background: #fff;
+  border: 1px solid #e0e3e8;
+  border-radius: 12px;
+  padding: 16px;
+
+  /* Safariで見えやすい影 */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
