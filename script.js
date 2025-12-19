@@ -2,11 +2,17 @@
 // グローバル状態
 // ==============================
 
-// 選択中の年度の「全ライブ」
+// 選択中の年度の「全ライブ一覧」
 let lives = [];
 
-// 形態などで絞り込んだ後のライブ一覧
+// フィルタ・検索後のライブ一覧
 let filteredLives = [];
+
+// 現在選択中のライブ形態（未選択なら空文字）
+let selectedType = "";
+
+// 曲名検索ワード（未入力なら空文字）
+let searchWord = "";
 
 
 // ==============================
@@ -60,11 +66,39 @@ function renderLiveSelect() {
   });
 }
 
-// --------------------------
-// 日付表示作成用の関数
-// --------------------------
+
+// ==============================
+// フィルタ処理（超重要）
+// ==============================
+
+// 年度・形態・曲名検索をすべて AND 条件で適用する
+function applyFilters() {
+  filteredLives = lives.filter(live => {
+    // 形態フィルタ
+    if (selectedType && live.type !== selectedType) {
+      return false;
+    }
+
+    // 曲名検索（部分一致）
+    if (searchWord) {
+      return live.setlist?.some(song =>
+        song.title.includes(searchWord)
+      );
+    }
+
+    return true;
+  });
+
+  renderLiveSelect();
+}
+
+
+// ==============================
+// 日付表示用ユーティリティ
+// ==============================
+
+// "2025.09.13" → "2025.09.13（土）"
 function formatDateWithDay(dateStr) {
-  // "2025.09.13" → "2025-09-13" に変換
   const formatted = dateStr.replace(/\./g, "-");
   const date = new Date(formatted);
 
@@ -74,6 +108,7 @@ function formatDateWithDay(dateStr) {
   return `${dateStr}（${day}）`;
 }
 
+
 // ==============================
 // ライブ詳細表示
 // ==============================
@@ -81,30 +116,29 @@ function formatDateWithDay(dateStr) {
 // 選択されたライブのセットリストを表示
 function renderResult(live) {
   const result = document.getElementById("result");
-  console.log("LIVE:", live);
-console.log("SETLIST:", live.setlist);
 
-result.innerHTML = `
-  <div class="live-card">
-    <div class="live-date">${formatDateWithDay(live.date)}</div>
-    <div class="live-title">${live.title}</div>
+  result.innerHTML = `
+    <div class="live-card">
+      <div class="live-date">${formatDateWithDay(live.date)}</div>
+      <div class="live-title">${live.title}</div>
 
-    <div class="live-meta">
-      ${live.venue} ・ ${live.type}
+      <div class="live-meta">
+        ${live.venue} ・ ${live.type}
+      </div>
+
+      <ol class="setlist">
+        ${live.setlist.map((song, index) => `
+          <li>
+            <span class="track-no">${index + 1}</span>
+            <span class="track-title">${song.title}</span>
+            ${song.note ? `<span class="note">（${song.note}）</span>` : ""}
+          </li>
+        `).join("")}
+      </ol>
     </div>
-
-    <ol class="setlist">
-      ${live.setlist.map((song, index) => `
-  <li>
-    <span class="track-no">${index + 1}</span>
-    <span class="track-title">${song.title}</span>
-    ${song.note ? `<span class="note">（${song.note}）</span>` : ""}
-  </li>
-`).join("")}
-    </ol>
-  </div>
-`;
+  `;
 }
+
 
 // ==============================
 // 初期化・イベント設定
@@ -114,6 +148,7 @@ async function init() {
   const yearSelect = document.getElementById("yearSelect");
   const typeSelect = document.getElementById("typeSelect");
   const liveSelect = document.getElementById("liveSelect");
+  const songSearch = document.getElementById("songSearch");
 
   // 年度一覧を取得
   const { years } = await loadYears();
@@ -129,25 +164,29 @@ async function init() {
   // 初期表示：最新年度
   const currentYear = years.sort((a, b) => b - a)[0];
   lives = await loadYear(currentYear);
-  filteredLives = lives;
+
+  // 状態初期化
+  selectedType = "";
+  searchWord = "";
 
   renderTypeSelect();
-  renderLiveSelect();
+  applyFilters();
 
   // --------------------------
   // 年度変更時
   // --------------------------
   yearSelect.addEventListener("change", async () => {
-    const year = yearSelect.value;
+    lives = await loadYear(yearSelect.value);
 
-    lives = await loadYear(year);
-    filteredLives = lives;
+    selectedType = "";
+    searchWord = "";
+
+    typeSelect.value = "";
+    songSearch.value = "";
 
     renderTypeSelect();
-    renderLiveSelect();
+    applyFilters();
 
-    // 状態リセット
-    typeSelect.value = "";
     document.getElementById("result").innerHTML = "";
   });
 
@@ -155,14 +194,17 @@ async function init() {
   // 形態変更時
   // --------------------------
   typeSelect.addEventListener("change", () => {
-    const type = typeSelect.value;
+    selectedType = typeSelect.value;
+    applyFilters();
+    document.getElementById("result").innerHTML = "";
+  });
 
-    // 形態未選択なら全件
-    filteredLives = type
-      ? lives.filter(l => l.type === type)
-      : lives;
-
-    renderLiveSelect();
+  // --------------------------
+  // 曲名検索時
+  // --------------------------
+  songSearch.addEventListener("input", () => {
+    searchWord = songSearch.value.trim();
+    applyFilters();
     document.getElementById("result").innerHTML = "";
   });
 
@@ -174,10 +216,9 @@ async function init() {
     if (!id) return;
 
     const live = filteredLives.find(l => l.id === id);
-    renderResult(live);
+    if (live) renderResult(live);
   });
 }
-
 
 // 初期化実行
 init();
