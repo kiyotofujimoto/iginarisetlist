@@ -94,6 +94,7 @@ body {
 
 /* 曲名検索 */
 .search-box input {
+  font-size: 16px;
   border: 1px solid #d0d5dd;
 }
 
