@@ -42,20 +42,19 @@ body {
 }
 
 
-/* ==============================
-  絞り込みUI
-============================== */
+/* =========================
+   絞り込み全体
+========================= */
 
 .filter-box {
   background: #f8f9fb;
   border: 1px solid #e0e3e8;
   border-radius: 12px;
-  padding: 14px 16px; /* 上下だけ少し詰める */
+  padding: 16px;
   margin-bottom: 20px;
 }
 
-
-/* 「絞り込み」ラベル */
+/* 「絞り込み」見出し */
 .filter-title {
   font-weight: bold;
   font-size: 14px;
@@ -63,35 +62,45 @@ body {
   margin-bottom: 12px;
 }
 
-/* ラベル＋セレクトを縦並び */
+/* =========================
+   ラベル（年度・形態・ライブ）
+========================= */
+
 .filter-box label {
   display: block;
   font-size: 14px;
-  margin-bottom: 10px;
+  margin-bottom: 4px; /* ← 最小限 */
+  color: #333;
 }
 
-/* select / input の余計な上マージンを消す */
+/* =========================
+   select / input 共通
+========================= */
+
 .filter-box select,
-.filter-box input {
-  margin-top: 2px;
-}
-
-
-/* 曲名検索 */
-.search-box {
-  margin-bottom: 12px;
-}
-
-/* 曲名検索 input */
 .search-box input {
   width: 100%;
-  box-sizing: border-box; /* ←超重要 */
+  box-sizing: border-box; /* iOS Safari 必須 */
+  margin-bottom: 12px;    /* 余白はこっちで管理 */
   padding: 8px 10px;
   font-size: 14px;
-  border: 1px solid #d0d5dd;
   border-radius: 8px;
 }
 
+/* select */
+.filter-box select {
+  border: 1px solid #d0d5dd;
+}
+
+/* 曲名検索 */
+.search-box input {
+  border: 1px solid #d0d5dd;
+}
+
+/* search-box 自体には余白を持たせない */
+.search-box {
+  margin: 0;
+}
 
 
 /* ==============================
