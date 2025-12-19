@@ -1,9 +1,50 @@
+/* ==============================
+  全体ベース
+============================== */
+
+body {
+  font-size: 16px;
+  line-height: 1.7;
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Helvetica Neue",
+    "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans",
+    "Noto Sans JP",
+    "Yu Gothic",
+    "Meiryo",
+    sans-serif;
+}
+
+
+/* ==============================
+  見出し・説明文
+============================== */
+
+/* サイトタイトル
+   見た目は「h4相当」に抑える */
+.site-title {
+  font-size: 18px;        /* 旧 h4 に近いサイズ */
+  font-weight: bold;
+  margin: 16px 0 8px;
+  text-align: center;
+}
+
+/* 補足説明文
+   旧 h6 の役割を p で再現 */
 .notice {
   margin: 8px 0 16px;
   font-size: 12px;
   color: #666;
   font-weight: normal;
+  text-align: center;
 }
+
+
+/* ==============================
+  絞り込みUI
+============================== */
 
 .filter-box {
   background: #f8f9fb;
@@ -13,6 +54,7 @@
   margin-bottom: 20px;
 }
 
+/* 「絞り込み」ラベル */
 .filter-title {
   font-weight: bold;
   font-size: 14px;
@@ -20,6 +62,7 @@
   margin-bottom: 12px;
 }
 
+/* ラベル＋セレクトを縦並び */
 .filter-box label {
   display: block;
   font-size: 14px;
@@ -31,31 +74,58 @@
   margin-top: 4px;
 }
 
+/* 曲名検索 */
+.search-box {
+  margin-bottom: 12px;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 6px 8px;
+  font-size: 14px;
+}
+
+
+/* ==============================
+  ライブカード
+============================== */
+
 .live-card {
   background: #fff;
   border: 1px solid #e0e3e8;
   border-radius: 12px;
   padding: 16px;
+
+  /* Safariでも効く控えめな影 */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 }
 
+/* 日付（一番目立たせる） */
 .live-date {
   font-size: 20px;
   font-weight: bold;
-  color: #2563eb; /* 青系 */
+  color: #2563eb;
 }
 
+/* イベント名 */
 .live-title {
   font-size: 16px;
   font-weight: bold;
   margin-top: 4px;
 }
 
+/* 会場・形態などの補足情報 */
 .live-meta {
   font-size: 13px;
   color: #666;
   margin-top: 6px;
   margin-bottom: 12px;
 }
+
+
+/* ==============================
+  セットリスト
+============================== */
 
 .setlist {
   list-style: none;
@@ -70,6 +140,7 @@
   padding: 6px 0;
 }
 
+/* 曲番号 */
 .track-no {
   min-width: 28px;
   text-align: center;
@@ -81,43 +152,22 @@
   flex-shrink: 0;
 }
 
+/* 曲名 */
 .track-title {
   font-weight: bold;
 }
 
-
+/* 備考 */
 .note {
   font-size: 12px;
   color: #888;
   margin-left: 4px;
 }
 
-.live-card {
-  background: #fff;
-  border: 1px solid #e0e3e8;
-  border-radius: 12px;
-  padding: 16px;
 
-  /* Safariで見えやすい影 */
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-}
-
-body {
-  font-size: 16px;
-  line-height: 1.6;
-  font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    "Helvetica Neue",
-    "Hiragino Kaku Gothic ProN",
-    "Hiragino Sans",
-    "Noto Sans JP",
-    "Yu Gothic",
-    "Meiryo",
-    sans-serif;
-    line-height: 1.7;
-}
-
+/* ==============================
+  フッター
+============================== */
 
 .site-footer {
   margin-top: 48px;
@@ -128,5 +178,3 @@ body {
   border-top: 1px solid #e0e0e0;
   line-height: 1.6;
 }
-
-
