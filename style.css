@@ -94,12 +94,15 @@ body {
 
 /* 曲名検索 */
 .search-box input {
+   width: 100%;
   font-size: 16px;
+  box-sizing: border-box;
   border: 1px solid #d0d5dd;
 }
 
 /* search-box 自体には余白を持たせない */
 .search-box {
+  width: 100%;
   margin: 0;
 }
 
