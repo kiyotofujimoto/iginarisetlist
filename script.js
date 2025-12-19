@@ -60,6 +60,19 @@ function renderLiveSelect() {
   });
 }
 
+// --------------------------
+// 日付表示作成用の関数
+// --------------------------
+function formatDateWithDay(dateStr) {
+  // "2025.09.13" → "2025-09-13" に変換
+  const formatted = dateStr.replace(/\./g, "-");
+  const date = new Date(formatted);
+
+  const days = ["日", "月", "火", "水", "木", "金", "土"];
+  const day = days[date.getDay()];
+
+  return `${dateStr}（${day}）`;
+}
 
 // ==============================
 // ライブ詳細表示
@@ -73,7 +86,7 @@ console.log("SETLIST:", live.setlist);
 
 result.innerHTML = `
   <div class="live-card">
-    <div class="live-date">${live.date}</div>
+    <div class="live-date">${formatDateWithDay(live.date)}</div>
     <div class="live-title">${live.title}</div>
 
     <div class="live-meta">
@@ -92,7 +105,6 @@ result.innerHTML = `
   </div>
 `;
 }
-
 
 // ==============================
 // 初期化・イベント設定
@@ -165,6 +177,7 @@ async function init() {
     renderResult(live);
   });
 }
+
 
 // 初期化実行
 init();
