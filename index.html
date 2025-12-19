@@ -8,37 +8,47 @@
 </head>
 <body>
 
-  <h4>🍄いぎなり東北産ライブ セットリスト検索🍄</h4>
-  <h6 class="notice">
-  武道館公演以降のセットリストを中心にまとめています。※生誕祭は除く<br>
-  （余力があれば、それ以前の公演も順次追加予定です）
-  </h6>
-<div class="filter-box">
-  <div class="filter-title">絞り込み</div>
-  <label>年度：
-    <select id="yearSelect"></select></label>
-  <label>形態：
-  <select id="typeSelect">
-    <option value="">-- 全て --</option>
-  </select>
-</label>
-  <label>
-    ライブ：
+  <h1>🍄いぎなり東北産ライブ セットリスト検索🍄</h1>
+  <p class="notice">
+    武道館公演以降のセットリストを中心にまとめています。※生誕祭は除く<br>
+    （余力があれば、それ以前の公演も順次追加予定です）
+  </p>
+
+  <div class="filter-box">
+    <div class="filter-title">絞り込み</div>
+
+    <label for="yearSelect">年度：</label>
+    <select id="yearSelect"></select>
+
+    <label for="typeSelect">形態：</label>
+    <select id="typeSelect">
+      <option value="">-- 全て --</option>
+    </select>
+
+    <div class="search-box">
+      <input
+        type="text"
+        id="songSearch"
+        placeholder="曲名で検索">
+    </div>
+
+    <label for="liveSelect">ライブ：</label>
     <select id="liveSelect">
       <option value="">-- 選択してください --</option>
     </select>
-  </label>
-</div>
+  </div>
+
   <div id="result"></div>
+
+  <footer class="site-footer">
+    <p>
+      ※このサイトは個人の趣味で作っている非公式まとめサイトです。<br>
+      内容の正確性を保証するものではありません。<br>
+      営利目的はありません。<br>
+      また、予告なく公開を終了する場合があります。
+    </p>
+  </footer>
+
   <script src="script.js"></script>
-  
-<footer class="site-footer">
-  <p>
-    ※このサイトは個人の趣味で作っている非公式まとめサイトです。<br>
-    内容の正確性を保証するものではありません。
-    営利目的はありません。<br>
-    また、予告なく公開を終了する場合がありますがご了承ください。
-  </p>
-</footer>
 </body>
 </html>
