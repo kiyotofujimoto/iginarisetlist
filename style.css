@@ -83,12 +83,12 @@ body {
   box-sizing: border-box; /* iOS Safari 必須 */
   margin-bottom: 12px;    /* 余白はこっちで管理 */
   padding: 8px 10px;
-  font-size: 14px;
   border-radius: 8px;
 }
 
 /* select */
 .filter-box select {
+  font-size: 14px;
   border: 1px solid #d0d5dd;
 }
 
