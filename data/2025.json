@@ -717,6 +717,23 @@
       { "title": "HOME", "note": "" }
     ]
   },
+      {
+    "id": "2025-12-13",
+    "date": "2025.12.13",
+    "slot": "",
+    "type": "FES/対バン",
+    "tour": "",
+    "title": "New Stream Music FES",
+    "venue": "エアポートウォーク名古屋",
+    "setlist": [
+      { "title": "あなたは", "note": "" },
+      { "title": "No Make", "note": "" },
+      { "title": "いただきランチャー", "note": "" },
+      { "title": "いぎなり魔曲", "note": "" },
+      { "title": "シャチョサン", "note": "" },
+      { "title": "天下一品〜みちのく革命〜", "note": "" }
+    ]
+  },
     {
     "id": "2025-12-14",
     "date": "2025.12.14",
