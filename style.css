@@ -50,9 +50,10 @@ body {
   background: #f8f9fb;
   border: 1px solid #e0e3e8;
   border-radius: 12px;
-  padding: 16px;
+  padding: 14px 16px; /* 上下だけ少し詰める */
   margin-bottom: 20px;
 }
+
 
 /* 「絞り込み」ラベル */
 .filter-title {
@@ -66,24 +67,31 @@ body {
 .filter-box label {
   display: block;
   font-size: 14px;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
-.filter-box select {
-  width: 100%;
-  margin-top: 4px;
+/* select / input の余計な上マージンを消す */
+.filter-box select,
+.filter-box input {
+  margin-top: 2px;
 }
+
 
 /* 曲名検索 */
 .search-box {
   margin-bottom: 12px;
 }
 
+/* 曲名検索 input */
 .search-box input {
   width: 100%;
-  padding: 6px 8px;
+  box-sizing: border-box; /* ←超重要 */
+  padding: 8px 10px;
   font-size: 14px;
+  border: 1px solid #d0d5dd;
+  border-radius: 8px;
 }
+
 
 
 /* ==============================
