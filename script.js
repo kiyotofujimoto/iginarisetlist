@@ -81,10 +81,13 @@ function applyFilters() {
 
     // 曲名検索（部分一致）
     if (searchWord) {
-      return live.setlist?.some(song =>
-        song.title.includes(searchWord)
-      );
-    }
+  const normalizedWord = normalizeText(searchWord);
+
+  return live.setlist?.some(song =>
+    normalizeText(song.title).includes(normalizedWord)
+  );
+}
+
 
     return true;
   });
@@ -107,6 +110,21 @@ function formatDateWithDay(dateStr) {
 
   return `${dateStr}（${day}）`;
 }
+
+// ==============================
+// 文字列正規化ユーティリティ
+// ==============================
+
+// ・大文字 / 小文字を無視
+// ・全角 / 半角を吸収
+// ・前後の空白を除去
+function normalizeText(str) {
+  return str
+    .toLowerCase()
+    .normalize("NFKC")
+    .trim();
+}
+
 
 
 // ==============================
