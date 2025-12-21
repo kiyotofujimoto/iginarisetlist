@@ -22,17 +22,13 @@ body {
   見出し・説明文
 ============================== */
 
-/* サイトタイトル
-   見た目は「h4相当」に抑える */
 .site-title {
-  font-size: 18px;        /* 旧 h4 に近いサイズ */
+  font-size: 18px;
   font-weight: bold;
   margin: 16px 0 8px;
   text-align: center;
 }
 
-/* 補足説明文
-   旧 h6 の役割を p で再現 */
 .notice {
   margin: 8px 0 16px;
   font-size: 12px;
@@ -54,7 +50,11 @@ body {
   margin-bottom: 20px;
 }
 
-/* 絞り込みヘッダー */
+
+/* =========================
+   絞り込みヘッダー
+========================= */
+
 .filter-header {
   display: flex;
   justify-content: space-between;
@@ -62,15 +62,28 @@ body {
   margin-bottom: 12px;
 }
 
-/* リセットボタン */
+.filter-title {
+  font-weight: bold;
+  font-size: 14px;
+  color: #555;
+  margin: 0; /* Safari対策：余白は親で管理 */
+}
+
+
+/* =========================
+   リセットボタン
+========================= */
+
 .reset-button {
   font-size: 12px;
   padding: 6px 10px;
-  border-radius: 8px;
+  border-radius: 999px;
   border: 1px solid #ccc;
   background: #fff;
   color: #555;
   cursor: pointer;
+  position: relative; /* Safari対策 */
+  z-index: 10;        /* Safari対策 */
 }
 
 .reset-button:hover {
@@ -78,25 +91,17 @@ body {
 }
 
 
-/* 「絞り込み」ラベル */
-/* 「絞り込み」見出し */
-.filter-title {
-  font-weight: bold;
-  font-size: 14px;
-  color: #555;
-  margin-bottom: 12px;
-}
-
 /* =========================
-   ラベル（年度・形態・ライブ）
+   ラベル
 ========================= */
 
 .filter-box label {
   display: block;
   font-size: 14px;
-  margin-bottom: 4px; /* ← 最小限 */
+  margin-bottom: 4px;
   color: #333;
 }
+
 
 /* =========================
    select / input 共通
@@ -105,30 +110,25 @@ body {
 .filter-box select,
 .search-box input {
   width: 100%;
-  box-sizing: border-box; /* iOS Safari 必須 */
-  margin-bottom: 12px;    /* 余白はこっちで管理 */
+  box-sizing: border-box;
+  margin-bottom: 12px;
   padding: 8px 10px;
   border-radius: 8px;
 }
 
-/* select */
 .filter-box select {
   font-size: 14px;
   border: 1px solid #d0d5dd;
 }
 
-/* 曲名検索 */
-.search-box input {
-   width: 100%;
-  font-size: 16px;
-  box-sizing: border-box;
-  border: 1px solid #d0d5dd;
-}
-
-/* search-box 自体には余白を持たせない */
 .search-box {
   width: 100%;
   margin: 0;
+}
+
+.search-box input {
+  font-size: 16px;
+  border: 1px solid #d0d5dd;
 }
 
 
@@ -141,26 +141,21 @@ body {
   border: 1px solid #e0e3e8;
   border-radius: 12px;
   padding: 16px;
-
-  /* Safariでも効く控えめな影 */
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 }
 
-/* 日付（一番目立たせる） */
 .live-date {
   font-size: 20px;
   font-weight: bold;
   color: #2563eb;
 }
 
-/* イベント名 */
 .live-title {
   font-size: 16px;
   font-weight: bold;
   margin-top: 4px;
 }
 
-/* 会場・形態などの補足情報 */
 .live-meta {
   font-size: 13px;
   color: #666;
@@ -186,7 +181,6 @@ body {
   padding: 6px 0;
 }
 
-/* 曲番号 */
 .track-no {
   min-width: 28px;
   text-align: center;
@@ -198,12 +192,10 @@ body {
   flex-shrink: 0;
 }
 
-/* 曲名 */
 .track-title {
   font-weight: bold;
 }
 
-/* 備考 */
 .note {
   font-size: 12px;
   color: #888;
