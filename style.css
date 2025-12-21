@@ -54,6 +54,31 @@ body {
   margin-bottom: 20px;
 }
 
+/* 絞り込みヘッダー */
+.filter-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+/* リセットボタン */
+.reset-button {
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background: #fff;
+  color: #555;
+  cursor: pointer;
+}
+
+.reset-button:hover {
+  background: #f0f0f0;
+}
+
+
+/* 「絞り込み」ラベル */
 /* 「絞り込み」見出し */
 .filter-title {
   font-weight: bold;

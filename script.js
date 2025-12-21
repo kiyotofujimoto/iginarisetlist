@@ -70,7 +70,6 @@ function renderLiveSelect() {
 // ==============================
 // フィルタ処理（超重要）
 // ==============================
-
 // 年度・形態・曲名検索をすべて AND 条件で適用する
 function applyFilters() {
   filteredLives = lives.filter(live => {
@@ -79,15 +78,13 @@ function applyFilters() {
       return false;
     }
 
-    // 曲名検索（部分一致）
+    // 曲名検索
     if (searchWord) {
-  const normalizedWord = normalizeText(searchWord);
-
-  return live.setlist?.some(song =>
-    normalizeText(song.title).includes(normalizedWord)
-  );
-}
-
+      const normalizedWord = normalizeText(searchWord);
+      return live.setlist?.some(song =>
+        normalizeText(song.title).includes(normalizedWord)
+      );
+    }
 
     return true;
   });
@@ -157,18 +154,20 @@ function renderResult(live) {
   `;
 }
 
-
 // ==============================
 // 初期化・イベント設定
 // ==============================
 
 async function init() {
-  const yearSelect = document.getElementById("yearSelect");
-  const typeSelect = document.getElementById("typeSelect");
-  const liveSelect = document.getElementById("liveSelect");
-  const songSearch = document.getElementById("songSearch");
+  const yearSelect   = document.getElementById("yearSelect");
+  const typeSelect   = document.getElementById("typeSelect");
+  const liveSelect   = document.getElementById("liveSelect");
+  const songSearch   = document.getElementById("songSearch");
+  const resetButton  = document.getElementById("resetButton");
 
+  // --------------------------
   // 年度一覧を取得
+  // --------------------------
   const { years } = await loadYears();
 
   // 年度プルダウン生成（新しい年を上に）
@@ -179,8 +178,11 @@ async function init() {
     yearSelect.appendChild(opt);
   });
 
+  // --------------------------
   // 初期表示：最新年度
+  // --------------------------
   const currentYear = years.sort((a, b) => b - a)[0];
+  yearSelect.value = currentYear;
   lives = await loadYear(currentYear);
 
   // 状態初期化
@@ -235,6 +237,30 @@ async function init() {
 
     const live = filteredLives.find(l => l.id === id);
     if (live) renderResult(live);
+  });
+
+  // --------------------------
+  // 🔁 条件リセットボタン
+  // --------------------------
+  resetButton.addEventListener("click", async () => {
+    // 年度を最新に戻す
+    yearSelect.value = currentYear;
+    lives = await loadYear(currentYear);
+
+    // 内部状態リセット
+    selectedType = "";
+    searchWord = "";
+
+    // UIリセット
+    typeSelect.value = "";
+    songSearch.value = "";
+    liveSelect.value = "";
+
+    renderTypeSelect();
+    applyFilters();
+
+    // 表示クリア
+    document.getElementById("result").innerHTML = "";
   });
 }
 
