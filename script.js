@@ -70,7 +70,6 @@ function renderLiveSelect() {
 // ==============================
 // フィルタ処理（超重要）
 // ==============================
-
 // 年度・形態・曲名検索をすべて AND 条件で適用する
 function applyFilters() {
   filteredLives = lives.filter(live => {
@@ -79,15 +78,13 @@ function applyFilters() {
       return false;
     }
 
-    // 曲名検索（部分一致）
+    // 曲名検索
     if (searchWord) {
-  const normalizedWord = normalizeText(searchWord);
-
-  return live.setlist?.some(song =>
-    normalizeText(song.title).includes(normalizedWord)
-  );
-}
-
+      const normalizedWord = normalizeText(searchWord);
+      return live.setlist?.some(song =>
+        normalizeText(song.title).includes(normalizedWord)
+      );
+    }
 
     return true;
   });
