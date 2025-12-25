@@ -1,5 +1,706 @@
 [
   {
+    "id": "2025-01-05",
+    "date": "2025.01.05",
+    "slot": "",
+    "type": "単独ライブ",
+    "tour": "",
+    "title": "いぎなりちゅら産ライブ",
+    "venue": "＜沖縄県＞ミュージックタウン音市場",
+    "setlist": [
+      { "title": "おのぼりガール", "note": "" },
+      { "title": "あなたは", "note": "" },
+      { "title": "大勝利宣言", "note": "" },
+      { "title": "カバーメドレー", "note": "" },
+      { "title": "乾杯ニッポン", "note": "" },
+      { "title": "ハイテンションサマー！", "note": "" },
+      { "title": "ウィンターのアゲアゲバッコーン！", "note": "" },
+      { "title": "青春修学旅行", "note": "" },
+      { "title": "いぎなり魔曲", "note": "" },
+      { "title": "TOHOKUちゃんぷるー", "note": "" },
+      { "title": "シャチョサン", "note": "" },
+      { "title": "天下一品 ～みちのく革命～", "note": "" },
+      { "title": "チョコスプレー♡", "note": "" }
+    ]
+  },
+  {
+    "id": "2025-01-11",
+    "date": "2025.01.11",
+    "slot": "",
+    "type": "フリイベ/リリイベ",
+    "tour": "武道館のその先へ",
+    "title": "野音から武道館のその先へ決起会＠すみだ産業会館",
+    "venue": "＜東京都＞錦糸町マルイ 8F すみだ産業会館",
+    "setlist": [
+      { "title": "チョコスプレー♡", "note": "" },
+      { "title": "メタハンマー", "note": "" },
+      { "title": "いただきランチャー", "note": "" },
+      { "title": "BUBBLE POPPIN", "note": "" }
+    ]
+  },
+    {
+    "id": "2025-01-12",
+    "date": "2025.01.12",
+    "slot": "",
+    "type": "FES/対バン",
+    "tour": "",
+    "title": "『LIIiEN 1st tour 「START」』とうほくちゃんゲスト出演",
+    "venue": "＜宮城県＞仙台市　Rensa",
+    "setlist": [
+      { "title": "イヤギハジャ", "note": "北美・吉瀬" },
+      { "title": "Love is here", "note": "" },
+      { "title": "未成年", "note": "" }
+    ]
+  },
+    {
+    "id": "2025-01-26",
+    "date": "2025.01.26",
+    "slot": "",
+    "type": "FES/対バン",
+    "tour": "",
+    "title": "冬祭！地酒＆地肴 in 代々木『HERO GATE』",
+    "venue": "＜東京都＞代々木公園野外音楽堂",
+    "setlist": [
+      { "title": "チョコスプレー♡", "note": "" },
+      { "title": "Trophy Girl", "note": "" },
+      { "title": "いただきランチャー", "note": "" },
+      { "title": "ウィンターのアゲアゲバッコーン！", "note": "" },
+      { "title": "シャチョサン", "note": "" },
+      { "title": "わざとあざとエキスパート", "note": "" }
+    ]
+  },
+  {
+    "id": "2025-02-01",
+    "date": "2025.02.01",
+    "slot": "",
+    "type": "フリイベ/リリイベ",
+    "tour": "武道館のその先へ",
+    "title": "野音から武道館のその先へ＠ゲートシティ大崎",
+    "venue": "＜東京都＞ゲートシティ大崎 アトリウム",
+    "setlist": [
+      { "title": "うぢらとおめだづ", "note": "" },
+      { "title": "沼れ！マイラバー", "note": "" },
+      { "title": "ナイツオブナインズ", "note": "" },
+      { "title": "チョコスプレー♡", "note": "" }
+    ]
+  },
+   {
+    "id": "2025-02-21-01",
+    "date": "2025.02.21",
+    "slot": "1部",
+    "type": "単独ライブ",
+    "tour": "",
+    "title": "いぎなりバレンタイン BOYSイベント＜1部＞",
+    "venue": "＜東京都＞日本橋三井ホール",
+    "setlist": [
+      { "title": "テキーナ", "note": "" },
+      { "title": "わざとあざとエキスパート", "note": "" },
+      { "title": "乾杯ニッポン", "note": "" },
+      { "title": "NIWAKA", "note": "" },
+      { "title": "トーホク・ラブ・ストーリー〜恋はいつも突然に〜", "note": "" },
+      { "title": "恋はじめ", "note": "" },
+      { "title": "チョコスプレー♡", "note": "" },
+      { "title": "ぱんださん", "note": "" },
+      { "title": "いただきランチャー", "note": "" },
+      { "title": "シャチョサン", "note": "" },
+      { "title": "天下一品 ～みちのく革命～", "note": "" },
+      { "title": "ウィンターのアゲアゲバッコーン！", "note": "" }
+    ]
+  },
+  {
+    "id": "2025-02-21-02",
+    "date": "2025.02.21",
+    "slot": "2部",
+    "type": "単独ライブ",
+    "tour": "",
+    "title": "いぎなりバレンタイン BOYSイベント＜2部＞",
+    "venue": "＜東京都＞日本橋三井ホール",
+    "setlist": [
+      { "title": "テキーナ", "note": "" },
+      { "title": "わざとあざとエキスパート", "note": "" },
+      { "title": "あなたは", "note": "" },
+      { "title": "青春修学旅行", "note": "" },
+      { "title": "トーホク・ラブ・ストーリー〜恋はいつも突然に〜", "note": "" },
+      { "title": "恋はじめ", "note": "" },
+      { "title": "チョコスプレー♡", "note": "" },
+      { "title": "ぱんださん", "note": "" },
+      { "title": "いただきランチャー", "note": "" },
+      { "title": "シャチョサン", "note": "" },
+      { "title": "天下一品 ～みちのく革命～", "note": "" },
+      { "title": "伊達サンバ", "note": "" }
+    ]
+  },
+    {
+    "id": "2025-02-23",
+    "date": "2025.02.23",
+    "slot": "",
+    "type": "フリイベ/リリイベ",
+    "tour": "武道館のその先へ",
+    "title": "お台場から武道館のその先へ",
+    "venue": "＜東京都＞TOWER RECORDS　miniダイバーシティ東京",
+    "setlist": [
+      { "title": "チョコスプレー♡", "note": "" },
+      { "title": "ナイツオブナインズ", "note": "" },
+      { "title": "東京アレルギー", "note": "" },
+      { "title": "天下一品 ～みちのく革命～", "note": "" }
+    ]
+  },
+  {
+    "id": "2025-03-02",
+    "date": "2025.03.02",
+    "slot": "",
+    "type": "フリイベ/リリイベ",
+    "tour": "武道館のその先へ",
+    "title": "西宮から武道館のその先へ",
+    "venue": "＜兵庫県＞阪急西宮ガーデンズ",
+    "setlist": [
+      { "title": "チョコスプレー♡", "note": "" },
+      { "title": "No Make", "note": "" },
+      { "title": "わざとあざとエキスパート", "note": "" },
+      { "title": "天下一品 ～みちのく革命～", "note": "" }
+    ]
+  },
+  {
+    "id": "2025-03-14-01",
+    "date": "2025.03.14",
+    "slot": "1部",
+    "type": "単独ライブ",
+    "tour": "",
+    "title": "いぎなりホワイトデー GIRLSイベント＜1部＞",
+    "venue": "＜東京都＞日本橋三井ホール",
+    "setlist": [
+      { "title": "沼れ！マイラバー", "note": "" },
+      { "title": "服を着て、恋したい", "note": "" },
+      { "title": "トラベル", "note": "" },
+      { "title": "イヤギハジャ", "note": "" },
+      { "title": "轟", "note": "" },
+      { "title": "うぢらとおめだづ", "note": "" },
+      { "title": "チョコスプレー♡", "note": "" },
+      { "title": "恋はじめ", "note": "" },
+      { "title": "HiGHER,HiGHER!!", "note": "" },
+      { "title": "わざとあざとエキスパート", "note": "" },
+      { "title": "天下一品 ～みちのく革命～", "note": "" },
+      { "title": "Trophy Girl", "note": "" }
+    ]
+  },
+   {
+    "id": "2025-03-14-02",
+    "date": "2025.03.14",
+    "slot": "2部",
+    "type": "単独ライブ",
+    "tour": "",
+    "title": "いぎなりホワイトデー GIRLSイベント＜2部＞",
+    "venue": "＜東京都＞日本橋三井ホール",
+    "setlist": [
+      { "title": "沼れ！マイラバー", "note": "" },
+      { "title": "服を着て、恋したい", "note": "" },
+      { "title": "恋愛フィルター", "note": "" },
+      { "title": "イヤギハジャ", "note": "" },
+      { "title": "轟", "note": "" },
+      { "title": "大勝利宣言", "note": "" },
+      { "title": "チョコスプレー♡", "note": "" },
+      { "title": "恋はじめ", "note": "" },
+      { "title": "狂くるどっかーん♡", "note": "" },
+      { "title": "わざとあざとエキスパート", "note": "" },
+      { "title": "天下一品 ～みちのく革命～", "note": "" },
+      { "title": "feeling", "note": "" }
+    ]
+  },
+  {
+    "id": "2025-03-23",
+    "date": "2025.03.23",
+    "slot": "",
+    "type": "FES/対バン",
+    "tour": "",
+    "title": "H.I.P. presents GIG TAKAHASHI 3 ~tour 2025~ 青森公演",
+    "venue": "＜青森県＞青森Quarter",
+    "setlist": [
+      { "title": "ワンダフル東北", "note": "" },
+      { "title": "BUBBLE POPPIN", "note": "" },
+      { "title": "うぢらとおめだづ", "note": "" },
+      { "title": "チョコスプレー♡", "note": "" },
+      { "title": "天下一品 ～みちのく革命～", "note": "" },
+      { "title": "シャチョサン", "note": "" }
+    ]
+  },
+      {
+    "id": "2025-03-29",
+    "date": "2025.03.29",
+    "slot": "",
+    "type": "フリイベ/リリイベ",
+    "tour": "武道館のその先へ",
+    "title": "名古屋から武道館のその先へ",
+    "venue": "＜愛知県＞三井ショッピングパーク ららぽーと名古屋みなとアクルス",
+    "setlist": [
+      { "title": "チョコスプレー♡", "note": "" },
+      { "title": "わざとあざとエキスパート", "note": "" },
+      { "title": "天下一品 ～みちのく革命～", "note": "" },
+      { "title": "トリプルセブン", "note": "カバー" },
+      { "title": "エンジョイ人生", "note": "カバー" }
+    ]
+  },
+  {
+    "id": "2025-03-30",
+    "date": "2025.03.30",
+    "slot": "",
+    "type": "FES/対バン",
+    "tour": "",
+    "title": "清 竜人25主催3か月連続対バンイベント『LWP2025 vol.3』",
+    "venue": "＜神奈川県＞横浜BAYHALL",
+    "setlist": [
+      { "title": "沼れ！マイラバー", "note": "" },
+      { "title": "服を着て、恋したい", "note": "" },
+      { "title": "うぢらとおめだづ", "note": "" },
+      { "title": "メタハンマー", "note": "" },
+      { "title": "HiGHER,HiGHER!!", "note": "" },
+      { "title": "恋愛フィルター", "note": "" },
+      { "title": "わざとあざとエキスパート", "note": "" },
+      { "title": "天下一品 ～みちのく革命～", "note": "" },
+      { "title": "チョコスプレー♡", "note": "" }
+    ]
+  },
+  {
+    "id": "2025-04-09",
+    "date": "2025.04.09",
+    "slot": "",
+    "type": "フリイベ/リリイベ",
+    "tour": "武道館のその先へ",
+    "title": "学生優遇フリーイベント『豊洲から武道館のその先へ』",
+    "venue": "＜東京都＞アーバンドック ららぽーと豊洲",
+    "setlist": [
+      { "title": "わざとあざとエキスパート", "note": "" },
+      { "title": "沼れ！マイラバー", "note": "" },
+      { "title": "天下一品 ～みちのく革命～", "note": "" },
+      { "title": "結び", "note": "" }
+    ]
+  },
+  {
+    "id": "2025-04-12",
+    "date": "2025.04.12",
+    "slot": "",
+    "type": "FES/対バン",
+    "tour": "",
+    "title": "ももクロ春の一大事2025 in 新発田市 ～新発田 新発見！？～",
+    "venue": "＜新潟県＞外周パーク　新発田で発見！フマキラーランド",
+    "setlist": [
+      { "title": "あなたは", "note": "" },
+      { "title": "Trophy Girl", "note": "" },
+      { "title": "うぢらとおめだづ", "note": "" },
+      { "title": "シャチョサン", "note": "" },
+      { "title": "天下一品 ～みちのく革命～", "note": "" },
+      { "title": "ナイツオブナインズ", "note": "" }
+    ]
+  },
+    {
+    "id": "2025-04-13",
+    "date": "2025.04.13",
+    "slot": "",
+    "type": "FES/対バン",
+    "tour": "",
+    "title": "高嶺のなでしこ〜たかねこフェスvo.4　出張編〜",
+    "venue": "＜宮城県＞仙台PIT",
+    "setlist": [
+      { "title": "わざとあざとエキスパート", "note": "" },
+      { "title": "re;star", "note": "" },
+      { "title": "ぱんださん", "note": "" },
+      { "title": "服を着て、恋したい", "note": "" },
+      { "title": "いただきランチャー", "note": "" },
+      { "title": "天下一品 ～みちのく革命～", "note": "" },
+      { "title": "負けないうた", "note": "" },
+      { "title": "I decided", "note": "" }
+    ]
+  },
+{
+    "id": "2025-04-26",
+    "date": "2025.04.26",
+    "slot": "",
+    "type": "単独ライブ",
+    "tour": "",
+    "title": "いぎなり野音LIVE '25",
+    "venue": "＜東京都＞日比谷野外大音楽堂",
+    "setlist": [
+      { "title": "いただきランチャー", "note": "" },
+      { "title": "BUBBLE POPPIN", "note": "" },
+      { "title": "Burnin’ Heart", "note": "" },
+      { "title": "微妙", "note": "" },
+      { "title": "Action!", "note": "" },
+      { "title": "天下一品 ～みちのく革命～", "note": "" },
+      { "title": "桜プロミス", "note": "" },
+      { "title": "わざとあざとエキスパート", "note": "" },
+      { "title": "Love is here", "note": "とうほくちゃん：律月・北美・葉月・安杜・吉瀬" },
+      { "title": "Fly Out", "note": "いぎなりちゃん：橘・桜・藤谷・伊達" },
+      { "title": "うぢらとおめだづ", "note": "" },
+      { "title": "沼れ！マイラバー", "note": "" },
+      { "title": "あーぐれす", "note": "" },
+      { "title": "Viper", "note": "" },
+      { "title": "シャチョサン", "note": "" },
+      { "title": "テキーナ", "note": "" },
+      { "title": "ニュートロ", "note": "" },
+      { "title": "I decided", "note": "" },
+      { "title": "真っ直ぐに、明日がある", "note": "" },
+      { "title": "線の物語", "note": "" },
+      { "title": "東京アレルギー", "note": "" }
+    ]
+  },
+    {
+    "id": "2025-04-27",
+    "date": "2025.04.27",
+    "slot": "",
+    "type": "フリイベ/リリイベ",
+    "tour": "",
+    "title": "Blu-ray「REVENGE LIVE」リリースイベント",
+    "venue": "＜神奈川県＞ラゾーナ川崎プラザ",
+    "setlist": [
+      { "title": "あーぐれす", "note": "" },
+      { "title": "Viper", "note": "" },
+      { "title": "チョコスプレー♡", "note": "" },
+      { "title": "ナイツオブナインズ", "note": "" }
+    ]
+  },
+ {
+    "id": "2025-05-03-01",
+    "date": "2025.05.03",
+    "slot": "1部",
+    "type": "単独ライブ",
+    "tour": "南東北ゴールデンめぐり",
+    "title": "南東北ゴールデンめぐり＜福島県＞＜1部＞",
+    "venue": "＜福島県＞いわき市文化センター 大ホール",
+    "setlist": [
+      { "title": "ワンダフル東北", "note": "" },
+      { "title": "ハイテンションサマー！", "note": "" },
+      { "title": "イヤギハジャ", "note": "" },
+      { "title": "TOHOKU FUNKY RAIL", "note": "" },
+      { "title": "あーぐれす", "note": "" },
+      { "title": "Viper", "note": "" },
+      { "title": "わざとあざとエキスパート", "note": "" },
+      { "title": "BUBBLE POPPIN", "note": "" },
+      { "title": "青春修学旅行", "note": "" },
+      { "title": "未成年", "note": "" },
+      { "title": "コンビニエント・エゴ", "note": "" },
+      { "title": "いただきランチャー", "note": "" },
+      { "title": "シャチョサン", "note": "" },
+      { "title": "天下一品 ～みちのく革命～", "note": "" }
+    ]
+  },
+ {
+    "id": "2025-05-03-02",
+    "date": "2025.05.03",
+    "slot": "2部",
+    "type": "単独ライブ",
+    "tour": "南東北ゴールデンめぐり",
+    "title": "南東北ゴールデンめぐり＜福島県＞＜2部＞",
+    "venue": "＜福島県＞いわき市文化センター 大ホール",
+    "setlist": [
+      { "title": "シャニムニポジティボー", "note": "" },
+      { "title": "チョコスプレー♡", "note": "" },
+      { "title": "トーホク・ラブ・ストーリー〜恋はいつも突然に〜", "note": "" },
+      { "title": "TOHOKU FUNKY RAIL", "note": "" },
+      { "title": "あーぐれす", "note": "" },
+      { "title": "Viper", "note": "" },
+      { "title": "わざとあざとエキスパート", "note": "" },
+      { "title": "BUBBLE POPPIN", "note": "" },
+      { "title": "青春修学旅行", "note": "" },
+      { "title": "Love is here", "note": "" },
+      { "title": "Fly Out", "note": "" },
+      { "title": "Burnin’ Heart", "note": "" },
+      { "title": "うぢらとおめだづ", "note": "" },
+      { "title": "線の物語", "note": "" }
+    ]
+  },
+   {
+    "id": "2025-05-05-01",
+    "date": "2025.05.05",
+    "slot": "1部",
+    "type": "単独ライブ",
+    "tour": "南東北ゴールデンめぐり",
+    "title": "南東北ゴールデンめぐり＜山形県＞＜1部＞",
+    "venue": "＜山形県＞山形中央公民館",
+    "setlist": [
+      { "title": "沼れ！マイラバー", "note": "" },
+      { "title": "大勝利宣言", "note": "" },
+      { "title": "轟", "note": "" },
+      { "title": "TOHOKU FUNKY RAIL", "note": "" },
+      { "title": "あーぐれす", "note": "" },
+      { "title": "Viper", "note": "" },
+      { "title": "わざとあざとエキスパート", "note": "" },
+      { "title": "BUBBLE POPPIN", "note": "" },
+      { "title": "青春修学旅行", "note": "" },
+      { "title": "ニュートロ", "note": "" },
+      { "title": "恋愛フィルター", "note": "" },
+      { "title": "妄想方程式", "note": "" },
+      { "title": "うぢらとおめだづ", "note": "" },
+      { "title": "いただきランチャー", "note": "" }
+    ]
+  },
+ {
+    "id": "2025-05-05-02",
+    "date": "2025.05.05",
+    "slot": "2部",
+    "type": "単独ライブ",
+    "tour": "南東北ゴールデンめぐり",
+    "title": "南東北ゴールデンめぐり＜山形県＞＜2部＞",
+    "venue": "＜山形県＞山形中央公民館",
+    "setlist": [
+      { "title": "リライトガール", "note": "" },
+      { "title": "服を着て、恋したい", "note": "" },
+      { "title": "ぱんださん", "note": "" },
+      { "title": "TOHOKU FUNKY RAIL", "note": "" },
+      { "title": "あーぐれす", "note": "" },
+      { "title": "Viper", "note": "" },
+      { "title": "わざとあざとエキスパート", "note": "" },
+      { "title": "BUBBLE POPPIN", "note": "" },
+      { "title": "青春修学旅行", "note": "" },
+      { "title": "テキーナ", "note": "" },
+      { "title": "飛ぶぞ！", "note": "" },
+      { "title": "Trophy Girl", "note": "" },
+      { "title": "天下一品 ～みちのく革命～", "note": "" },
+      { "title": "Symphony", "note": "" }
+    ]
+  },
+     {
+    "id": "2025-05-06",
+    "date": "2025.05.06",
+    "slot": "",
+    "type": "単独ライブ",
+    "tour": "南東北ゴールデンめぐり",
+    "title": "南東北ゴールデンめぐり＜宮城県＞",
+    "venue": "＜宮城県＞SENDAI GIGS",
+    "setlist": [
+      { "title": "HANA", "note": "" },
+      { "title": "スズメDANCE", "note": "" },
+      { "title": "服を着て、恋したい", "note": "" },
+      { "title": "狂くるどっかーん♡", "note": "" },
+      { "title": "TOHOKU FUNKY RAIL", "note": "" },
+      { "title": "あーぐれす", "note": "" },
+      { "title": "Viper", "note": "" },
+      { "title": "わざとあざとエキスパート", "note": "" },
+      { "title": "BUBBLE POPPIN", "note": "" },
+      { "title": "青春修学旅行", "note": "" },
+      { "title": "真っ直ぐに、明日がある", "note": "" },
+      { "title": "天下一品 ～みちのく革命～", "note": "" },
+      { "title": "ハイテンションサマー！", "note": "" },
+      { "title": "伊達サンバ", "note": "" },
+      { "title": "ワンダフル東北", "note": "" }
+    ]
+  },
+  {
+    "id": "2025-05-09",
+    "date": "2025.05.09",
+    "slot": "",
+    "type": "フリイベ/リリイベ",
+    "tour": "武道館のその先へ",
+    "title": "男女ペア優遇フリーイベント『豊洲から武道館のその先へ』",
+    "venue": "＜東京都＞アーバンドック ららぽーと豊洲",
+    "setlist": [
+      { "title": "わざとあざとエキスパート", "note": "" },
+      { "title": "恋愛フィルター", "note": "" },
+      { "title": "沼れ！マイラバー", "note": "" },
+      { "title": "Let’s シンガソング", "note": "" }
+    ]
+  },
+    {
+    "id": "2025-05-10",
+    "date": "2025.05.10",
+    "slot": "",
+    "type": "FES/対バン",
+    "tour": "",
+    "title": "ukka 10th Anniversary Live vol.2",
+    "venue": "＜神奈川県＞1000CLUB",
+    "setlist": [
+      { "title": "わざとあざとエキスパート", "note": "" },
+      { "title": "あーぐれす", "note": "" },
+      { "title": "桜プロミス", "note": "" },
+      { "title": "うぢらとおめだづ", "note": "" },
+      { "title": "東京アレルギー", "note": "" },
+      { "title": "リンドバーグ", "note": "カバー" },
+      { "title": "天下一品 ～みちのく革命～", "note": "" },
+      { "title": "夢幻歌劇", "note": "コラボ" }
+    ]
+  },
+    {
+    "id": "2025-05-11",
+    "date": "2025.05.11",
+    "slot": "",
+    "type": "フリイベ/リリイベ",
+    "tour": "武道館のその先へ",
+    "title": "一見産/紹介産優遇フリーイベント『豊洲から武道館のその先へ』",
+    "venue": "＜東京都＞アーバンドック ららぽーと豊洲",
+    "setlist": [
+      { "title": "あーぐれす", "note": "" },
+      { "title": "メタハンマー", "note": "" },
+      { "title": "東京アレルギー", "note": "" },
+      { "title": "天下一品 ～みちのく革命～", "note": "" }
+    ]
+  },
+    {
+    "id": "2025-05-19",
+    "date": "2025.05.19",
+    "slot": "",
+    "type": "FES/対バン",
+    "tour": "",
+    "title": "IGINARI LiFE!",
+    "venue": "＜宮城県＞仙台PIT",
+    "setlist": [
+      { "title": "わざとあざとエキスパート", "note": "" },
+      { "title": "チョコスプレー♡", "note": "" },
+      { "title": "Viper", "note": "" },
+      { "title": "メタハンマー", "note": "" },
+      { "title": "恋愛フィルター", "note": "" },
+      { "title": "天下一品 ～みちのく革命～", "note": "" },
+      { "title": "服を着て、恋したい", "note": "" },
+      { "title": "沼れ！マイラバー", "note": "" }
+    ]
+  },
+      {
+    "id": "2025-05-24",
+    "date": "2025.05.24",
+    "slot": "",
+    "type": "FES/対バン",
+    "tour": "",
+    "title": "東北楽天ゴールデンイーグルスコラボイベント",
+    "venue": "＜宮城県＞楽天モバイルパーク宮城",
+    "setlist": [
+      { "title": "大勝利宣言", "note": "" },
+      { "title": "うぢらとおめだづ", "note": "" },
+      { "title": "Trophy Girl", "note": "" },
+      { "title": "Burnin’ Heart", "note": "" },
+      { "title": "あーぐれす", "note": "" },
+      { "title": "いぎなり魔曲", "note": "" },
+      { "title": "リライトガール", "note": "" },
+      { "title": "いただきランチャー", "note": "" }
+    ]
+  },
+      {
+    "id": "2025-05-25",
+    "date": "2025.05.25",
+    "slot": "",
+    "type": "フリイベ/リリイベ",
+    "tour": "",
+    "title": "MISS MERCY フリーライブツアー「7UP7 vol.2」in Sendai",
+    "venue": "＜宮城県＞仙台駅前EBeanS",
+    "setlist": [
+      { "title": "あーぐれす", "note": "" },
+      { "title": "メタハンマー", "note": "" },
+      { "title": "Viper", "note": "" },
+      { "title": "わざとあざとエキスパート", "note": "" }
+    ]
+  },
+    {
+    "id": "2025-06-01",
+    "date": "2025.06.01",
+    "slot": "",
+    "type": "FES/対バン",
+    "tour": "",
+    "title": "A LIVE SENDAI Vol.3",
+    "venue": "＜宮城県＞SENDAI GIGS",
+    "setlist": [
+      { "title": "チョコスプレー♡", "note": "" },
+      { "title": "服を着て、恋したい", "note": "" },
+      { "title": "ゾンビソサエティ", "note": "" },
+      { "title": "あーぐれす", "note": "" },
+      { "title": "うぢらとおめだづ", "note": "" },
+      { "title": "ツンデレラ", "note": "" },
+      { "title": "わざとあざとエキスパート", "note": "" },
+      { "title": "天下一品 ～みちのく革命～", "note": "" }
+    ]
+  },
+      {
+    "id": "2025-06-09-01",
+    "date": "2025.06.09",
+    "slot": "1部",
+    "type": "フリイベ/リリイベ",
+    "tour": "武道館のその先へ",
+    "title": "メンズ優遇『豊洲から武道館のその先へ』＜1部＞",
+    "venue": "＜東京都＞アーバンドック ららぽーと豊洲",
+    "setlist": [
+      { "title": "ツンデレラ", "note": "" },
+      { "title": "いただきランチャー", "note": "" },
+      { "title": "シャチョサン", "note": "" },
+      { "title": "天下一品 ～みちのく革命～", "note": "" }
+    ]
+  },
+        {
+    "id": "2025-06-09-02",
+    "date": "2025.06.09",
+    "slot": "2部",
+    "type": "フリイベ/リリイベ",
+    "tour": "武道館のその先へ",
+    "title": "レディース優遇『豊洲から武道館のその先へ』＜2部＞",
+    "venue": "＜東京都＞アーバンドック ららぽーと豊洲",
+    "setlist": [
+      { "title": "ツンデレラ", "note": "" },
+      { "title": "沼れ！マイラバー", "note": "" },
+      { "title": "わざとあざとエキスパート", "note": "" },
+      { "title": "服を着て、恋したい", "note": "" }
+    ]
+  },
+        {
+    "id": "2025-06-14",
+    "date": "2025.06.14",
+    "slot": "",
+    "type": "フリイベ/リリイベ",
+    "tour": "武道館のその先へ",
+    "title": "『豊洲から武道館のその先へ』",
+    "venue": "＜東京都＞アーバンドック ららぽーと豊洲",
+    "setlist": [
+      { "title": "ツンデレラ", "note": "" },
+      { "title": "青春修学旅行", "note": "" },
+      { "title": "あーぐれす", "note": "" },
+      { "title": "天下一品 ～みちのく革命～", "note": "" }
+    ]
+  },
+      {
+    "id": "2025-06-21",
+    "date": "2025.06.21",
+    "slot": "",
+    "type": "FES/対バン",
+    "tour": "",
+    "title": "Popteen & Cuugal × ONE AND ONLY ポップキューフェス2025",
+    "venue": "＜神奈川県＞KT Zepp Yokohama",
+    "setlist": [
+      { "title": "沼れ！マイラバー", "note": "" },
+      { "title": "ツンデレラ", "note": "" },
+      { "title": "わざとあざとエキスパート", "note": "" },
+      { "title": "Trophy Girl", "note": "" },
+      { "title": "服を着て、恋したい", "note": "" },
+      { "title": "天下一品 ～みちのく革命～", "note": "" },
+      { "title": "あーぐれす", "note": "" }
+    ]
+  },
+    {
+    "id": "2025-06-28",
+    "date": "2025.06.28",
+    "slot": "",
+    "type": "FES/対バン",
+    "tour": "",
+    "title": "IDOL DANCE BATTLE「VERSUS」",
+    "venue": "＜東京都＞Zepp Shinjuku",
+    "setlist": [
+      { "title": "あーぐれす", "note": "" },
+      { "title": "ツンデレラ", "note": "" },
+      { "title": "メタハンマー", "note": "" },
+      { "title": "シャチョサン", "note": "" },
+      { "title": "天下一品 ～みちのく革命～", "note": "" },
+      { "title": "Viper", "note": "" },
+      { "title": "BUBBLE POPPIN", "note": "" }
+    ]
+  },
+          {
+    "id": "2025-07-02",
+    "date": "2025.07.02",
+    "slot": "",
+    "type": "フリイベ/リリイベ",
+    "tour": "武道館のその先へ",
+    "title": "シリーズファイナル『豊洲から武道館のその先へ』",
+    "venue": "＜東京都＞アーバンドック ららぽーと豊洲",
+    "setlist": [
+      { "title": "あーぐれす", "note": "" },
+      { "title": "沼れ！マイラバー", "note": "" },
+      { "title": "天下一品 ～みちのく革命～", "note": "" },
+      { "title": "ナイツオブナインズ", "note": "" }
+    ]
+  },
+  {
     "id": "2025-07-09",
     "date": "2025.07.09",
     "slot": "",
