@@ -84,6 +84,24 @@
       { "title": "チョコスプレー♡", "note": "" }
     ]
   },
+    {
+    "id": "2025-02-15",
+    "date": "2025.02.15",
+    "slot": "",
+    "type": "FES/対バン",
+    "tour": "",
+    "title": "TOKYO DOME presents HEROINES VALENTINE 2025",
+    "venue": "＜東京都＞TOKYO DOME CITY HALL",
+    "setlist": [
+      { "title": "わざとあざとエキスパート", "note": "" },
+  　  { "title": "天下一品 ～みちのく革命～", "note": "" },
+      { "title": "うぢらとおめだづ", "note": "" },
+      { "title": "東京アレルギー", "note": "" },
+      { "title": "いぎなり魔曲", "note": "" },
+      { "title": "チョコスプレー♡", "note": "" },
+      { "title": "沼れ！マイラバー", "note": "" }
+    ]
+  },
    {
     "id": "2025-02-21-01",
     "date": "2025.02.21",
