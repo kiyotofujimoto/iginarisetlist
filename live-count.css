@@ -91,35 +91,28 @@ body {
   結果カード（ライブカード流用）
 ============================== */
 
+/* 結果カード */
 .result-card {
+  margin: 24px auto;
+  padding: 20px;
+  max-width: 720px;
   background: #fff;
-  border: 1px solid #e0e3e8;
   border-radius: 12px;
-  padding: 16px;
-  margin: 0 16px 20px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
-/* 見出し */
+/* タイトル */
 .result-title {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
-  margin-bottom: 4px;
+  margin-bottom: 6px;
 }
 
-/* サブ情報 */
-.result-meta {
-  font-size: 13px;
-  color: #666;
-  margin-bottom: 12px;
-}
-
-/* 回数を強調 */
+/* 回数 */
 .result-count {
-  font-size: 20px;
-  font-weight: bold;
-  color: #2563eb;
-  margin-bottom: 12px;
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 16px;
 }
 
 
@@ -127,21 +120,29 @@ body {
   披露ライブ一覧
 ============================== */
 
+/* リスト */
 .result-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  padding-left: 18px;
 }
 
 .result-list li {
-  padding: 6px 0;
-  font-size: 14px;
-  border-bottom: 1px solid #eee;
+  margin-bottom: 8px;
+  line-height: 1.5;
 }
 
-.result-list li:last-child {
-  border-bottom: none;
+/* 会場を少し薄く */
+.result-list .venue {
+  color: #777;
+  font-size: 13px;
 }
+
+/* 空表示 */
+.empty-message {
+  text-align: center;
+  color: #666;
+}
+
+
 
 
 /* ==============================
