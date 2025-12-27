@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>楽曲披露回数検索</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<h1 class="site-title">楽曲披露回数検索</h1>
+<p class="notice">
+  指定した年（または全期間）で、楽曲の披露回数を集計します
+</p>
+
+<div class="filter-box">
+  <div class="filter-header">
+    <div class="filter-title">検索条件</div>
+  </div>
+
+  <label for="yearSelect">期間</label>
+  <select id="yearSelect">
+    <option value="all">全期間</option>
+  </select>
+
+  <label for="songInput">曲名</label>
+  <input
+    type="text"
+    id="songInput"
+    placeholder="曲名を入力"
+  />
+
+  <button id="searchButton">検索</button>
+</div>
+
+<div id="result"></div>
+
+<script src="song-count.js"></script>
+</body>
+</html>
