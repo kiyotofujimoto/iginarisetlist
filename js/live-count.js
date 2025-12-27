@@ -1,4 +1,28 @@
 // ==============================
+// HTMLエスケープ
+// ==============================
+function escapeHtml(str) {
+  return String(str)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39
+/**
+ * 検索用の正規化
+ * - 大文字/小文字を区別しない
+ * - 全角英数や記号の揺れを寄せる（NFKC）
+ * - 前後空白除去
+ */
+function normalizeText(str) {
+  return String(str ?? "")
+    .normalize("NFKC")
+    .toLowerCase()
+    .trim();
+}
+
+
+// ==============================
 // JSON 読み込み系
 // ==============================
 
@@ -89,18 +113,7 @@ function extractSongTitles(raw) {
   return [];
 }
 
-/**
- * 検索用の正規化
- * - 大文字/小文字を区別しない
- * - 全角英数や記号の揺れを寄せる（NFKC）
- * - 前後空白除去
- */
-function normalizeText(str) {
-  return String(str ?? "")
-    .normalize("NFKC")
-    .toLowerCase()
-    .trim();
-}
+
 
 /**
  * 配列から曲名を抽出
