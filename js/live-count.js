@@ -8,6 +8,7 @@ function escapeHtml(str) {
     .replace(/>/g, "&gt;")
     .replace(/"/g, "&quot;")
     .replace(/'/g, "&#39
+             }
 /**
  * 検索用の正規化
  * - 大文字/小文字を区別しない
