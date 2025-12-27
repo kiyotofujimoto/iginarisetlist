@@ -1,0 +1,218 @@
+/* ==============================
+  全体ベース
+============================== */
+
+body {
+  font-size: 16px;
+  line-height: 1.7;
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Helvetica Neue",
+    "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans",
+    "Noto Sans JP",
+    "Yu Gothic",
+    "Meiryo",
+    sans-serif;
+}
+
+
+/* ==============================
+  見出し・説明文
+============================== */
+
+.site-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 16px 0 8px;
+  text-align: center;
+}
+
+.notice {
+  margin: 8px 0 16px;
+  font-size: 12px;
+  color: #666;
+  font-weight: normal;
+  text-align: center;
+}
+
+
+/* =========================
+   絞り込み全体
+========================= */
+
+.filter-box {
+  background: #f8f9fb;
+  border: 1px solid #e0e3e8;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 20px;
+}
+
+
+/* =========================
+   絞り込みヘッダー
+========================= */
+
+.filter-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.filter-title {
+  font-weight: bold;
+  font-size: 14px;
+  color: #555;
+  margin: 0; /* Safari対策：余白は親で管理 */
+}
+
+
+/* =========================
+   リセットボタン
+========================= */
+
+.reset-button {
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid #ccc;
+  background: #fff;
+  color: #555;
+  cursor: pointer;
+  position: relative; /* Safari対策 */
+  z-index: 10;        /* Safari対策 */
+}
+
+.reset-button:hover {
+  background: #f0f0f0;
+}
+
+
+/* =========================
+   ラベル
+========================= */
+
+.filter-box label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 4px;
+  color: #333;
+}
+
+
+/* =========================
+   select / input 共通
+========================= */
+
+.filter-box select,
+.search-box input {
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 12px;
+  padding: 8px 10px;
+  border-radius: 8px;
+}
+
+.filter-box select {
+  font-size: 14px;
+  border: 1px solid #d0d5dd;
+}
+
+.search-box {
+  width: 100%;
+  margin: 0;
+}
+
+.search-box input {
+  font-size: 16px;
+  border: 1px solid #d0d5dd;
+}
+
+
+/* ==============================
+  ライブカード
+============================== */
+
+.live-card {
+  background: #fff;
+  border: 1px solid #e0e3e8;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.live-date {
+  font-size: 20px;
+  font-weight: bold;
+  color: #2563eb;
+}
+
+.live-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 4px;
+}
+
+.live-meta {
+  font-size: 13px;
+  color: #666;
+  margin-top: 6px;
+  margin-bottom: 12px;
+}
+
+
+/* ==============================
+  セットリスト
+============================== */
+
+.setlist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.setlist li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 0;
+}
+
+.track-no {
+  min-width: 28px;
+  text-align: center;
+  font-size: 12px;
+  color: #fff;
+  background: #2563eb;
+  border-radius: 6px;
+  padding: 2px 0;
+  flex-shrink: 0;
+}
+
+.track-title {
+  font-weight: bold;
+}
+
+.note {
+  font-size: 12px;
+  color: #888;
+  margin-left: 4px;
+}
+
+
+/* ==============================
+  フッター
+============================== */
+
+.site-footer {
+  margin-top: 48px;
+  padding: 24px 16px;
+  font-size: 9px;
+  color: #666;
+  text-align: center;
+  border-top: 1px solid #e0e0e0;
+  line-height: 1.6;
+}
