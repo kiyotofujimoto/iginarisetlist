@@ -3,11 +3,13 @@
 // ==============================
 async function loadYears() {
   const res = await fetch("./data/index.json");
+  if (!res.ok) throw new Error(`index.json load failed: ${res.status}`);
   return await res.json();
 }
 
 async function loadLives(year) {
   const res = await fetch(`./data/${year}.json`);
+  if (!res.ok) throw new Error(`${year}.json load failed: ${res.status}`);
   return await res.json();
 }
 
@@ -15,6 +17,7 @@ async function loadTargetLives(year) {
   if (year === "all") {
     const { years } = await loadYears();
     const allLives = [];
+
     for (const y of years) {
       const lives = await loadLives(y);
       allLives.push(...lives.map(live => ({ ...live, year: y })));
@@ -28,19 +31,46 @@ async function loadTargetLives(year) {
 
 async function loadSongsRaw() {
   const res = await fetch("./data/songs.raw.json");
+  if (!res.ok) throw new Error(`songs.raw.json load failed: ${res.status}`);
   return await res.json();
 }
 
-// songs.raw.json の形が
-// - ["曲名", ...]
-// - [{title:"曲名"}, ...]
-// - [{name:"曲名"}, ...]
-// どれでも拾う（ここでは「そのまま」拾うだけ）
+// ==============================
+// songs.raw.json から曲名配列を抽出（形が何でも吸う）
+// ==============================
 function extractSongTitles(raw) {
-  if (!Array.isArray(raw)) return [];
+  // rawが配列ならそのまま
+  if (Array.isArray(raw)) return extractFromArray(raw);
 
+  // rawがオブジェクトなら、ありがちなキーを探す
+  if (raw && typeof raw === "object") {
+    const candidates =
+      raw.songs ??
+      raw.titles ??
+      raw.items ??
+      raw.data ??
+      raw.list ??
+      raw.results;
+
+    if (Array.isArray(candidates)) return extractFromArray(candidates);
+
+    // ネストが深いパターンも雑に救う（1段だけ）
+    for (const v of Object.values(raw)) {
+      if (Array.isArray(v)) return extractFromArray(v);
+      if (v && typeof v === "object") {
+        for (const vv of Object.values(v)) {
+          if (Array.isArray(vv)) return extractFromArray(vv);
+        }
+      }
+    }
+  }
+
+  return [];
+}
+
+function extractFromArray(arr) {
   const titles = [];
-  for (const item of raw) {
+  for (const item of arr) {
     if (typeof item === "string") {
       titles.push(item);
       continue;
@@ -50,7 +80,8 @@ function extractSongTitles(raw) {
       if (typeof t === "string") titles.push(t);
     }
   }
-  return titles; // 重複排除しない
+  // 空文字とかnullっぽいのは落とす
+  return titles.filter(t => typeof t === "string" && t.trim() !== "");
 }
 
 // ==============================
@@ -80,7 +111,7 @@ function setupIncrementalSearch({ input, suggestBox, songMaster }) {
     suggestBox.innerHTML = items
       .map((t, idx) => `
         <div class="suggest-item" data-idx="${idx}">
-          ${t}
+          ${escapeHtml(t)}
         </div>
       `)
       .join("");
@@ -97,38 +128,40 @@ function setupIncrementalSearch({ input, suggestBox, songMaster }) {
     }
   }
 
-  input.addEventListener("input", () => {
-    const q = input.value;
-
-    // 空なら閉じる
-    if (!q) {
-      closeSuggest();
-      return;
-    }
-
-    // そのまま includes で候補抽出（最大20件）
+  function buildCandidates(q) {
     const items = [];
     for (const title of songMaster) {
       if (String(title).includes(q)) items.push(title);
       if (items.length >= 20) break;
     }
+    return items;
+  }
 
-    openSuggest(items);
+  input.addEventListener("input", () => {
+    const q = input.value;
+
+    if (!q) {
+      closeSuggest();
+      return;
+    }
+    openSuggest(buildCandidates(q));
   });
 
-  // 候補クリックで確定
-  suggestBox.addEventListener("click", (e) => {
+  // clickだと blur/input と競合しがちなので mousedown で確定する
+  suggestBox.addEventListener("mousedown", (e) => {
     const item = e.target.closest(".suggest-item");
     if (!item) return;
+
+    e.preventDefault(); // 先にblurするのを防ぐ
     const idx = Number(item.dataset.idx);
     const title = currentList[idx];
     if (!title) return;
+
     input.value = title;
     closeSuggest();
     input.focus();
   });
 
-  // キーボード操作（上下/Enter/Esc）
   input.addEventListener("keydown", (e) => {
     if (!suggestBox.classList.contains("is-open")) return;
 
@@ -142,6 +175,7 @@ function setupIncrementalSearch({ input, suggestBox, songMaster }) {
       highlightActive();
     } else if (e.key === "Enter") {
       if (activeIndex >= 0 && currentList[activeIndex]) {
+        // Enterは「候補確定」を優先（検索はinit側のEnterで走らせる）
         e.preventDefault();
         input.value = currentList[activeIndex];
         closeSuggest();
@@ -151,7 +185,6 @@ function setupIncrementalSearch({ input, suggestBox, songMaster }) {
     }
   });
 
-  // 外クリックで閉じる
   document.addEventListener("click", (e) => {
     if (e.target === input) return;
     if (suggestBox.contains(e.target)) return;
@@ -159,6 +192,15 @@ function setupIncrementalSearch({ input, suggestBox, songMaster }) {
   });
 
   return { closeSuggest };
+}
+
+function escapeHtml(str) {
+  return String(str)
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#039;");
 }
 
 // ==============================
@@ -173,12 +215,14 @@ function renderResult(container, word, year, matched) {
   const headerLabel = year === "all" ? "全期間" : `${year}年`;
 
   container.innerHTML = `
-    <h2>${headerLabel}「${word}」</h2>
+    <h2>${headerLabel}「${escapeHtml(word)}」</h2>
     <p>ライブ披露回数：${matched.length}回</p>
     <ul>
-      ${matched.map(item => `
-        <li>${item.date} / ${item.title}（${item.venue}）</li>
-      `).join("")}
+      ${matched
+        .map(
+          item => `<li>${escapeHtml(item.date)} / ${escapeHtml(item.title)}）</li>`
+        )
+        .join("")}
     </ul>
   `;
 }
@@ -193,68 +237,79 @@ async function init() {
   const result       = document.getElementById("result");
   const suggestBox   = document.getElementById("suggest");
 
-  // 年度プルダウン生成
-  const { years } = await loadYears();
-  years.sort((a, b) => b - a).forEach(year => {
-    const opt = document.createElement("option");
-    opt.value = year;
-    opt.textContent = year;
-    yearSelect.appendChild(opt);
-  });
-
-  // songs.raw.json 読み込み
-  const raw = await loadSongsRaw();
-  const songMaster = extractSongTitles(raw);
-
-  // ★動作確認用ログ（まずここ見て）
-  console.log("songs.raw.json count:", Array.isArray(raw) ? raw.length : raw);
-  console.log("songMaster count:", songMaster.length);
-  console.log("songMaster sample:", songMaster.slice(0, 10));
-
-  // インクリメンタルセットアップ
-  const inc = setupIncrementalSearch({
-    input: songInput,
-    suggestBox,
-    songMaster
-  });
-
-  async function runSearch() {
-    const year = yearSelect.value;
-    const word = songInput.value;
-
-    inc.closeSuggest();
-
-    if (!word) {
-      result.innerHTML = "<p>曲名を入力してください</p>";
-      return;
-    }
-
-    const lives = await loadTargetLives(year);
-
-    const matched = [];
-    lives.forEach(live => {
-      live.setlist?.forEach(song => {
-        if (String(song.title).includes(word)) {
-          matched.push({
-            date: live.date,
-            title: live.title,
-            venue: live.venue,
-            year: live.year
-          });
-        }
-      });
+  try {
+    // 年度プルダウン生成
+    const { years } = await loadYears();
+    years.sort((a, b) => b - a).forEach(year => {
+      const opt = document.createElement("option");
+      opt.value = year;
+      opt.textContent = year;
+      yearSelect.appendChild(opt);
     });
 
-    renderResult(result, word, year, matched);
-  }
+    // songs.raw.json 読み込み
+    const raw = await loadSongsRaw();
+    const songMaster = extractSongTitles(raw);
 
-  searchButton.addEventListener("click", runSearch);
+    // 動作確認ログ
+    console.log("songs.raw.json type:", Array.isArray(raw) ? "array" : typeof raw);
+    console.log("songMaster count:", songMaster.length);
+    console.log("songMaster sample:", songMaster.slice(0, 10));
 
-  songInput.addEventListener("keydown", (e) => {
-    if (e.key === "Enter") {
-      setTimeout(() => runSearch(), 0);
+    // ここで0なら songs.raw.json の中身が「曲名っぽい文字列/オブジェクト」を含んでない
+    if (songMaster.length === 0) {
+      console.warn("songMaster is empty. songs.raw.json structure or keys are unexpected.");
     }
-  });
+
+    // インクリメンタルセットアップ
+    const inc = setupIncrementalSearch({
+      input: songInput,
+      suggestBox,
+      songMaster
+    });
+
+    async function runSearch() {
+      const year = yearSelect.value;
+      const word = songInput.value;
+
+      inc.closeSuggest();
+
+      if (!word) {
+        result.innerHTML = "<p>曲名を入力してください</p>";
+        return;
+      }
+
+      const lives = await loadTargetLives(year);
+
+      const matched = [];
+      for (const live of lives) {
+        for (const song of (live.setlist ?? [])) {
+          if (String(song.title).includes(word)) {
+            matched.push({
+              date: live.date,
+              title: live.title,
+              venue: live.venue,
+              year: live.year
+            });
+          }
+        }
+      }
+
+      renderResult(result, word, year, matched);
+    }
+
+    searchButton.addEventListener("click", runSearch);
+
+    // Enterで検索（候補確定Enterと競合するので setTimeout で後に回す）
+    songInput.addEventListener("keydown", (e) => {
+      if (e.key === "Enter") {
+        setTimeout(() => runSearch(), 0);
+      }
+    });
+  } catch (err) {
+    console.error(err);
+    result.innerHTML = `<p>初期化に失敗しました：${escapeHtml(err.message)}</p>`;
+  }
 }
 
 init();
