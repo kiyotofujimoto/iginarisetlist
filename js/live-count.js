@@ -99,7 +99,11 @@ async function init() {
 
 function renderResult(container, word, year, matched) {
   if (matched.length === 0) {
-    container.innerHTML = "<p>該当するデータがありません</p>";
+    container.innerHTML = `
+      <div class="result-card">
+        <p class="empty-message">該当するデータがありません</p>
+      </div>
+    `;
     return;
   }
 
@@ -108,18 +112,26 @@ function renderResult(container, word, year, matched) {
     : `${year}年`;
 
   container.innerHTML = `
-    <h2>${headerLabel}「${word}」</h2>
-    <p>ライブ披露回数：${matched.length}回</p>
+    <div class="result-card">
+      <div class="result-title">
+        ${headerLabel}「${word}」
+      </div>
 
-    <ul>
-      ${matched.map(item => `
-        <li>
-          ${item.date} / ${item.title}（${item.venue}）
-        </li>
-      `).join("")}
-    </ul>
+      <div class="result-count">
+        ライブ披露回数：${matched.length}回
+      </div>
+
+      <ul class="result-list">
+        ${matched.map(item => `
+          <li>
+            ${item.date} / ${item.title}
+          </li>
+        `).join("")}
+      </ul>
+    </div>
   `;
 }
+
 
 // ==============================
 // 実行
