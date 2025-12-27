@@ -7,7 +7,7 @@ function escapeHtml(str) {
     .replace(/</g, "&lt;")
     .replace(/>/g, "&gt;")
     .replace(/"/g, "&quot;")
-    .replace(/'/g, "&#39");
+    .replace(/'/g, "&#39;")
              }
 /**
  * 検索用の正規化
@@ -322,19 +322,24 @@ async function init() {
   async function runSearch() {
     inc.closeSuggest();
 
+    const year = yearSelect.value;
+
     const wordRaw = songInput.value;
     const word = normalizeText(wordRaw);
-    if (normalizeText(song.title).includes(word)) {
+
+    // 空入力チェック
+    if (!word) {
       result.innerHTML = "<p>曲名を入力してください</p>";
       return;
     }
 
-    const lives = await loadTargetLives(yearSelect.value);
+    const lives = await loadTargetLives(year);
     const matched = [];
 
     for (const live of lives) {
       for (const song of (live.setlist ?? [])) {
-        if (song.title.includes(word)) {
+        // 大文字小文字などを無視して部分一致
+        if (normalizeText(song.title).includes(word)) {
           matched.push({
             date: live.date,
             title: live.title,
@@ -344,8 +349,10 @@ async function init() {
       }
     }
 
-    renderResult(result, word, yearSelect.value, matched);
+    // 表示は「入力した見た目」を優先したいなら wordRaw を渡す
+    renderResult(result, wordRaw, year, matched);
   }
+
 
   searchButton.addEventListener("click", runSearch);
   songInput.addEventListener("keydown", e => {
