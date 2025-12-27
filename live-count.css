@@ -1,5 +1,5 @@
 /* ==============================
-  全体ベース（既存と揃える）
+  全体ベース
 ============================== */
 
 body {
@@ -15,75 +15,120 @@ body {
     "Yu Gothic",
     "Meiryo",
     sans-serif;
-  margin: 0;
-  padding: 0;
 }
 
 
 /* ==============================
-  タイトル・説明
+  見出し・説明文
 ============================== */
 
-.page-title {
+.site-title {
   font-size: 18px;
   font-weight: bold;
   margin: 16px 0 8px;
   text-align: center;
 }
 
-.page-description {
-  margin: 8px 16px 16px;
+.notice {
+  margin: 8px 0 16px;
   font-size: 12px;
   color: #666;
+  font-weight: normal;
   text-align: center;
 }
 
 
 /* =========================
-   検索ボックス
+   絞り込み全体
 ========================= */
 
-.search-box {
+.filter-box {
   background: #f8f9fb;
   border: 1px solid #e0e3e8;
   border-radius: 12px;
   padding: 16px;
-  margin: 0 16px 20px;
+  margin-bottom: 20px;
 }
 
-.search-box label {
+
+/* =========================
+   絞り込みヘッダー
+========================= */
+
+.filter-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.filter-title {
+  font-weight: bold;
+  font-size: 14px;
+  color: #555;
+  margin: 0; /* Safari対策：余白は親で管理 */
+}
+
+
+/* =========================
+   リセットボタン
+========================= */
+
+.reset-button {
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid #ccc;
+  background: #fff;
+  color: #555;
+  cursor: pointer;
+  position: relative; /* Safari対策 */
+  z-index: 10;        /* Safari対策 */
+}
+
+.reset-button:hover {
+  background: #f0f0f0;
+}
+
+
+/* =========================
+   ラベル
+========================= */
+
+.filter-box label {
   display: block;
   font-size: 14px;
   margin-bottom: 4px;
   color: #333;
 }
 
-.search-box select,
-.search-box input,
-.search-box button {
+
+/* =========================
+   select / input 共通
+========================= */
+
+.filter-box select,
+.search-box input {
   width: 100%;
   box-sizing: border-box;
   margin-bottom: 12px;
   padding: 8px 10px;
   border-radius: 8px;
-  font-size: 14px;
 }
 
-.search-box select,
-.search-box input {
+.filter-box select {
+  font-size: 14px;
   border: 1px solid #d0d5dd;
 }
 
-.search-box button {
-  border: none;
-  background: #2563eb;
-  color: #fff;
-  font-weight: bold;
-  cursor: pointer;
+.search-box {
+  width: 100%;
+  margin: 0;
 }
 
-.search-box button:hover {
-  opacity: 0.9;
+.search-box input {
+  font-size: 16px;
+  border: 1px solid #d0d5dd;
 }
 
 
