@@ -280,7 +280,7 @@ function renderResult(container, word, year, matched) {
       <div class="result-count">ライブ披露回数：${matched.length}回</div>
       <ul class="result-list">
         ${matched.map(item => `
-          <li>${escapeHtml(item.date)} / ${escapeHtml(item.title)}</li>
+          <li>開催年:${escapeHtml(item.date)} / 曲名:${escapeHtml(item.title)}</li>
         `).join("")}
       </ul>
     </div>
