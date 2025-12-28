@@ -7,7 +7,7 @@ html, body {
 
 body {
   margin: 0;
-    font-size: 16px;
+  font-size: 16px;
   line-height: 1.7;
   font-family:
     -apple-system,
@@ -33,10 +33,10 @@ body {
 ============================== */
 
 .site-title {
-  font-size: 20px;
-  font-weight: 800;
-  margin: 12px 0 8px;
-  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 16px 0 8px;
+  text-align: center
 }
 
 .notice {
@@ -58,7 +58,7 @@ body {
 .filter-box {
   background: #f8f9fb;
   border: 1px solid #e0e3e8;
-  border-radius: 14px;
+  border-radius: 12px;
   padding: 16px;
   margin: 16px 0 20px;
 }
