@@ -1,58 +1,50 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8" />
-  <title>楽曲披露回数検索</title>
-  <link rel="stylesheet" href="live-count.css" />
-</head>
 <body>
+  <div class="page">
+    <h1 class="site-title">🍄楽曲披露回数検索🍄</h1>
+    <p class="notice">
+      2025年以降のセットリストを中心にまとめています。※生誕祭は除く<br>
+      （余力があれば、それ以前の公演も順次追加予定です）
+    </p>
 
-<h1 class="site-title">🍄楽曲披露回数検索🍄</h1>
-<p class="notice">
-  2025年以降のセットリストを中心にまとめています。※生誕祭は除く<br>
-（余力があれば、それ以前の公演も順次追加予定です）
-</p>
+    <div class="filter-box">
+      <div class="filter-header">
+        <div class="filter-title">検索条件</div>
+      </div>
 
-<div class="filter-box">
-  <div class="filter-header">
-    <div class="filter-title">検索条件</div>
+      <p class="notice notice-inbox">
+        指定した年（または全期間）で、楽曲の披露回数を集計します
+      </p>
+
+      <label for="yearSelect">期間</label>
+      <select id="yearSelect">
+        <option value="all">全期間</option>
+      </select>
+
+      <label for="songInput">曲名</label>
+
+      <div class="autocomplete">
+        <input
+          type="text"
+          id="songInput"
+          placeholder="曲名を入力"
+          autocomplete="off"
+        />
+        <div id="suggest" class="suggest"></div>
+      </div>
+
+      <button id="searchButton" class="primary-button">検索</button>
+    </div>
+
+    <div id="result"></div>
+
+    <footer class="site-footer">
+      <p>
+        ※このサイトは個人の趣味で作っている非公式まとめサイトです。<br>
+        内容の正確性を保証するものではありません。営利目的はありません。<br>
+        また、予告なく公開を終了する場合があります。
+      </p>
+    </footer>
   </div>
-<p class="notice">
-    指定した年（または全期間）で、楽曲の披露回数を集計します
-</p>
-  
-  <label for="yearSelect">期間</label>
-  <select id="yearSelect">
-    <option value="all">全期間</option>
-  </select>
 
-  <label for="songInput">曲名</label>
-
-  <!-- ここがインクリメンタル -->
-  <div class="autocomplete">
-    <input
-      type="text"
-      id="songInput"
-      placeholder="曲名を入力"
-      autocomplete="off"
-    />
-    <div id="suggest" class="suggest"></div>
-  </div>
-
-  <button id="searchButton">検索</button>
-
-</div>
-
-<div id="result"></div>
-
-<footer class="site-footer">
-  <p>
-    ※このサイトは個人の趣味で作っている非公式まとめサイトです。<br>
-    内容の正確性を保証するものではありません。営利目的はありません。<br>
-    また、予告なく公開を終了する場合があります。
-  </p>
-</footer>
-
-<script src="./js/live-count.js"></script>
+  <script src="./js/live-count.js"></script>
 </body>
-</html>
