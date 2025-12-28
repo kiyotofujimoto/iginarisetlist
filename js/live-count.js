@@ -299,6 +299,7 @@ async function init() {
   const yearSelect = document.getElementById("yearSelect");
   const songInput = document.getElementById("songInput");
   const searchButton = document.getElementById("searchButton");
+  const resetButton = document.getElementById("resetButton");
   const result = document.getElementById("result");
   const suggestBox = document.getElementById("suggest");
 
@@ -317,6 +318,16 @@ async function init() {
     input: songInput,
     suggestBox,
     songMaster
+  });
+
+  // 条件リセットボタン
+    resetButton.addEventListener("click", () => {
+    yearSelect.value = "all";   // 全期間に戻す
+    songInput.value = "";       // 曲名クリア
+    inc.closeSuggest();         // 候補閉じる
+    result.innerHTML = "";      // 結果消す
+    songInput.focus();          // 入力欄へ
+    window.scrollTo({ top: 0, behavior: "smooth" }); // 任意：上に戻す
   });
 
   async function runSearch() {
