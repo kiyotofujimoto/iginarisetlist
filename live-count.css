@@ -227,11 +227,12 @@ body {
   background: #fff;
   border-radius: 14px;
   border: 1px solid #e6e8ee;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.06);
 }
 
 .result-title {
-  font-size: 18px;
-  font-weight: 800;
+  font-size: 16px;
+  font-weight: 700;
   margin: 0 0 6px;
 }
 
