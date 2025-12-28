@@ -276,11 +276,11 @@ function renderResult(container, word, year, matched) {
 
   container.innerHTML = `
     <div class="result-card">
-      <div class="result-title">${escapeHtml(label)}「${escapeHtml(word)}」</div>
+      <div class="result-title">開催年:${escapeHtml(label)}/曲名:「${escapeHtml(word)}」</div>
       <div class="result-count">ライブ披露回数：${matched.length}回</div>
       <ul class="result-list">
         ${matched.map(item => `
-          <li>開催年:${escapeHtml(item.date)} / 曲名:${escapeHtml(item.title)}</li>
+          <li>${escapeHtml(item.date)} / ${escapeHtml(item.title)}</li>
         `).join("")}
       </ul>
     </div>
