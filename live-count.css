@@ -84,6 +84,29 @@ body {
 }
 
 /* =========================
+   リセットボタン
+========================= */
+
+.reset-button {
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid #ccc;
+  background: #fff;
+  color: #555;
+  cursor: pointer;
+  position: relative; /* Safari対策 */
+  z-index: 10;        /* Safari対策 */
+}
+
+.reset-button:hover {
+  background: #f0f0f0;
+}
+
+
+
+
+/* =========================
    ラベル
 ========================= */
 
