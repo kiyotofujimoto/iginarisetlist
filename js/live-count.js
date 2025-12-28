@@ -267,21 +267,23 @@ function setupIncrementalSearch({ input, suggestBox, songMaster }) {
  * 検索結果を画面に描画
  */
 function renderResult(container, word, year, matched) {
-  if (matched.length === 0) {
-    container.innerHTML = "<p>該当するデータがありません</p>";
+  if (!matched || matched.length === 0) {
+    container.innerHTML = `<p class="empty-message">該当するデータがありません</p>`;
     return;
   }
 
   const label = year === "all" ? "全期間" : `${year}年`;
 
   container.innerHTML = `
-    <h2>${label}「${escapeHtml(word)}」</h2>
-    <p>ライブ披露回数：${matched.length}回</p>
-    <ul>
-      ${matched.map(item => `
-        <li>${item.date} / ${item.title}</li>
-      `).join("")}
-    </ul>
+    <div class="result-card">
+      <div class="result-title">${escapeHtml(label)}「${escapeHtml(word)}」</div>
+      <div class="result-count">ライブ披露回数：${matched.length}回</div>
+      <ul class="result-list">
+        ${matched.map(item => `
+          <li>${escapeHtml(item.date)} / ${escapeHtml(item.title)}</li>
+        `).join("")}
+      </ul>
+    </div>
   `;
 }
 
