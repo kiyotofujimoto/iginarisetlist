@@ -213,7 +213,7 @@ body {
   font-size: 0.95em;
 }
 
-.help-box {
+.filter-box .help-box {
   background: #f1f3f6;
   border-radius: 8px;
   padding: 8px 12px;
@@ -223,7 +223,7 @@ body {
   line-height: 1.5;
 }
 
-.help-box div {
+.filter-box .help-box div {
   white-space: nowrap;
 }
 
