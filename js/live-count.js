@@ -298,7 +298,7 @@ function renderResult(container, word, year, matched) {
 function renderRanking(container, year, ranking, opts = {}) {
   const {
     initialTop = 10,   // 初期表示
-    expandedTop = 40,  // 展開時表示（多すぎると重いので30推奨）
+    expandedTop = 40,  // 展開時表示（多すぎると重いので40推奨）
   } = opts;
 
   if (!Array.isArray(ranking) || ranking.length === 0) {
@@ -468,7 +468,7 @@ async function init() {
       }
 
       const ranking = Array.from(counts.values()).sort((a, b) => b.count - a.count);
-      renderRanking(result, year, ranking, { initialTop: 10, expandedTop: 30 });
+      renderRanking(result, year, ranking, { initialTop: 10, expandedTop: 40 });
       return;
     }
 
