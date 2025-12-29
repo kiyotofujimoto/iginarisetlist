@@ -216,7 +216,7 @@ function setupIncrementalSearch({ input, suggestBox, songMaster }) {
     closeSuggest();
     input.focus();
 
-    // ★追加：候補クリックで value が変わっても input イベントは発火しないので、
+    // 候補クリックで value が変わっても input イベントは発火しないので、
     // ボタン文言更新用にカスタムイベントを投げる（ロジックには影響なし）
     input.dispatchEvent(new Event("songvaluechange"));
   });
@@ -291,33 +291,88 @@ function renderResult(container, word, year, matched) {
   `;
 }
 
-/**
- * ランキングを描画（TOP10）
- */
-function renderRanking(container, year, ranking) {
-  const label = year === "all" ? "全期間" : `${year}年`;
-  const topN = 10;
-  const items = ranking.slice(0, topN);
+// ==============================
+// ランキング描画（TOP10折りたたみ + 順位表示）
+// ==============================
 
-  container.innerHTML = `
-    <div class="result-card">
-      <h2 class="result-title">${label} 曲ランキング（TOP${topN}）</h2>
-      <p class="result-count">対象曲数：${ranking.length}曲</p>
-      <ol class="rank-list">
-        ${items
-          .map(
-            (r) => `
-              <li class="rank-item">
-                <span class="rank-name">${escapeHtml(r.title)}</span>
-                <span class="rank-count">${r.count}回</span>
-              </li>
-            `
-          )
-          .join("")}
-      </ol>
-    </div>
-  `;
+function renderRanking(container, year, ranking, opts = {}) {
+  const {
+    initialTop = 10,   // 初期表示
+    expandedTop = 40,  // 展開時表示（多すぎると重いので30推奨）
+  } = opts;
+
+  if (!Array.isArray(ranking) || ranking.length === 0) {
+    container.innerHTML = `<p class="empty-message">該当するデータがありません</p>`;
+    return;
+  }
+
+  const label = (year === "all") ? "全期間" : `${year}年`;
+
+  // 折りたたみ状態：デフォで閉じる
+  let expanded = false;
+
+  // ランキングの1行を作る（順位付き）
+  const renderRows = (list) => {
+    return list.map((item, idx) => {
+      const name = escapeHtml(item.title);
+      const count = Number(item.count) || 0;
+      const rankNo = idx + 1;
+
+      return `
+        <li class="rank-item">
+          <span class="rank-no">${rankNo}.</span>
+          <span class="rank-name">${name}</span>
+          <span class="rank-count">${count}回</span>
+        </li>
+      `;
+    }).join("");
+  };
+
+  // メイン描画関数（状態に応じて再描画）
+  const paint = () => {
+    const total = ranking.length;
+    const showN = expanded ? Math.min(expandedTop, total) : Math.min(initialTop, total);
+    const shown = ranking.slice(0, showN);
+
+    const canToggle = total > initialTop;
+    const toggleText = expanded ? "閉じる" : "もっと見る";
+    const subText = expanded
+      ? `上位${showN}曲 / 全${total}曲`
+      : `上位${showN}曲 / 全${total}曲`;
+
+    container.innerHTML = `
+      <div class="result-card">
+        <h2 class="result-title">${label} 楽曲ランキング</h2>
+        <p class="result-count">${escapeHtml(subText)}</p>
+
+        <ol class="rank-list">
+          ${renderRows(shown)}
+        </ol>
+
+        ${canToggle ? `
+          <button type="button" class="primary-button rank-toggle" data-action="toggle">
+            ${toggleText}
+          </button>
+        ` : ""}
+      </div>
+    `;
+  };
+
+  // イベント委譲でトグル（毎回innerHTMLで作り直すから）
+  const onClick = (e) => {
+    const btn = e.target.closest(".rank-toggle");
+    if (!btn) return;
+    expanded = !expanded;
+    paint();
+  };
+
+  // 既存ハンドラが二重登録されるのを避ける（同一containerを使い回す前提）
+  container.removeEventListener("click", onClick);
+  container.addEventListener("click", onClick);
+
+  paint();
 }
+
 
 // ==============================
 // 初期化
@@ -413,7 +468,7 @@ async function init() {
       }
 
       const ranking = Array.from(counts.values()).sort((a, b) => b.count - a.count);
-      renderRanking(result, year, ranking);
+      renderRanking(result, year, ranking, { initialTop: 10, expandedTop: 30 });
       return;
     }
 
