@@ -284,8 +284,7 @@ function renderResult(container, word, year, matched) {
           .map(
             (item) => `
               <li class="result-item">
-              <div class="result-date">${escapeHtml(item.date)}</div> 
-              <div class="result-live">${escapeHtml(item.title)}</div>
+              <div class="result-date">${escapeHtml(item.date)}</div> <div class="result-live">${escapeHtml(item.title)}</div>
               </li>
             `).join("")}
       </ul>
