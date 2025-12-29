@@ -274,9 +274,9 @@ function renderResult(container, word, year, matched) {
 
   container.innerHTML = `
     <div class="result-card">
-      <div class="result-title">開催年:${escapeHtml(label)}/曲名:「${escapeHtml(
+      <div class="result-title">[${escapeHtml(label)}]  [${escapeHtml(
         word
-      )}」</div>
+      )}]</div>
       <div class="result-count">ライブ披露回数：${matched.length}回</div>
       <ul class="result-list">
         ${matched
@@ -292,11 +292,11 @@ function renderResult(container, word, year, matched) {
 }
 
 /**
- * ランキングを描画（TOP30）
+ * ランキングを描画（TOP10）
  */
 function renderRanking(container, year, ranking) {
   const label = year === "all" ? "全期間" : `${year}年`;
-  const topN = 30;
+  const topN = 10;
   const items = ranking.slice(0, topN);
 
   container.innerHTML = `
