@@ -278,7 +278,7 @@ function renderResult(container, word, year, matched) {
       <div class="result-title">[${escapeHtml(label)}]  [${escapeHtml(
         word
       )}]</div>
-      <div class="result-count">ライブ披露回数：<span class="count-number">${matched.length}</span>回</div>
+      <div class="result-count">ライブ披露回数：<span class="count-number">${matched.length}</span> 回</div>
       <ul class="result-list">
         ${matched
           .map(
