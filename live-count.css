@@ -290,14 +290,34 @@ body {
 }
 
 .result-list {
-  padding-left: 18px;
+  list-style: none;
+  padding: 0;
   margin: 0;
 }
 
-.result-list li {
-  margin-bottom: 8px;
-  line-height: 1.5;
+.result-item {
+  padding: 10px 4px;
+  border-bottom: 1px solid #eef0f4;
 }
+
+.result-item:last-child {
+  border-bottom: none;
+}
+
+.result-date {
+  font-size: 13px;
+  font-weight: 700;
+  color: #2563eb; /* 日付は青 */
+  margin-bottom: 2px;
+}
+
+.result-live {
+  font-size: 15px;
+  font-weight: 600;
+  color: #111;
+  line-height: 1.4;
+}
+
 
 .empty-message {
   text-align: center;
