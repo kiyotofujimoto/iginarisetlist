@@ -186,25 +186,54 @@ function setupIncrementalSearch({ input, suggestBox, songMaster }) {
   }
 
   // 入力時に候補を更新
-  input.addEventListener("input", () => {
-    const qRaw = input.value;
-    const q = normalizeText(qRaw);
+// 入力時に候補を更新（前方一致優先 → 足りなければ部分一致）
+input.addEventListener("input", () => {
+  const qRaw = input.value;
+  const q = normalizeText(qRaw);
 
-    // 空なら閉じる
-    if (!q) {
-      closeSuggest();
-      return;
+  // 空なら閉じる
+  if (!q) {
+    closeSuggest();
+    return;
+  }
+
+  const LIMIT = 20;
+
+  const prefixHits = [];
+  const partialHits = [];
+  const used = new Set(); // 既に入れた曲名（重複防止）
+
+  // 1) 前方一致を先に集める
+  for (const title of songMaster) {
+    const nt = normalizeText(title);
+    if (nt.startsWith(q)) {
+      const key = nt; // 正規化で重複排除（必要なら title でもOK）
+      if (!used.has(key)) {
+        used.add(key);
+        prefixHits.push(title);
+        if (prefixHits.length >= LIMIT) break;
+      }
     }
+  }
 
-    // 正規化した文字列同士で includes（最大20件）
-    const items = [];
+  // 2) 足りない分だけ部分一致で埋める（前方一致と重複は除外）
+  if (prefixHits.length < LIMIT) {
     for (const title of songMaster) {
-      if (normalizeText(title).includes(q)) items.push(title);
-      if (items.length >= 20) break;
+      const nt = normalizeText(title);
+      if (nt.includes(q)) {
+        const key = nt;
+        if (!used.has(key)) {
+          used.add(key);
+          partialHits.push(title);
+          if (prefixHits.length + partialHits.length >= LIMIT) break;
+        }
+      }
     }
+  }
 
-    openSuggest(items);
-  });
+  openSuggest([...prefixHits, ...partialHits]);
+});
+
 
   // 候補クリックで確定（mousedownでblur防止）
   suggestBox.addEventListener("mousedown", (e) => {
