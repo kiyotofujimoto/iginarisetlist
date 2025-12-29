@@ -257,6 +257,13 @@ body {
   color: #666;
 }
 
+.rank-list { margin: 0; padding-left: 18px; }
+.rank-item { display: flex; justify-content: space-between; gap: 12px; padding: 6px 0; }
+.rank-name { flex: 1; }
+.rank-count { color: #555; font-weight: 700; white-space: nowrap; }
+
+
+
 /* ==============================
   フッター
 ============================== */
