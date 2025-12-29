@@ -283,10 +283,11 @@ function renderResult(container, word, year, matched) {
         ${matched
           .map(
             (item) => `
-              <li>${escapeHtml(item.date)} / ${escapeHtml(item.title)}</li>
-            `
-          )
-          .join("")}
+              <li class="result-item">
+              <div class="result-date">${escapeHtml(item.date)}</div> 
+              <div class="result-live">${escapeHtml(item.title)}</div>
+              </li>
+            `).join("")}
       </ul>
     </div>
   `;
