@@ -258,6 +258,13 @@ body {
   margin: 0 0 14px;
 }
 
+.count-number {
+  font-size: 16px;
+  font-weight: 800;
+  color: #2563eb; /* セットリストの日付と同系色 */
+  margin: 0 0 14px;
+}
+
 .result-list {
   padding-left: 18px;
   margin: 0;
