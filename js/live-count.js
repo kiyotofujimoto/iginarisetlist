@@ -287,6 +287,28 @@ function renderResult(container, word, year, matched) {
   `;
 }
 
+function renderRanking(container, year, ranking) {
+  const label = year === "all" ? "全期間" : `${year}年`;
+  const topN = 30;
+  const items = ranking.slice(0, topN);
+
+  container.innerHTML = `
+    <div class="result-card">
+      <h2 class="result-title">${label} 曲ランキング（TOP${topN}）</h2>
+      <p class="result-count">対象曲数：${ranking.length}曲</p>
+      <ol class="rank-list">
+        ${items.map(r => `
+          <li class="rank-item">
+            <span class="rank-name">${escapeHtml(r.title)}</span>
+            <span class="rank-count">${r.count}回</span>
+          </li>
+        `).join("")}
+      </ol>
+    </div>
+  `;
+}
+
+
 // ==============================
 // 初期化
 // ==============================
@@ -332,38 +354,56 @@ async function init() {
   });
 
   async function runSearch() {
-    inc.closeSuggest();
+  inc.closeSuggest();
 
-    const year = yearSelect.value;
+  const year = yearSelect.value;
+  const qRaw = songInput.value;
+  const q = normalizeText(qRaw);
 
-    const wordRaw = songInput.value;
-    const word = normalizeText(wordRaw);
+  const lives = await loadTargetLives(year);
 
-    // 空入力チェック
-    if (!word) {
-      result.innerHTML = "<p>曲名を入力してください</p>";
-      return;
-    }
-
-    const lives = await loadTargetLives(year);
-    const matched = [];
+  // 曲名が空 → ランキング
+  if (!q) {
+    const counts = new Map(); // key: 正規化, value: { title, count }
 
     for (const live of lives) {
       for (const song of (live.setlist ?? [])) {
-        // 大文字小文字などを無視して部分一致
-        if (normalizeText(song.title).includes(word)) {
-          matched.push({
-            date: live.date,
-            title: live.title,
-            venue: live.venue
-          });
+        const title = String(song.title ?? "").trim();
+        if (!title) continue;
+
+        const key = normalizeText(title);
+        if (!key) continue;
+
+        const prev = counts.get(key);
+        if (prev) {
+          prev.count += 1;
+        } else {
+          counts.set(key, { title, count: 1 });
         }
       }
     }
 
-    // 表示は「入力した見た目」を優先したいなら wordRaw を渡す
-    renderResult(result, wordRaw, year, matched);
+    const ranking = Array.from(counts.values())
+      .sort((a, b) => b.count - a.count);
+
+    renderRanking(result, year, ranking);
+    return;
   }
+
+  // 曲名あり → 従来通り（部分一致）
+  const matched = [];
+  for (const live of lives) {
+    for (const song of (live.setlist ?? [])) {
+      const t = String(song.title ?? "");
+      if (normalizeText(t).includes(q)) {
+        matched.push({ date: live.date, title: live.title, venue: live.venue });
+      }
+    }
+  }
+
+  renderResult(result, qRaw, year, matched);
+}
+
 
 
   searchButton.addEventListener("click", runSearch);
