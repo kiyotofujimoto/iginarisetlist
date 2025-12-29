@@ -289,33 +289,41 @@ body {
   color: #2563eb;
 }
 
+/* ==============================
+  披露ライブ一覧（1行＝カード風）
+============================== */
+
 .result-list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
+/* li をカードっぽくする */
 .result-item {
-  padding: 10px 4px;
-  border-bottom: 1px solid #eef0f4;
+  display: flex;
+  gap: 10px;
+  padding: 10px 12px;
+  border: 1px solid #e6e8ee;
+  border-radius: 12px;
+  background: #fff;
+  margin: 10px 0;
 }
 
-.result-item:last-child {
-  border-bottom: none;
-}
-
+/* 日付 */
 .result-date {
-  font-size: 13px;
+  flex: 0 0 auto;
   font-weight: 700;
-  color: #2563eb; /* 日付は青 */
-  margin-bottom: 2px;
+  color: #2563eb; /* セットリストの日付っぽい青 */
+  white-space: nowrap;
 }
 
+/* ライブ名 */
 .result-live {
-  font-size: 15px;
-  font-weight: 600;
+  flex: 1;
   color: #111;
-  line-height: 1.4;
+  line-height: 1.5;
+  word-break: break-word;
 }
 
 
