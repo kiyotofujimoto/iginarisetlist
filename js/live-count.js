@@ -417,7 +417,7 @@ async function init() {
       return;
     }
 
-    // 曲名あり → 従来通り（部分一致）
+    // 曲名あり （部分一致）
     const matched = [];
     for (const live of lives) {
       for (const song of live.setlist ?? []) {
