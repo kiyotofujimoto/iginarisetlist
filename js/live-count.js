@@ -240,7 +240,7 @@ input.addEventListener("input", () => {
         input.value = currentList[activeIndex];
         closeSuggest();
 
-        // ★追加：Enterで確定した時も同様にボタン文言更新
+        // Enterで確定した時も同様にボタン文言更新
         input.dispatchEvent(new Event("songvaluechange"));
       }
     } else if (e.key === "Escape") {
@@ -275,9 +275,9 @@ function renderResult(container, word, year, matched) {
 
   container.innerHTML = `
     <div class="result-card">
-      <div class="result-title">[${escapeHtml(label)}]  [${escapeHtml(
-        word
-      )}]</div>
+      <div class="result-title">
+      <span class="result-tag">${escapeHtml(label)}</span>
+      <span class="result-tag result-tag-song">${escapeHtml(word)}</span></div>
       <div class="result-count">ライブ披露回数：<span class="count-number">${matched.length}</span> 回</div>
       <ul class="result-list">
         ${matched
