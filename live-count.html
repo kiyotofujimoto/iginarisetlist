@@ -34,17 +34,24 @@
         <option value="all">全期間</option>
       </select>
 
-      <label for="songInput">曲名：</label>
+<label for="songInput">曲名</label>
 
-      <div class="autocomplete">
-        <input
-          type="text"
-          id="songInput"
-          placeholder="曲名を入力"
-          autocomplete="off"
-        />
-        <div id="suggest" class="suggest"></div>
-      </div>
+
+<div class="autocomplete">
+  <input
+    type="text"
+    id="songInput"
+    placeholder="曲名を入力"
+    autocomplete="off"
+  />
+  <div id="suggest" class="suggest"></div>
+</div>
+
+      <div class="help-box">
+  <div>※ 曲名を入力 → 披露回数を表示</div>
+  <div>※ 空欄で検索 → 楽曲ランキングを表示</div>
+</div>
+
 
       <button id="searchButton" class="primary-button">検索</button>
     </div>
