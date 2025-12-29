@@ -237,6 +237,31 @@ body {
   margin-top: 6px;
 }
 
+.result-header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+/* 共通タグ */
+.result-tag {
+  display: inline-block;
+  padding: 4px 10px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 999px;
+  background: #eef2f7;
+  color: #555;
+}
+
+/* 曲名タグだけ少し強調 */
+.result-tag-song {
+  background: #e6f0ff;
+  color: #2563eb;
+}
+
+
 .result-card {
   margin: 16px 0;
   padding: 16px;
