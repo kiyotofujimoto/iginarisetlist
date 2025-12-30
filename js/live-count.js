@@ -370,8 +370,9 @@ function renderRanking(container, year, ranking, opts = {}) {
 
     container.innerHTML = `
       <div class="result-card">
+      <h2 class="result-title">
       <span class="result-tag">${escapeHtml(label)}</span>
-        <span class="result-title"> 楽曲ランキング</span>
+      楽曲ランキング</h2>
         <p class="result-count">${escapeHtml(subText)}</p>
 
         <ol class="rank-list">
@@ -525,7 +526,7 @@ async function init() {
     if (e.key === "Enter") setTimeout(runSearch, 0);
   });
 
-  // ★追加：入力に応じてボタン文言を切り替え
+  // 入力に応じてボタン文言を切り替え
   songInput.addEventListener("input", updateSearchButtonLabel);
   songInput.addEventListener("songvaluechange", updateSearchButtonLabel);
 
