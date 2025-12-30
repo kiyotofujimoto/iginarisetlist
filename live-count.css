@@ -1,0 +1,400 @@
+/* ==============================
+  全体ベース
+============================== */
+
+html, body {
+  height: 100%;
+}
+
+/* 画面の最大幅を揃える枠 */
+.page {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+/* 画面の最大幅を揃える枠 */
+
+body {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.7;
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Helvetica Neue",
+    "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans",
+    "Noto Sans JP",
+    "Yu Gothic",
+    "Meiryo",
+    sans-serif;
+}
+
+/* ==============================
+  見出し・説明文
+============================== */
+
+.site-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 16px 0 8px;
+  text-align: center
+}
+
+.notice {
+  margin: 8px 0 16px;
+  font-size: 12px;
+  color: #666;
+  font-weight: normal;
+  text-align: center;
+}
+
+.notice-inbox {
+  margin: 0 0 12px;
+}
+
+/* =========================
+   絞り込み全体
+========================= */
+
+.filter-box {
+  background: #f8f9fb;
+  border: 1px solid #e0e3e8;
+  border-radius: 12px;
+  padding: 16px;
+  margin: 16px 0 20px;
+}
+
+/* =========================
+   絞り込みヘッダー
+========================= */
+
+.filter-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.filter-title {
+  font-weight: 800;
+  font-size: 14px;
+  color: #555;
+  margin: 0;
+}
+
+/* =========================
+   リセットボタン
+========================= */
+
+.reset-button {
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid #ccc;
+  background: #fff;
+  color: #555;
+  cursor: pointer;
+  position: relative; /* Safari対策 */
+  z-index: 10;        /* Safari対策 */
+}
+
+.reset-button:hover {
+  background: #f0f0f0;
+}
+
+
+
+
+/* =========================
+   ラベル
+========================= */
+
+.filter-box label {
+  display: block;
+  font-size: 14px;
+  margin: 12px 0 6px;
+  color: #333;
+}
+
+/* =========================
+   select / input 共通
+   ★ここが重要：#songInput に確実に当てる
+========================= */
+
+.filter-box select,
+.filter-box input[type="text"] {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 12px;
+  border-radius: 10px;
+  border: 1px solid #d0d5dd;
+  background: #fff;
+  font-size: 16px;
+  outline: none;
+}
+
+.filter-box select {
+  background: #ececec; /* セットリストページの雰囲気寄せ */
+}
+
+.filter-box input[type="text"]::placeholder {
+  color: #9aa0a6;
+}
+
+.filter-box select:focus,
+.filter-box input[type="text"]:focus {
+  border-color: #b7bcc6;
+}
+
+/* =========================
+  検索ボタン
+========================= */
+
+.primary-button {
+  width: 100%;
+  margin-top: 14px;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #d0d5dd;
+  background: #e9edf3;
+  color: #111;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.primary-button:active {
+  transform: translateY(1px);
+}
+
+/* ===========================
+  インクリメンタルサーチ
+========================= */
+
+.autocomplete {
+  position: relative;
+}
+
+.suggest {
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: calc(100% + 6px);
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+  max-height: 260px;
+  overflow: auto;
+  z-index: 1000;
+}
+
+.suggest.is-open {
+  display: block;
+}
+
+.suggest-item {
+  padding: 10px 12px;
+  cursor: pointer;
+  line-height: 1.35;
+}
+
+.suggest-item:hover,
+.suggest-item.is-active {
+  background: #f3f4f6;
+}
+
+.suggest-empty {
+  padding: 10px 12px;
+  color: #666;
+  font-size: 0.95em;
+}
+
+.filter-box .help-box {
+  background: #f1f3f6;
+  border-radius: 8px;
+  padding: 8px 12px;
+  margin: 6px 0 10px;
+  font-size: 12px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.filter-box .help-box div {
+  white-space: nowrap;
+}
+
+
+
+/* ==============================
+  結果カード（統一感出す）
+============================== */
+
+#result {
+  margin-top: 6px;
+}
+
+.result-header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+/* 共通タグ */
+.result-tag {
+  display: inline-block;
+  padding: 4px 10px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 999px;
+  background: #eef2f7;
+  color: #555;
+}
+
+/* 曲名タグだけ少し強調 */
+.result-tag-song {
+  background: #e6f0ff;
+  color: #2563eb;
+}
+
+
+.result-card {
+  margin: 16px 0;
+  padding: 16px;
+  background: #fff;
+  border-radius: 14px;
+  border: 1px solid #e6e8ee;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+}
+
+.result-title {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0 0 6px;
+}
+
+.result-count {
+  font-size: 14px;
+  color: #555;
+  margin: 0 0 14px;
+}
+
+.result-count .count-number {
+  font-size: 16px;
+  font-weight: 800;
+  color: #2563eb;
+}
+
+/* ==============================
+  披露ライブ一覧（1行＝カード風）
+============================== */
+
+.result-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* li をカードっぽくする */
+.result-item {
+  display: flex;
+  gap: 10px;
+  padding: 10px 12px;
+  border: 1px solid #e6e8ee;
+  border-radius: 12px;
+  background: #fff;
+  margin: 10px 0;
+}
+
+/* 日付 */
+.result-date {
+  flex: 0 0 auto;
+  font-weight: 700;
+  color: #2563eb; /* セットリストの日付っぽい青 */
+  white-space: nowrap;
+}
+
+/* ライブ名 */
+.result-live {
+  flex: 1;
+  color: #111;
+  line-height: 1.5;
+  word-break: break-word;
+}
+
+
+.empty-message {
+  text-align: center;
+  color: #666;
+}
+
+/* ==============================
+  ランキング（セットリスト風）
+============================== */
+
+.rank-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.rank-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 0;
+  border-bottom: 1px solid #eef0f4;
+}
+
+.rank-item:last-child {
+  border-bottom: none;
+}
+
+/* セットリストの track-no と同じ系統 */
+.rank-no {
+  min-width: 28px;
+  text-align: center;
+  font-size: 12px;
+  color: #fff;
+  background: #2563eb;
+  border-radius: 6px;
+  padding: 2px 0;
+  flex-shrink: 0;
+}
+
+/* 曲名は太字寄り */
+.rank-name {
+  font-weight: 700;
+  flex: 1;
+  min-width: 0;
+  word-break: break-word;
+}
+
+/* 回数は右寄せで少し目立たせる */
+.rank-count {
+  font-weight: 800;
+  color: #111;
+  white-space: nowrap;
+}
+
+
+
+
+
+/* ==============================
+  フッター
+============================== */
+
+.site-footer {
+  margin-top: 28px;
+  padding: 18px 10px;
+  font-size: 10px;
+  color: #666;
+  text-align: center;
+  border-top: 1px solid #e0e0e0;
+  line-height: 1.6;
+}
