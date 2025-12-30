@@ -104,6 +104,47 @@ body {
   background: #f0f0f0;
 }
 
+/* =========================
+   ページ切り替えタブ
+========================= */
+.seg-tabs{
+  display: inline-flex;
+  border: 1px solid #d0d5dd;
+  background: #ececec;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.seg-tab{
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #555;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.seg-tab + .seg-tab{
+  border-left: 1px solid #d0d5dd;
+}
+
+.seg-tab.is-active{
+  background: #fff;
+  color: #111;
+}
+
+/* スマホでヘッダーが詰まる時の保険 */
+.filter-header{
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.reset-button{
+  margin-left: auto; /* 右寄せしたい場合 */
+}
 
 
 
