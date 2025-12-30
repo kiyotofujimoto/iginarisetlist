@@ -317,17 +317,31 @@ function renderRanking(container, year, ranking, opts = {}) {
     return list.map((item, idx) => {
       const name = escapeHtml(item.title);
       const count = Number(item.count) || 0;
-      const rankNo = idx + 1;
+      // ranked: [{ name, count }, ...] を count降順に並べた後
 
-      return `
-        <li class="rank-item">
-          <span class="rank-no">${rankNo}</span>
-          <span class="rank-name">${name}</span>
-          <span class="rank-count">${count}回</span>
-        </li>
-      `;
-    }).join("");
-  };
+let prevCount = null;
+let prevRank = 0;      // 前回の順位
+let index = 0;         // 1始まりの並び順（表示順）
+
+const html = ranked.map((item) => {
+  index += 1;
+
+  // 回数が変わったら「表示順(index)」を順位にする
+  // 変わらなければ同率なので前回順位を維持
+  const rankNo = (item.count === prevCount) ? prevRank : index;
+
+  prevCount = item.count;
+  prevRank = rankNo;
+
+  return `
+    <li class="rank-item">
+      <span class="rank-no">${rankNo}</span>
+      <span class="rank-name">${escapeHtml(item.name)}</span>
+      <span class="rank-count">${item.count}回</span>
+    </li>
+  `;
+}).join("");
+
 
   // メイン描画関数（状態に応じて再描画）
   const paint = () => {
