@@ -296,10 +296,15 @@ function renderResult(container, word, year, matched) {
 // ランキング描画（TOP10折りたたみ + 順位表示）
 // ==============================
 
+/**
+ * ランキング描画（同率は同じ順位、次は飛ばす：例 5,5,7）
+ * - 初期はTOP10
+ * - 「もっと見る」で最大40（optsで変更可）
+ */
 function renderRanking(container, year, ranking, opts = {}) {
   const {
-    initialTop = 10,   // 初期表示
-    expandedTop = 40,  // 展開時表示（多すぎると重いので40推奨）
+    initialTop = 10,   // 初期表示件数
+    expandedTop = 40,  // 展開時の最大表示件数
   } = opts;
 
   if (!Array.isArray(ranking) || ranking.length === 0) {
@@ -309,45 +314,53 @@ function renderRanking(container, year, ranking, opts = {}) {
 
   const label = (year === "all") ? "全期間" : `${year}年`;
 
-  // 折りたたみ状態：デフォで閉じる
-  let expanded = false;
+  // ---- ここで一度だけ順位付け（同率は同順位、次は飛ばす） ----
+  // ranking 想定: [{ title: "曲名", count: 49 }, ...] もしくは title/name どっちでも対応
+  const ranked = ranking.map((item) => {
+    const name = item.title ?? item.name ?? "";
+    const count = Number(item.count) || 0;
+    return { name, count };
+  });
 
-  // ランキングの1行を作る（順位付き）
+  // 既にソート済みなら不要だけど、安全のため count降順に
+  ranked.sort((a, b) => b.count - a.count || String(a.name).localeCompare(String(b.name), "ja"));
+
+  // rankNo を付与
+  let prevCount = null;
+  let prevRank = 0;
+  let index = 0;
+
+  const rankedWithNo = ranked.map((item) => {
+    index += 1;
+    const rankNo = (item.count === prevCount) ? prevRank : index;
+    prevCount = item.count;
+    prevRank = rankNo;
+    return { ...item, rankNo };
+  });
+
+  // 折りたたみ状態（containerごとに保持）
+  const stateKey = "__rankExpanded";
+  if (typeof container[stateKey] !== "boolean") container[stateKey] = false;
+
   const renderRows = (list) => {
-    return list.map((item, idx) => {
-      const name = escapeHtml(item.title);
-      const count = Number(item.count) || 0;
-      // ranked: [{ name, count }, ...] を count降順に並べた後
+    return list.map((item) => `
+      <li class="rank-item">
+        <span class="rank-no">${item.rankNo}</span>
+        <span class="rank-name">${escapeHtml(item.name)}</span>
+        <span class="rank-count">${item.count}回</span>
+      </li>
+    `).join("");
+  };
 
-let prevCount = null;
-let prevRank = 0;      // 前回の順位
-let index = 0;         // 1始まりの並び順（表示順）
-
-const html = ranked.map((item) => {
-  index += 1;
-
-  // 回数が変わったら「表示順(index)」を順位にする
-  // 変わらなければ同率なので前回順位を維持
-  const rankNo = (item.count === prevCount) ? prevRank : index;
-
-  prevCount = item.count;
-  prevRank = rankNo;
-
-  return `
-    <li class="rank-item">
-      <span class="rank-no">${rankNo}</span>
-      <span class="rank-name">${escapeHtml(item.name)}</span>
-      <span class="rank-count">${item.count}回</span>
-    </li>
-  `;
-}).join("");
-
-
-  // メイン描画関数（状態に応じて再描画）
   const paint = () => {
-    const total = ranking.length;
-    const showN = expanded ? Math.min(expandedTop, total) : Math.min(initialTop, total);
-    const shown = ranking.slice(0, showN);
+    const expanded = container[stateKey];
+
+    const total = rankedWithNo.length;
+    const showN = expanded
+      ? Math.min(expandedTop, total)
+      : Math.min(initialTop, total);
+
+    const shown = rankedWithNo.slice(0, showN);
 
     const canToggle = total > initialTop;
     const toggleText = expanded ? "閉じる" : "もっと見る";
@@ -365,7 +378,7 @@ const html = ranked.map((item) => {
         </ol>
 
         ${canToggle ? `
-          <button type="button" class="primary-button rank-toggle" data-action="toggle">
+          <button type="button" class="primary-button rank-toggle">
             ${toggleText}
           </button>
         ` : ""}
@@ -373,17 +386,17 @@ const html = ranked.map((item) => {
     `;
   };
 
-  // イベント委譲でトグル（毎回innerHTMLで作り直すから）
-  const onClick = (e) => {
-    const btn = e.target.closest(".rank-toggle");
-    if (!btn) return;
-    expanded = !expanded;
-    paint();
-  };
-
-  // 既存ハンドラが二重登録されるのを避ける（同一containerを使い回す前提）
-  container.removeEventListener("click", onClick);
-  container.addEventListener("click", onClick);
+  // クリックは1回だけ付ける（増殖防止）
+  const handlerKey = "__rankHandler";
+  if (!container[handlerKey]) {
+    container[handlerKey] = (e) => {
+      const btn = e.target.closest(".rank-toggle");
+      if (!btn) return;
+      container[stateKey] = !container[stateKey];
+      paint();
+    };
+    container.addEventListener("click", container[handlerKey]);
+  }
 
   paint();
 }
