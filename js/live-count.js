@@ -370,8 +370,9 @@ function renderRanking(container, year, ranking, opts = {}) {
 
     container.innerHTML = `
       <div class="result-card">
+      <div class="result-title">
       <span class="result-tag">${escapeHtml(label}</span>
-        <h2 class="result-title"> 楽曲ランキング</h2>
+        <h2> 楽曲ランキング</h2></div>
         <p class="result-count">${escapeHtml(subText)}</p>
 
         <ol class="rank-list">
