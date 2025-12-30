@@ -332,43 +332,55 @@ body {
   color: #666;
 }
 
+/* ==============================
+  ランキング（セットリスト風）
+============================== */
+
 .rank-list {
-  margin: 0;
-  padding-left: 0;   /* olのデフォ番号は使わない方針 */
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .rank-item {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   gap: 10px;
   padding: 8px 0;
-  border-bottom: 1px solid #eef0f5;
+  border-bottom: 1px solid #eef0f4;
 }
 
 .rank-item:last-child {
   border-bottom: none;
 }
 
+/* セットリストの track-no と同じ系統 */
 .rank-no {
-  width: 34px;
-  flex: 0 0 34px;
-  color: #666;
-  font-weight: 700;
-  text-align: right;
+  min-width: 28px;
+  text-align: center;
+  font-size: 12px;
+  color: #fff;
+  background: #2563eb;
+  border-radius: 6px;
+  padding: 2px 0;
+  flex-shrink: 0;
 }
 
+/* 曲名は太字寄り */
 .rank-name {
+  font-weight: 700;
   flex: 1;
   min-width: 0;
+  word-break: break-word;
 }
 
+/* 回数は右寄せで少し目立たせる */
 .rank-count {
-  flex: 0 0 auto;
   font-weight: 800;
   color: #111;
   white-space: nowrap;
 }
+
 
 
 
