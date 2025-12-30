@@ -321,7 +321,7 @@ function renderRanking(container, year, ranking, opts = {}) {
 
       return `
         <li class="rank-item">
-          <span class="rank-no">${rankNo}.</span>
+          <span class="rank-no">${rankNo}</span>
           <span class="rank-name">${name}</span>
           <span class="rank-count">${count}回</span>
         </li>
