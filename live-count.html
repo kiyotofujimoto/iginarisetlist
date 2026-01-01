@@ -8,7 +8,6 @@
 </head>
 
 <body>
-  <div class="page">
     <h1 class="site-title">🍄いぎなり東北産 楽曲ランキング🍄</h1>
     <p class="notice">
       2025年以降の公演のデータをまとめています。※生誕祭は除く<br>
@@ -16,24 +15,28 @@
     </p>
 
     <div class="filter-box">
-      <div class="filter-header">
-        <div class="filter-title">検索条件</div>
+<div class="filter-header">
+  <div class="filter-title">検索条件</div>
 
-    <button
-      type="button"
-      id="resetButton"
-      class="reset-button"
-      >
-      条件リセット
-    </button>
+  <div class="seg-tabs" role="tablist" aria-label="ページ切り替え">
+    <a class="seg-tab" href="./index.html" role="tab" aria-selected="false">
+      🔍 セットリスト検索
+    </a>
+    <a class="seg-tab is-active" href="./live-count.html" role="tab" aria-selected="true">
+      📊 楽曲ランキング
+    </a>
   </div>
+
+  <button type="button" class="reset-button" id="resetButton">条件リセット</button>
+</div>
+
 
       <label for="yearSelect">開催年：</label>
       <select id="yearSelect">
         <option value="all">全期間</option>
       </select>
 
-<label for="songInput">曲名</label>
+<label for="songInput">曲名：</label>
 
 
 <div class="autocomplete">
@@ -62,7 +65,6 @@
         また、予告なく公開を終了する場合があります。
       </p>
     </footer>
-  </div>
 
   <script src="./js/live-count.js"></script>
 </body>

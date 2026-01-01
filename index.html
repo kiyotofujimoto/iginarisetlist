@@ -16,16 +16,21 @@
 
 
   <div class="filter-box">
-    <div class="filter-header">
-    <div class="filter-title">絞り込み</div>
-    <button
-      type="button"
-      id="resetButton"
-      class="reset-button"
-      >
-      条件リセット
-    </button>
+   <div class="filter-header">
+  <div class="filter-title">検索条件</div>
+
+  <div class="seg-tabs" role="tablist" aria-label="ページ切り替え">
+    <a class="seg-tab is-active" href="./index.html" role="tab" aria-selected="true">
+      🔍 セットリスト検索
+    </a>
+    <a class="seg-tab" href="./live-count.html" role="tab" aria-selected="false">
+      📊 楽曲ランキング
+    </a>
   </div>
+
+  <button type="button" class="reset-button" id="resetButton">条件リセット</button>
+</div>
+
 
     <label for="yearSelect">開催年：</label>
     <select id="yearSelect"></select>

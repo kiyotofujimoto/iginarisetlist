@@ -185,27 +185,25 @@ function setupIncrementalSearch({ input, suggestBox, songMaster }) {
     }
   }
 
-// 入力時に候補を更新（前方一致のみ）
-input.addEventListener("input", () => {
-  const q = normalizeText(input.value);
+  // 入力時に候補を更新（前方一致のみ）
+  input.addEventListener("input", () => {
+    const q = normalizeText(input.value);
 
-  if (!q) {
-    closeSuggest();
-    return;
-  }
-
-  const items = [];
-  for (const title of songMaster) {
-    if (normalizeText(title).startsWith(q)) {
-      items.push(title);
-      if (items.length >= 20) break;
+    if (!q) {
+      closeSuggest();
+      return;
     }
-  }
 
-  openSuggest(items);
-});
+    const items = [];
+    for (const title of songMaster) {
+      if (normalizeText(title).startsWith(q)) {
+        items.push(title);
+        if (items.length >= 20) break;
+      }
+    }
 
-
+    openSuggest(items);
+  });
 
   // 候補クリックで確定（mousedownでblur防止）
   suggestBox.addEventListener("mousedown", (e) => {
@@ -315,17 +313,14 @@ function renderRanking(container, year, ranking, opts = {}) {
   const label = (year === "all") ? "全期間" : `${year}年`;
 
   // ---- ここで一度だけ順位付け（同率は同順位、次は飛ばす） ----
-  // ranking 想定: [{ title: "曲名", count: 49 }, ...] もしくは title/name どっちでも対応
   const ranked = ranking.map((item) => {
     const name = item.title ?? item.name ?? "";
     const count = Number(item.count) || 0;
     return { name, count };
   });
 
-  // 既にソート済みなら不要だけど、安全のため count降順に
   ranked.sort((a, b) => b.count - a.count || String(a.name).localeCompare(String(b.name), "ja"));
 
-  // rankNo を付与
   let prevCount = null;
   let prevRank = 0;
   let index = 0;
@@ -338,7 +333,6 @@ function renderRanking(container, year, ranking, opts = {}) {
     return { ...item, rankNo };
   });
 
-  // 折りたたみ状態（containerごとに保持）
   const stateKey = "__rankExpanded";
   if (typeof container[stateKey] !== "boolean") container[stateKey] = false;
 
@@ -364,9 +358,7 @@ function renderRanking(container, year, ranking, opts = {}) {
 
     const canToggle = total > initialTop;
     const toggleText = expanded ? "閉じる" : "もっと見る";
-    const subText = expanded
-      ? `上位${showN}曲 / 全${total}曲`
-      : `上位${showN}曲 / 全${total}曲`;
+    const subText = `上位${showN}曲 / 全${total}曲`;
 
     container.innerHTML = `
       <div class="result-card">
@@ -388,7 +380,6 @@ function renderRanking(container, year, ranking, opts = {}) {
     `;
   };
 
-  // クリックは1回だけ付ける（増殖防止）
   const handlerKey = "__rankHandler";
   if (!container[handlerKey]) {
     container[handlerKey] = (e) => {
@@ -403,19 +394,10 @@ function renderRanking(container, year, ranking, opts = {}) {
   paint();
 }
 
-
 // ==============================
 // 初期化
 // ==============================
 
-/**
- * 画面起動時に一度だけ実行される
- * - 年度プルダウン生成
- * - 曲マスタ読み込み
- * - インクリメンタル付与
- * - 検索/リセットのイベント登録
- * - ★検索ボタン文言の切り替え（追加）
- */
 async function init() {
   const yearSelect = document.getElementById("yearSelect");
   const songInput = document.getElementById("songInput");
@@ -425,7 +407,7 @@ async function init() {
   const suggestBox = document.getElementById("suggest");
 
   // ============================
-  // ★追加：ボタン文言の切り替え
+  // ★ボタン文言の切り替え
   // ============================
   function updateSearchButtonLabel() {
     const q = normalizeText(songInput.value);
@@ -447,6 +429,12 @@ async function init() {
   const raw = await loadSongsRaw();
   const songMaster = extractSongTitles(raw);
 
+  // ============================
+  // ★追加：曲名マスタSet（正規化済み）
+  // これに無い入力は「曲名検索」させない
+  // ============================
+  const songSet = new Set(songMaster.map((t) => normalizeText(t)));
+
   // インクリメンタルセットアップ
   const inc = setupIncrementalSearch({
     input: songInput,
@@ -456,13 +444,12 @@ async function init() {
 
   // 条件リセットボタン
   resetButton.addEventListener("click", () => {
-    yearSelect.value = "all"; // 全期間に戻す
-    songInput.value = ""; // 曲名クリア
-    inc.closeSuggest(); // 候補閉じる
-    result.innerHTML = ""; // 結果消す
-    window.scrollTo({ top: 0, behavior: "smooth" }); // 任意：上に戻す
+    yearSelect.value = "all";
+    songInput.value = "";
+    inc.closeSuggest();
+    result.innerHTML = "";
+    window.scrollTo({ top: 0, behavior: "smooth" });
 
-    // ★追加：リセット後にボタン文言も更新
     updateSearchButtonLabel();
   });
 
@@ -478,7 +465,7 @@ async function init() {
 
     // 曲名が空 → ランキング
     if (!q) {
-      const counts = new Map(); // key: 正規化, value: { title, count }
+      const counts = new Map();
 
       for (const live of lives) {
         for (const song of live.setlist ?? []) {
@@ -502,12 +489,27 @@ async function init() {
       return;
     }
 
-    // 曲名あり （部分一致）
+    // ============================
+    // ★追加：候補に無い文字列は検索しない
+    // 「候補なし」なのに結果が出る問題を潰す
+    // ============================
+    if (!songSet.has(q)) {
+      result.innerHTML = `
+        <div class="result-card">
+          <p class="empty-message">その曲名は見つかりませんでした（候補から選んでください）</p>
+        </div>
+      `;
+      return;
+    }
+
+    // ============================
+    // ★変更：曲名ありは「完全一致」のみ
+    // ============================
     const matched = [];
     for (const live of lives) {
       for (const song of live.setlist ?? []) {
         const t = String(song.title ?? "");
-        if (normalizeText(t).includes(q)) {
+        if (normalizeText(t) === q) {
           matched.push({
             date: live.date,
             title: live.title,
@@ -526,11 +528,9 @@ async function init() {
     if (e.key === "Enter") setTimeout(runSearch, 0);
   });
 
-  // 入力に応じてボタン文言を切り替え
   songInput.addEventListener("input", updateSearchButtonLabel);
   songInput.addEventListener("songvaluechange", updateSearchButtonLabel);
 
-  // 初期表示時も反映
   updateSearchButtonLabel();
 }
 

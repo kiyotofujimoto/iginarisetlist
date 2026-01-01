@@ -2,21 +2,10 @@
   全体ベース
 ============================== */
 
-html, body {
-  height: 100%;
-}
-
-/* 画面の最大幅を揃える枠 */
-.page {
-  max-width: 720px;
-  margin: 0 auto;
-  padding: 16px;
-}
 
 /* 画面の最大幅を揃える枠 */
 
 body {
-  margin: 0;
   font-size: 16px;
   line-height: 1.7;
   font-family:
@@ -63,7 +52,7 @@ body {
   border: 1px solid #e0e3e8;
   border-radius: 12px;
   padding: 16px;
-  margin: 16px 0 20px;
+  margin-bottom: 20px;
 }
 
 /* =========================
@@ -78,11 +67,13 @@ body {
 }
 
 .filter-title {
-  font-weight: 800;
+  font-weight: bold;
   font-size: 14px;
   color: #555;
   margin: 0;
 }
+
+
 
 /* =========================
    リセットボタン
@@ -104,6 +95,47 @@ body {
   background: #f0f0f0;
 }
 
+/* =========================
+   ページ切り替えタブ
+========================= */
+.seg-tabs{
+  display: inline-flex;
+  border: 1px solid #d0d5dd;
+  background: #ececec;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.seg-tab{
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #555;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.seg-tab + .seg-tab{
+  border-left: 1px solid #d0d5dd;
+}
+
+.seg-tab.is-active{
+  background: #fff;
+  color: #111;
+}
+
+/* スマホでヘッダーが詰まる時の保険 */
+.filter-header{
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.reset-button{
+  margin-left: auto; /* 右寄せしたい場合 */
+}
 
 
 
@@ -114,10 +146,9 @@ body {
 .filter-box label {
   display: block;
   font-size: 14px;
-  margin: 12px 0 6px;
+  margin-bottom: 4px;
   color: #333;
 }
-
 /* =========================
    select / input 共通
    ★ここが重要：#songInput に確実に当てる
@@ -127,8 +158,9 @@ body {
 .filter-box input[type="text"] {
   width: 100%;
   box-sizing: border-box;
-  padding: 12px 12px;
-  border-radius: 10px;
+  margin-bottom: 12px;
+  padding: 8px 10px;
+  border-radius: 8px;
   border: 1px solid #d0d5dd;
   background: #fff;
   font-size: 16px;
@@ -136,6 +168,7 @@ body {
 }
 
 .filter-box select {
+  font-size: 14px;
   background: #ececec; /* セットリストページの雰囲気寄せ */
 }
 
@@ -390,9 +423,9 @@ body {
 ============================== */
 
 .site-footer {
-  margin-top: 28px;
-  padding: 18px 10px;
-  font-size: 10px;
+  margin-top: 48px;
+  padding: 24px 16px;
+  font-size: 9px;
   color: #666;
   text-align: center;
   border-top: 1px solid #e0e0e0;
