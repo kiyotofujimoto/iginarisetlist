@@ -380,16 +380,13 @@ function renderRanking(container, year, ranking, opts = {}) {
     `;
   };
 
-  const handlerKey = "__rankHandler";
-  if (!container[handlerKey]) {
-    container[handlerKey] = (e) => {
-      const btn = e.target.closest(".rank-toggle");
-      if (!btn) return;
-      container[stateKey] = !container[stateKey];
-      paint();
-    };
-    container.addEventListener("click", container[handlerKey]);
-  }
+  container.onclick = (e) => {
+  const btn = e.target.closest(".rank-toggle");
+  if (!btn) return;
+  container[stateKey] = !container[stateKey];
+  paint();
+};
+
 
   paint();
 }
