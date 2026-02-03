@@ -1,0 +1,1464 @@
+[
+  {
+    "id": "2024-01-02",
+    "date": "2024.01.02",
+    "slot": "",
+    "type": "FES/対バン",
+    "tour": "",
+    "title": "2024初夢ライブ",
+    "venue": "＜宮城県＞仙台駅前EBeanS",
+    "setlist": [
+      { "title": "HANA", "note": "" },
+      { "title": "ゾンビソサエティー", "note": "" },
+      { "title": "狂くるどっかーん♡", "note": "" },
+      { "title": "シャチョサン", "note": "" },
+      { "title": "結び", "note": "" }
+    ]
+  },
+  {
+    "id": "2024-01-14",
+    "date": "2024.01.14",
+    "slot": "",
+    "type": "FES/対バン",
+    "tour": "",
+    "title": "A LIVE SENDAI Vol.1",
+    "venue": "＜宮城県＞SENDAI GIGS",
+    "setlist": [
+      { "title": "NIWAKA", "note": "" },
+      { "title": "スズメDANCE", "note": "" },
+      { "title": "いただきランチャー", "note": "" },
+      { "title": "メタハンマー", "note": "" },
+      { "title": "HiGHER,HiGHER!!", "note": "" },
+      { "title": "いぎなり魔曲", "note": "" },
+      { "title": "沼れ！マイラバー", "note": "" },
+      { "title": "シャチョサン", "note": "" },
+      { "title": "天下一品 ～みちのく革命～", "note": "" },
+      { "title": "負けないうた", "note": "" },
+      { "title": "超孤独ライオン", "note": "≒JOY カバー" }
+    ]
+  },
+   {
+    "id": "2024-01-17-01",
+    "date": "2024.01.17",
+    "slot": "1部",
+    "type": "フリイベ/リリイベ",
+    "tour": "",
+    "title": "『毎月都内近郊フリー巡業』一月場所＜1部＞",
+    "venue": "＜東京都＞キラリナ吉祥寺",
+    "setlist": [
+      { "title": "わざとあざとエキスパート", "note": "" },
+      { "title": "あなたは", "note": "" },
+      { "title": "青春修学旅行", "note": "" },
+      { "title": "沼れ！マイラバー", "note": "" }
+    ]
+  },
+   {
+    "id": "2024-01-17-02",
+    "date": "2024.01.17",
+    "slot": "2部",
+    "type": "フリイベ/リリイベ",
+    "tour": "",
+    "title": "『毎月都内近郊フリー巡業』一月場所＜2部＞",
+    "venue": "＜東京都＞キラリナ吉祥寺",
+    "setlist": [
+      { "title": "沼れ！マイラバー", "note": "" },
+      { "title": "恋愛フィルター", "note": "" },
+      { "title": "ニュートロ", "note": "" },
+      { "title": "ワンダフル東北", "note": "" }
+    ]
+  },
+  {
+    "id": "2024-02-03",
+    "date": "2024.02.03",
+    "slot": "",
+    "type": "FES/対バン",
+    "tour": "",
+    "title": "Hello Music Festival 2024 in TOKYO",
+    "venue": "＜東京都＞パルテノン多摩",
+    "setlist": [
+      { "title": "Party Party", "note": "コラボ" },
+      { "title": "沼れ！マイラバー", "note": "コラボ" },
+      { "title": "狂くるどっかーん♡", "note": "" },
+      { "title": "わざとあざとエキスパート", "note": "" },
+      { "title": "ゾンビソサエティー", "note": "" },
+      { "title": "テキーナ", "note": "" },
+      { "title": "Trophy Girl", "note": "" },
+      { "title": "BUBBLE POPPIN", "note": "" }
+    ]
+  },
+   {
+    "id": "2024-02-04",
+    "date": "2024.02.04",
+    "slot": "",
+    "type": "フリイベ/リリイベ",
+    "tour": "",
+    "title": "『毎月都内近郊フリー巡業』二月場所",
+    "venue": "＜東京都＞ららぽーと立川立飛",
+    "setlist": [
+      { "title": "re;star", "note": "" },
+      { "title": "沼れ！マイラバー", "note": "" },
+      { "title": "ウィンターのアゲアゲバッコーン！", "note": "" },
+      { "title": "おのぼりガール", "note": "" }
+    ]
+  },
+   {
+    "id": "2024-02-10",
+    "date": "2024.02.10",
+    "slot": "",
+    "type": "FES/対バン",
+    "tour": "",
+    "title": "OPC Fes-PREMIUM 4 MAN-",
+    "venue": "＜東京都＞GARDEN 新木場 FACTORY",
+    "setlist": [
+      { "title": "わざとあざとエキスパート", "note": "" },
+      { "title": "いただきランチャー", "note": "" },
+      { "title": "天下一品 ～みちのく革命～", "note": "" },
+      { "title": "うぢらとおめだづ", "note": "" },
+      { "title": "シャチョサン", "note": "" },
+      { "title": "沼れ！マイラバー", "note": "" }
+    ]
+  },
+   {
+    "id": "2024-02-17",
+    "date": "2024.02.17",
+    "slot": "",
+    "type": "単独ライブ",
+    "tour": "",
+    "title": "いぎなりバレンタイン 2024",
+    "venue": "＜宮城県＞仙台Rensa",
+    "setlist": [
+      { "title": "狂くるどっかーん♡", "note": "" },
+      { "title": "服を着て、恋したい", "note": "" },
+      { "title": "恋愛フィルター", "note": "" },
+      { "title": "Love is here", "note": "とうほくちゃん" },
+      { "title": "コンビニエント・エゴ", "note": "いぎなりちゃん" },
+      { "title": "あなたは", "note": "" },
+      { "title": "沼れ！マイラバー", "note": "" },
+      { "title": "恋はじめ", "note": "" },
+      { "title": "ウィンターのアゲアゲバッコーン！", "note": "" },
+      { "title": "Trophy Girl", "note": "" },
+      { "title": "テキーナ", "note": "" },
+      { "title": "わざとあざとエキスパート", "note": "" },
+      { "title": "結び", "note": "" }
+    ]
+  },
+     {
+    "id": "2024-02-24-01",
+    "date": "2024.02.24",
+    "slot": "1部",
+    "type": "単独ライブ",
+    "tour": "",
+    "title": "いぎなり東北産 優勝おめでとうイベント＜1部＞",
+    "venue": "＜神奈川県＞横浜YTJホール",
+    "setlist": [
+      { "title": "ニュートロ", "note": "" },
+      { "title": "乾杯ニッポン", "note": "" },
+      { "title": "re;star", "note": "" },
+      { "title": "ウィンターのアゲアゲバッコーン！", "note": "" },
+      { "title": "睡蓮花", "note": "湘南乃風 カバー" },
+      { "title": "リライトガール", "note": "" },
+      { "title": "Burnin’ Heart", "note": "" },
+      { "title": "沼れ！マイラバー", "note": "" },
+      { "title": "あなたは", "note": "" },
+      { "title": "おのぼりガール", "note": "" },
+      { "title": "ハイテンションサマー！", "note": "" },
+      { "title": "わざとあざとエキスパート", "note": "" },
+      { "title": "線の物語", "note": "" }
+    ]
+  },
+      {
+    "id": "2024-02-24-02",
+    "date": "2024.02.24",
+    "slot": "2部",
+    "type": "単独ライブ",
+    "tour": "",
+    "title": "いぎなり東北産 優勝おめでとうイベント＜2部＞",
+    "venue": "＜神奈川県＞横浜YTJホール",
+    "setlist": [
+      { "title": "リライトガール", "note": "" },
+      { "title": "Burnin’ Heart", "note": "" },
+      { "title": "乾杯ニッポン", "note": "" },
+      { "title": "re;star", "note": "" },
+      { "title": "ウィンターのアゲアゲバッコーン！", "note": "" },
+      { "title": "結び", "note": "" },
+      { "title": "沼れ！マイラバー", "note": "" },
+      { "title": "おのぼりガール", "note": "" },
+      { "title": "ハイテンションサマー！", "note": "" },
+      { "title": "青春修学旅行", "note": "" },
+      { "title": "シャチョサン", "note": "" },
+      { "title": "栄光の架橋", "note": "ゆず カバー" },
+      { "title": "負けないうた", "note": "" }
+    ]
+  },
+  {
+    "id": "2024-03-09",
+    "date": "2024.03.09",
+    "slot": "",
+    "type": "単独ライブ",
+    "tour": "TOHOKU-SAN EXPO",
+    "title": "2024春ツアー TOHOKU-SAN EXPO＜宮城県＞",
+    "venue": "＜宮城県＞SENDAI GIGS",
+    "setlist": [
+      { "title": "Let’s シンガソング", "note": "" },
+      { "title": "沼れ！マイラバー", "note": "" },
+      { "title": "宇宙に行こう!", "note": "" },
+      { "title": "恋愛フィルター", "note": "" },
+      { "title": "BUBBLE POPPIN", "note": "" },
+      { "title": "桜プロミス", "note": "" },
+      { "title": "トーホク・ラブ・ストーリー〜恋はいつも突然に〜", "note": "葉月・安杜・藤谷" },
+      { "title": "轟", "note": "桜・伊達" },
+      { "title": "イヤギハジャ", "note": "北美・吉瀬" },
+      { "title": "ぱんださん", "note": "律月・橘" },
+      { "title": "真っ直ぐに、明日がある", "note": "" },
+      { "title": "Trophy Girl", "note": "" },
+      { "title": "あなたは", "note": "" },
+      { "title": "狂くるどっかーん♡", "note": "" },
+      { "title": "NIWAKA", "note": "" },
+      { "title": "メタハンマー", "note": "" },
+      { "title": "天下一品 ～みちのく革命～", "note": "" },
+      { "title": "いただきランチャー", "note": "" },
+      { "title": "飛ぶぞ！", "note": "" },
+      { "title": "ワンダフル東北", "note": "" }
+    ]
+  },
+   {
+    "id": "2024-03-16-01",
+    "date": "2024.03.16",
+    "slot": "1部",
+    "type": "フリイベ/リリイベ",
+    "tour": "",
+    "title": "『毎月都内近郊フリー巡業』三月場所＜1部＞",
+    "venue": "＜埼玉県＞ららぽーと富士見",
+    "setlist": [
+      { "title": "いぎなり魔曲", "note": "" },
+      { "title": "ハラハラGood! Good!", "note": "GIANTS HORSEカバー/律月ソロ" },
+      { "title": "沼れ！マイラバー", "note": "" },
+      { "title": "恋愛フィルター", "note": "" },
+      { "title": "服を着て、恋したい", "note": "" }
+    ]
+  },
+     {
+    "id": "2024-03-16-02",
+    "date": "2024.03.16",
+    "slot": "2部",
+    "type": "フリイベ/リリイベ",
+    "tour": "",
+    "title": "『毎月都内近郊フリー巡業』三月場所＜2部＞",
+    "venue": "＜埼玉県＞ららぽーと富士見",
+    "setlist": [
+      { "title": "Trophy Girl", "note": "" },
+      { "title": "天下一品 ～みちのく革命～", "note": "" },
+      { "title": "負けないうた", "note": "" },
+      { "title": "桜プロミス", "note": "" },
+      { "title": "夢幻歌劇", "note": "えびとう産カバー" }
+    ]
+  },
+  {
+    "id": "2024-03-31",
+    "date": "2024.03.31",
+    "slot": "",
+    "type": "単独ライブ",
+    "tour": "TOHOKU-SAN EXPO",
+    "title": "2024春ツアー TOHOKU-SAN EXPO＜大阪府＞",
+    "venue": "＜大阪府＞BIGCAT",
+    "setlist": [
+      { "title": "Let’s シンガソング", "note": "" },
+      { "title": "沼れ！マイラバー", "note": "" },
+      { "title": "宇宙に行こう!", "note": "" },
+      { "title": "恋愛フィルター", "note": "" },
+      { "title": "BUBBLE POPPIN", "note": "" },
+      { "title": "桜プロミス", "note": "" },
+      { "title": "トーホク・ラブ・ストーリー〜恋はいつも突然に〜", "note": "葉月・安杜・藤谷" },
+      { "title": "轟", "note": "桜・伊達" },
+      { "title": "イヤギハジャ", "note": "北美・吉瀬" },
+      { "title": "ぱんださん", "note": "律月・橘" },
+      { "title": "真っ直ぐに、明日がある", "note": "" },
+      { "title": "Trophy Girl", "note": "" },
+      { "title": "青春修学旅行", "note": "" },
+      { "title": "狂くるどっかーん♡", "note": "" },
+      { "title": "NIWAKA", "note": "" },
+      { "title": "メタハンマー", "note": "" },
+      { "title": "天下一品 ～みちのく革命～", "note": "" },
+      { "title": "いただきランチャー", "note": "" },
+      { "title": "飛ぶぞ！", "note": "" },
+      { "title": "リライトガール", "note": "" }
+    ]
+  },
+    {
+    "id": "2024-04-06",
+    "date": "2024.04.06",
+    "slot": "",
+    "type": "単独ライブ",
+    "tour": "TOHOKU-SAN EXPO",
+    "title": "2024春ツアー TOHOKU-SAN EXPO＜東京都＞",
+    "venue": "＜東京都＞豊洲PIT",
+    "setlist": [
+      { "title": "Let’s シンガソング", "note": "" },
+      { "title": "沼れ！マイラバー", "note": "" },
+      { "title": "宇宙に行こう!", "note": "" },
+      { "title": "恋愛フィルター", "note": "" },
+      { "title": "BUBBLE POPPIN", "note": "" },
+      { "title": "桜プロミス", "note": "" },
+      { "title": "トーホク・ラブ・ストーリー〜恋はいつも突然に〜", "note": "葉月・安杜・藤谷" },
+      { "title": "轟", "note": "桜・伊達" },
+      { "title": "イヤギハジャ", "note": "北美・吉瀬" },
+      { "title": "ぱんださん", "note": "律月・橘" },
+      { "title": "真っ直ぐに、明日がある", "note": "" },
+      { "title": "Trophy Girl", "note": "" },
+      { "title": "うぢらとおめだづ", "note": "" },
+      { "title": "狂くるどっかーん♡", "note": "" },
+      { "title": "東京アレルギー", "note": "" },
+      { "title": "NIWAKA", "note": "" },
+      { "title": "メタハンマー", "note": "" },
+      { "title": "天下一品 ～みちのく革命～", "note": "" },
+      { "title": "いただきランチャー", "note": "" },
+      { "title": "飛ぶぞ！", "note": "" },
+      { "title": "わざとあざとエキスパート", "note": "" },
+      { "title": "ワンダフル東北", "note": "" }
+    ]
+  },
+     {
+    "id": "2024-04-07",
+    "date": "2024.04.07",
+    "slot": "",
+    "type": "フリイベ/リリイベ",
+    "tour": "",
+    "title": "『毎月都内近郊フリー巡業』四月場所",
+    "venue": "＜東京都＞アーバンドック ららぽーと豊洲",
+    "setlist": [
+      { "title": "沼れ！マイラバー", "note": "" },
+      { "title": "狂くるどっかーん♡", "note": "" },
+      { "title": "ゾンビソサエティー", "note": "" },
+      { "title": "東京アレルギー", "note": "" }
+    ]
+  },
+    {
+    "id": "2024-04-21",
+    "date": "2024.04.21",
+    "slot": "",
+    "type": "単独ライブ",
+    "tour": "",
+    "title": "エンドーチェーン95周年 いぎなり東北水族館",
+    "venue": "＜宮城県＞仙台駅前EBeanS",
+    "setlist": [
+      { "title": "BUBBLE POPPIN", "note": "" },
+      { "title": "青春修学旅行", "note": "" },
+      { "title": "テキーナ", "note": "" },
+      { "title": "沼れ！マイラバー", "note": "" },
+      { "title": "服を着て、恋したい", "note": "" },
+      { "title": "東京アレルギー", "note": "" }
+    ]
+  },
+ {
+    "id": "2024-05-03-01",
+    "date": "2024.05.03",
+    "slot": "1部",
+    "type": "単独ライブ",
+    "tour": "北東北ゴールデンめぐり",
+    "title": "北東北ゴールデンめぐり＜青森県＞＜1部＞",
+    "venue": "＜青森県＞八戸市公民館",
+    "setlist": [
+      { "title": "わざとあざとエキスパート", "note": "" },
+      { "title": "ワンダフル東北", "note": "" },
+      { "title": "大勝利宣言", "note": "" },
+      { "title": "ゾンビソサエティー", "note": "" },
+      { "title": "狂くるどっかーん♡", "note": "" },
+      { "title": "恋愛フィルター", "note": "" },
+      { "title": "イヤギハジャ", "note": "北美・吉瀬" },
+      { "title": "東京アレルギー", "note": "" },
+      { "title": "恋はじめ", "note": "" },
+      { "title": "TOHOKU FUNKY RAIL", "note": "" },
+      { "title": "Action!", "note": "" },
+      { "title": "Being", "note": "" },
+      { "title": "結び", "note": "" },
+      { "title": "天下一品 ～みちのく革命～", "note": "" }
+    ]
+  },
+ {
+    "id": "2024-05-03-02",
+    "date": "2024.05.03",
+    "slot": "2部",
+    "type": "単独ライブ",
+    "tour": "北東北ゴールデンめぐり",
+    "title": "北東北ゴールデンめぐり＜青森県＞＜2部＞",
+    "venue": "＜青森県＞八戸市公民館",
+    "setlist": [
+      { "title": "ニュートロ", "note": "" },
+      { "title": "沼れ！マイラバー", "note": "" },
+      { "title": "大勝利宣言", "note": "" },
+      { "title": "ゾンビソサエティー", "note": "" },
+      { "title": "狂くるどっかーん♡", "note": "" },
+      { "title": "恋愛フィルター", "note": "" },
+      { "title": "いぎなり魔曲", "note": "" },
+      { "title": "ぱんださん", "note": "律月・橘" },
+      { "title": "東京アレルギー", "note": "" },
+      { "title": "恋はじめ", "note": "" },
+      { "title": "未成年", "note": "とうほくちゃん" },
+      { "title": "コンビニエント・エゴ", "note": "いぎなりちゃん" },
+      { "title": "No Make", "note": "" },
+      { "title": "シャチョサン", "note": "" },
+      { "title": "沼れ！マイラバー", "note": "" }
+    ]
+  },
+ {
+    "id": "2024-05-05-01",
+    "date": "2024.05.05",
+    "slot": "1部",
+    "type": "単独ライブ",
+    "tour": "北東北ゴールデンめぐり",
+    "title": "北東北ゴールデンめぐり＜秋田県＞＜1部＞",
+    "venue": "＜秋田県＞大曲市民会館 小ホール",
+    "setlist": [
+      { "title": "BUBBLE POPPIN", "note": "" },
+      { "title": "TOHOKU FUNKY RAIL", "note": "" },
+      { "title": "大勝利宣言", "note": "" },
+      { "title": "ゾンビソサエティー", "note": "" },
+      { "title": "狂くるどっかーん♡", "note": "" },
+      { "title": "恋愛フィルター", "note": "" },
+      { "title": "いぎなり魔曲", "note": "" },
+      { "title": "ぱんださん", "note": "律月・橘" },
+      { "title": "東京アレルギー", "note": "" },
+      { "title": "恋はじめ", "note": "" },
+      { "title": "ワンダフル東北", "note": "" },
+      { "title": "ニュートロ", "note": "" },
+      { "title": "Being", "note": "" },
+      { "title": "沼れ！マイラバー", "note": "" },
+      { "title": "服を着て、恋したい", "note": "" }
+    ]
+  },
+ {
+    "id": "2024-05-05-02",
+    "date": "2024.05.05",
+    "slot": "2部",
+    "type": "単独ライブ",
+    "tour": "北東北ゴールデンめぐり",
+    "title": "北東北ゴールデンめぐり＜秋田県＞＜2部＞",
+    "venue": "＜秋田県＞大曲市民会館 小ホール",
+    "setlist": [
+      { "title": "あなたは", "note": "" },
+      { "title": "服を着て、恋したい", "note": "" },
+      { "title": "大勝利宣言", "note": "" },
+      { "title": "ゾンビソサエティー", "note": "" },
+      { "title": "狂くるどっかーん♡", "note": "" },
+      { "title": "恋愛フィルター", "note": "" },
+      { "title": "沼れ！マイラバー", "note": "" },
+      { "title": "ぱんださん", "note": "律月・橘" },
+      { "title": "東京アレルギー", "note": "" },
+      { "title": "恋はじめ", "note": "" },
+      { "title": "わざとあざとエキスパート", "note": "" },
+      { "title": "Love is here", "note": "とうほくちゃん" },
+      { "title": "結び", "note": "" },
+      { "title": "メタハンマー", "note": "" },
+      { "title": "負けないうた", "note": "" }
+    ]
+  },
+ {
+    "id": "2024-05-06-01",
+    "date": "2024.05.06",
+    "slot": "1部",
+    "type": "単独ライブ",
+    "tour": "北東北ゴールデンめぐり",
+    "title": "北東北ゴールデンめぐり＜岩手県＞＜1部＞",
+    "venue": "＜岩手県＞トーサイクラシックホール",
+    "setlist": [
+      { "title": "沼れ！マイラバー", "note": "" },
+      { "title": "わざとあざとエキスパート", "note": "" },
+      { "title": "大勝利宣言", "note": "" },
+      { "title": "ゾンビソサエティー", "note": "" },
+      { "title": "狂くるどっかーん♡", "note": "" },
+      { "title": "恋愛フィルター", "note": "" },
+      { "title": "トーホク・ラブ・ストーリー〜恋はいつも突然に〜", "note": "葉月・安杜・藤谷" },
+      { "title": "東京アレルギー", "note": "" },
+      { "title": "恋はじめ", "note": "" },
+      { "title": "あなたは", "note": "" },
+      { "title": "コンビニエント・エゴ", "note": "いぎなりちゃん" },
+      { "title": "Being", "note": "" },
+      { "title": "No Make", "note": "" },
+      { "title": "いただきランチャー", "note": "" }
+    ]
+  },
+   {
+    "id": "2024-05-06-02",
+    "date": "2024.05.06",
+    "slot": "2部",
+    "type": "単独ライブ",
+    "tour": "北東北ゴールデンめぐり",
+    "title": "北東北ゴールデンめぐり＜岩手県＞＜2部＞",
+    "venue": "＜岩手県＞トーサイクラシックホール",
+    "setlist": [
+      { "title": "テキーナ", "note": "" },
+      { "title": "沼れ！マイラバー", "note": "" },
+      { "title": "大勝利宣言", "note": "" },
+      { "title": "ゾンビソサエティー", "note": "" },
+      { "title": "狂くるどっかーん♡", "note": "" },
+      { "title": "恋愛フィルター", "note": "" },
+      { "title": "いぎなり魔曲", "note": "" },
+      { "title": "轟", "note": "桜・伊達" },
+      { "title": "東京アレルギー", "note": "" },
+      { "title": "恋はじめ", "note": "" },
+      { "title": "未成年", "note": "とうほくちゃん" },
+      { "title": "I decided", "note": "" },
+      { "title": "シャチョサン", "note": "" },
+      { "title": "うぢらとおめだづ", "note": "" },
+      { "title": "天下一品 ～みちのく革命～", "note": "" },
+      { "title": "feeling", "note": "" }
+    ]
+  },
+  {
+    "id": "2024-05-11",
+    "date": "2024.05.11",
+    "slot": "",
+    "type": "フリイベ/リリイベ",
+    "tour": "",
+    "title": "「東北産万博」リリースイベント",
+    "venue": "＜宮城県＞仙台駅前EBeanS",
+    "setlist": [
+      { "title": "狂くるどっかーん♡", "note": "" },
+      { "title": "沼れ！マイラバー", "note": "" },
+      { "title": "東京アレルギー", "note": "" },
+      { "title": "大勝利宣言", "note": "" }
+    ]
+  },
+     {
+    "id": "2024-05-18",
+    "date": "2024.05.18",
+    "slot": "",
+    "type": "フリイベ/リリイベ",
+    "tour": "",
+    "title": "『毎月都内近郊フリー巡業』五月場所",
+    "venue": "＜東京都＞ダイバーシティ東京 プラザ 2Fフェスティバル広場",
+    "setlist": [
+      { "title": "わざとあざとエキスパート", "note": "" },
+      { "title": "服を着て、恋したい", "note": "" },
+      { "title": "東京アレルギー", "note": "" },
+      { "title": "天下一品 ～みちのく革命～", "note": "" }
+    ]
+  },
+    {
+    "id": "2024-05-24",
+    "date": "2024.05.24",
+    "slot": "",
+    "type": "FES/対バン",
+    "tour": "",
+    "title": "東北楽天ゴールデンイーグルスコラボイベント",
+    "venue": "＜宮城県＞楽天モバイルパーク宮城",
+    "setlist": [
+      { "title": "東京アレルギー", "note": "" },
+      { "title": "いただきランチャー", "note": "" },
+      { "title": "あなたは", "note": "" },
+      { "title": "いぎなり魔曲", "note": "" },
+      { "title": "リライトガール", "note": "" },
+      { "title": "大勝利宣言", "note": "" }
+    ]
+  },
+    {
+    "id": "2024-05-25",
+    "date": "2024.05.25",
+    "slot": "",
+    "type": "FES/対バン",
+    "tour": "",
+    "title": "「いぎなり東北産のいぎなりやるっちゃ東北産!マシマシ!!」公開収録",
+    "venue": "＜宮城県＞仙台駅前EBeanS",
+    "setlist": [
+      { "title": "ウィンターのアゲアゲバッコーン！", "note": "" },
+      { "title": "No Make", "note": "" },
+      { "title": "深夜特急", "note": "" },
+      { "title": "線の物語", "note": "" },
+      { "title": "サンセット", "note": "" }
+    ]
+  },
+
+      {
+    "id": "2024-06-02",
+    "date": "2024.06.02",
+    "slot": "",
+    "type": "FES/対バン",
+    "tour": "",
+    "title": "OSAKA GIGANTIC MUSIC FESTIVAL Special Live 「POPPIN’BASE in KYOTO 2024」",
+    "venue": "＜京都府＞KBSホール",
+    "setlist": [
+      { "title": "ぱんださん", "note": "" },
+      { "title": "うぢらとおめだづ", "note": "" },
+      { "title": "わざとあざとエキスパート", "note": "" },
+      { "title": "沼れ！マイラバー", "note": "" },
+      { "title": "狂くるどっかーん♡", "note": "" },
+      { "title": "恋愛フィルター", "note": "" },
+      { "title": "東京アレルギー", "note": "" }
+    ]
+  },
+    {
+    "id": "2024-06-08",
+    "date": "2024.06.08",
+    "slot": "",
+    "type": "FES/対バン",
+    "tour": "",
+    "title": "クロフェス2024～5周年だよ！全員集合だしん！～3",
+    "venue": "＜東京都＞海の森水上競技場",
+    "setlist": [
+      { "title": "沼れ！マイラバー", "note": "" },
+      { "title": "東京アレルギー", "note": "" },
+      { "title": "わざとあざとエキスパート", "note": "" },
+      { "title": "テキーナ", "note": "" },
+      { "title": "シャチョサン", "note": "" },
+      { "title": "天下一品 ～みちのく革命～", "note": "" }
+    ]
+  },
+     {
+    "id": "2024-06-22",
+    "date": "2024.06.22",
+    "slot": "",
+    "type": "フリイベ/リリイベ",
+    "tour": "",
+    "title": "『毎月都内近郊フリー巡業』六月場所",
+    "venue": "＜千葉県＞イオンモール幕張新都心 グランドスクエア",
+    "setlist": [
+      { "title": "大勝利宣言", "note": "" },
+      { "title": "沼れ！マイラバー", "note": "" },
+      { "title": "服を着て、恋したい", "note": "" },
+      { "title": "Trophy Girl", "note": "" }
+    ]
+  },
+    {
+    "id": "2024-06-29",
+    "date": "2024.06.29",
+    "slot": "",
+    "type": "FES/対バン",
+    "tour": "",
+    "title": "A LIVE SENDAI vol.2",
+    "venue": "＜宮城県＞SENDAI GIGS",
+    "setlist": [
+      { "title": "天下一品 ～みちのく革命～", "note": "" },
+      { "title": "沼れ！マイラバー", "note": "" },
+      { "title": "ゾンビソサエティー", "note": "" },
+      { "title": "Action!", "note": "" },
+      { "title": "わざとあざとエキスパート", "note": "" },
+      { "title": "初恋サンライズ", "note": "つばきファクトリーカバー" },
+      { "title": "メタハンマー", "note": "" },
+      { "title": "No Make", "note": "" }
+    ]
+  },
+    {
+    "id": "2024-06-30",
+    "date": "2024.06.30",
+    "slot": "",
+    "type": "FES/対バン",
+    "tour": "",
+    "title": "合同ライブイベント『カケルMERCY』vol.5",
+    "venue": "＜宮城県＞仙台駅前EBeanS",
+    "setlist": [
+      { "title": "沼れ！マイラバー", "note": "" },
+      { "title": "スズメDANCE", "note": "" },
+      { "title": "服を着て、恋したい", "note": "" },
+      { "title": "うぢらとおめだづ", "note": "" },
+      { "title": "東京アレルギー", "note": "" }
+    ]
+  },
+      {
+    "id": "2024-07-06",
+    "date": "2024.07.06",
+    "slot": "",
+    "type": "単独ライブ",
+    "tour": "",
+    "title": "いぎなり東北産 周年イベント《TOHOKU 9》",
+    "venue": "＜山形県＞リナワールド",
+    "setlist": [
+      { "title": "どっち？こっち？どうすっぺ！", "note": "" },
+      { "title": "服を着て、恋したい", "note": "" },
+      { "title": "ウィンターのアゲアゲバッコーン！", "note": "" },
+      { "title": "大勝利宣言", "note": "" },
+      { "title": "いぎなり魔曲", "note": "" },
+      { "title": "トーホク・ラブ・ストーリー〜恋はいつも突然に〜", "note": "" },
+      { "title": "Being", "note": "" },
+      { "title": "負けないうた", "note": "" },
+      { "title": "飛ぶぞ！", "note": "" },
+      { "title": "青春修学旅行", "note": "" },
+      { "title": "わざとあざとエキスパート", "note": "" },
+      { "title": "ハイテンションサマー！", "note": "" }
+    ]
+  },
+      {
+    "id": "2024-07-13-01",
+    "date": "2024.07.13",
+    "slot": "1部",
+    "type": "単独ライブ",
+    "tour": "",
+    "title": "第4回 いぎなり東北ファン倶楽部の集い＜1部＞",
+    "venue": "＜東京都＞KANDA SQUARE HALL",
+    "setlist": [
+      { "title": "Burnin’ Heart", "note": "" },
+      { "title": "東京アレルギー", "note": "" },
+      { "title": "青春修学旅行", "note": "" },
+      { "title": "微妙", "note": "" },
+      { "title": "沼れ！マイラバー", "note": "" },
+      { "title": "服を着て、恋したい", "note": "" }
+    ]
+  },
+      {
+    "id": "2024-07-13-02",
+    "date": "2024.07.13",
+    "slot": "2部",
+    "type": "単独ライブ",
+    "tour": "",
+    "title": "第4回 いぎなり東北ファン倶楽部の集い＜2部＞",
+    "venue": "＜東京都＞KANDA SQUARE HALL",
+    "setlist": [
+      { "title": "Burnin’ Heart", "note": "" },
+      { "title": "天下一品 ～みちのく革命～", "note": "" },
+      { "title": "NIWAKA", "note": "" },
+      { "title": "リライトガール", "note": "" },
+      { "title": "沼れ！マイラバー", "note": "" },
+      { "title": "服を着て、恋したい", "note": "" }
+    ]
+  },
+  {
+    "id": "2024-07-15-01",
+    "date": "2024.07.15",
+    "slot": "1部",
+    "type": "FES/対バン",
+    "tour": "",
+    "title": "スタプラローカリズム vol.4 ＜1部＞",
+    "venue": "＜愛知県＞Lives NAGOYA",
+    "setlist": [
+      { "title": "わざとあざとエキスパート", "note": "" },
+      { "title": "恋愛フィルター", "note": "" },
+      { "title": "Trophy Girl", "note": "" },
+      { "title": "いただきランチャー", "note": "" },
+      { "title": "カバーメドレー", "note": "" }
+    ]
+  },
+  {
+    "id": "2024-07-15-02",
+    "date": "2024.07.15",
+    "slot": "2部",
+    "type": "FES/対バン",
+    "tour": "",
+    "title": "スタプラローカリズム vol.4 ＜2部＞",
+    "venue": "＜愛知県＞Lives NAGOYA",
+    "setlist": [
+      { "title": "FANTASTIC MIRAI", "note": "TEAM SHACHIカバー" },
+      { "title": "いただきランチャー", "note": "" },
+      { "title": "Trophy Girl", "note": "" },
+      { "title": "恋愛フィルター", "note": "" },
+      { "title": "カバーメドレー", "note": "" }
+    ]
+  },
+     {
+    "id": "2024-07-20-01",
+    "date": "2024.07.20",
+    "slot": "",
+    "type": "フリイベ/リリイベ",
+    "tour": "",
+    "title": "『毎月都内近郊フリー巡業』七月場所＜1部＞",
+    "venue": "＜東京都＞日比谷野外大音楽堂",
+    "setlist": [
+      { "title": "服を着て、恋したい", "note": "" },
+      { "title": "東京アレルギー", "note": "" },
+      { "title": "わざとあざとエキスパート", "note": "" },
+      { "title": "Trophy Girl", "note": "" },
+      { "title": "NIWAKA", "note": "" }
+    ]
+  },
+     {
+    "id": "2024-07-20-02",
+    "date": "2024.07.20",
+    "slot": "",
+    "type": "フリイベ/リリイベ",
+    "tour": "",
+    "title": "『毎月都内近郊フリー巡業』七月場所＜2部＞",
+    "venue": "＜東京都＞日比谷野外大音楽堂",
+    "setlist": [
+      { "title": "服を着て、恋したい", "note": "" },
+      { "title": "沼れ！マイラバー", "note": "" },
+      { "title": "いただきランチャー", "note": "" },
+      { "title": "天下一品 ～みちのく革命～", "note": "" },
+      { "title": "シャチョサン", "note": "" }
+    ]
+  },
+   {
+    "id": "2024-07-21",
+    "date": "2024.07.21",
+    "slot": "",
+    "type": "FES/対バン",
+    "tour": "",
+    "title": "六本木ヒルズ SUMMER FES",
+    "venue": "＜東京都＞六本木ヒルズアリーナ",
+    "setlist": [
+      { "title": "沼れ！マイラバー", "note": "" },
+      { "title": "わざとあざとエキスパート", "note": "" },
+      { "title": "恋愛フィルター", "note": "" },
+      { "title": "微妙", "note": "" },
+      { "title": "東京アレルギー", "note": "" },
+      { "title": "いただきランチャー", "note": "" },
+      { "title": "天下一品 ～みちのく革命～", "note": "" },
+      { "title": "うぢらとおめだづ", "note": "" },
+      { "title": "Whatever", "note": "" },
+      { "title": "負けないうた", "note": "" }
+    ]
+  },
+        {
+    "id": "2024-07-26-01",
+    "date": "2024.07.26",
+    "slot": "1部",
+    "type": "単独ライブ",
+    "tour": "",
+    "title": "東京ワンマンライブ 〜年末への前哨戦〜＜1部＞",
+    "venue": "＜東京都＞かつしかシンフォニーヒルズ モーツァルトホール",
+    "setlist": [
+      { "title": "東京アレルギー", "note": "" },
+      { "title": "おのぼりガール", "note": "" },
+      { "title": "テキーナ", "note": "" },
+      { "title": "狂くるどっかーん♡", "note": "" },
+      { "title": "いぎなり魔曲", "note": "" },
+      { "title": "ハイテンションサマー！", "note": "" },
+      { "title": "わざとあざとエキスパート", "note": "" },
+      { "title": "服を着て、恋したい", "note": "" },
+      { "title": "TOHOKUちゃんぷるー", "note": "" },
+      { "title": "おぼろ花火", "note": "" },
+      { "title": "旅の途中", "note": "" },
+      { "title": "Burnin’ Heart", "note": "メドレー" },
+      { "title": "いただきランチャー", "note": "メドレー" },
+      { "title": "HANA", "note": "メドレー" },
+      { "title": "Fly Out", "note": "メドレー" },
+      { "title": "結び", "note": "" },
+      { "title": "天下一品 ～みちのく革命～", "note": "" },
+      { "title": "沼れ！マイラバー", "note": "" },
+      { "title": "伊達サンバ", "note": "" }
+    ]
+  },
+          {
+    "id": "2024-07-26-02",
+    "date": "2024.07.26",
+    "slot": "2部",
+    "type": "単独ライブ",
+    "tour": "",
+    "title": "東京ワンマンライブ 〜年末への前哨戦〜＜2部＞",
+    "venue": "＜東京都＞かつしかシンフォニーヒルズ モーツァルトホール",
+    "setlist": [
+      { "title": "東京アレルギー", "note": "" },
+      { "title": "おのぼりガール", "note": "" },
+      { "title": "テキーナ", "note": "" },
+      { "title": "服を着て、恋したい", "note": "" },
+      { "title": "いぎなり魔曲", "note": "" },
+      { "title": "ハイテンションサマー！", "note": "" },
+      { "title": "わざとあざとエキスパート", "note": "" },
+      { "title": "シャチョサン", "note": "" },
+      { "title": "TOHOKUちゃんぷるー", "note": "" },
+      { "title": "おぼろ花火", "note": "" },
+      { "title": "旅の途中", "note": "" },
+      { "title": "Burnin’ Heart", "note": "メドレー" },
+      { "title": "いただきランチャー", "note": "メドレー" },
+      { "title": "HANA", "note": "メドレー" },
+      { "title": "Fly Out", "note": "メドレー" },
+      { "title": "feeling", "note": "" },
+      { "title": "天下一品 ～みちのく革命～", "note": "" },
+      { "title": "沼れ！マイラバー", "note": "" },
+      { "title": "大勝利宣言", "note": "" }
+    ]
+  },
+      {
+    "id": "2024-07-27",
+    "date": "2024.07.27",
+    "slot": "",
+    "type": "FES/対バン",
+    "tour": "",
+    "title": "tbc夏まつり2024",
+    "venue": "＜宮城県＞仙台市勾当台公園・市民広場",
+    "setlist": [
+      { "title": "わざとあざとエキスパート", "note": "" },
+      { "title": "東京アレルギー", "note": "" }
+      ]
+  },
+    {
+    "id": "2024-08-03-01",
+    "date": "2024.08.03",
+    "slot": "",
+    "type": "FES/対バン",
+    "tour": "",
+    "title": "TOKYO IDOL FESTIVAL 2024 supported by にしたんクリニック【HOT STAGE】",
+    "venue": "＜東京都＞お台場・青海周辺エリア",
+    "setlist": [
+      { "title": "ハイテンションサマー！", "note": "" },
+      { "title": "TOHOKUちゃんぷるー", "note": "" },
+      { "title": "東京アレルギー", "note": "" },
+      { "title": "メタハンマー", "note": "" },
+      { "title": "わざとあざとエキスパート", "note": "" },
+      { "title": "いただきランチャー", "note": "" }
+      ]
+  },
+      {
+    "id": "2024-08-03-02",
+    "date": "2024.08.03",
+    "slot": "",
+    "type": "FES/対バン",
+    "tour": "",
+    "title": "TOKYO IDOL FESTIVAL 2024 supported by にしたんクリニック【SMILE GARDEN】",
+    "venue": "＜東京都＞お台場・青海周辺エリア",
+    "setlist": [
+      { "title": "おのぼりガール", "note": "" },
+      { "title": "ドスコイ金星", "note": "りんご娘カバー" },
+      { "title": "なんぼめじゃ!アポーパイ", "note": "りんご娘カバー" },
+      { "title": "ワンダフル東北", "note": "" },
+      { "title": "ケセラセラ", "note": "Mrs. GREEN APPLEカバー" }
+      ]
+  },
+    {
+    "id": "2024-08-04-01",
+    "date": "2024.08.04",
+    "slot": "",
+    "type": "FES/対バン",
+    "tour": "",
+    "title": "TOKYO IDOL FESTIVAL 2024 supported by にしたんクリニック【HEAT GARAGE】",
+    "venue": "＜東京都＞お台場・青海周辺エリア",
+    "setlist": [
+      { "title": "大勝利宣言", "note": "" },
+      { "title": "シャチョサン", "note": "" },
+      { "title": "うぢらとおめだづ", "note": "" },
+      { "title": "おのぼりガール", "note": "" },
+      { "title": "沼れ！マイラバー", "note": "" }
+      ]
+  },
+    {
+    "id": "2024-08-04-02",
+    "date": "2024.08.04",
+    "slot": "",
+    "type": "FES/対バン",
+    "tour": "",
+    "title": "TOKYO IDOL FESTIVAL 2024 supported by にしたんクリニック【SKY STAGE】",
+    "venue": "＜東京都＞お台場・青海周辺エリア",
+    "setlist": [
+      { "title": "天下一品 ～みちのく革命～", "note": "" },
+      { "title": "結び", "note": "" },
+      { "title": "負けないうた", "note": "" }
+      ]
+  },
+        {
+    "id": "2024-08-10",
+    "date": "2024.08.10",
+    "slot": "",
+    "type": "フリイベ/リリイベ",
+    "tour": "",
+    "title": "『毎月都内近郊フリー巡業』八月場所＜大宮＞",
+    "venue": "＜埼玉県＞ステラタウン大宮",
+    "setlist": [
+      { "title": "ぱんださん", "note": "" },
+      { "title": "ハイテンションサマー！", "note": "" },
+      { "title": "BUBBLE POPPIN", "note": "" },
+      { "title": "沼れ！マイラバー", "note": "" }
+    ]
+  },
+       {
+    "id": "2024-08-11",
+    "date": "2024.08.11",
+    "slot": "",
+    "type": "フリイベ/リリイベ",
+    "tour": "",
+    "title": "『毎月都内近郊フリー巡業』八月場所＜立川＞",
+    "venue": "＜東京都＞ららぽーと立川立飛",
+    "setlist": [
+      { "title": "東京アレルギー", "note": "" },
+      { "title": "TOHOKUちゃんぷるー", "note": "" },
+      { "title": "テキーナ", "note": "" },
+      { "title": "わざとあざとエキスパート", "note": "" }
+    ]
+  },
+         {
+    "id": "2024-08-12",
+    "date": "2024.08.12",
+    "slot": "",
+    "type": "フリイベ/リリイベ",
+    "tour": "",
+    "title": "『毎月都内近郊フリー巡業』八月場所＜横浜＞",
+    "venue": "＜神奈川県＞ららぽーと横浜",
+    "setlist": [
+      { "title": "沼れ！マイラバー", "note": "" },
+      { "title": "イヤギハジャ", "note": "" },
+      { "title": "大勝利宣言", "note": "" },
+      { "title": "いただきランチャー", "note": "" }
+    ]
+  },
+         {
+    "id": "2024-08-13",
+    "date": "2024.08.13",
+    "slot": "",
+    "type": "フリイベ/リリイベ",
+    "tour": "",
+    "title": "『毎月都内近郊フリー巡業』八月場所＜松戸＞",
+    "venue": "＜千葉県＞テラスモール松戸",
+    "setlist": [
+      { "title": "TOHOKUちゃんぷるー", "note": "" },
+      { "title": "BUBBLE POPPIN", "note": "" },
+      { "title": "Action!", "note": "" },
+      { "title": "沼れ！マイラバー", "note": "" }
+    ]
+  },
+            {
+    "id": "2024-08-14",
+    "date": "2024.08.14",
+    "slot": "",
+    "type": "フリイベ/リリイベ",
+    "tour": "",
+    "title": "『毎月都内近郊フリー巡業』八月場所＜むさし村山＞",
+    "venue": "＜東京都＞イオンモールむさし村山",
+    "setlist": [
+      { "title": "東京アレルギー", "note": "" },
+      { "title": "大勝利宣言", "note": "" },
+      { "title": "BUBBLE POPPIN", "note": "" },
+      { "title": "おのぼりガール", "note": "" }
+    ]
+  },
+            {
+    "id": "2024-08-15",
+    "date": "2024.08.15",
+    "slot": "",
+    "type": "フリイベ/リリイベ",
+    "tour": "",
+    "title": "『毎月都内近郊フリー巡業』八月場所＜錦糸町＞",
+    "venue": "＜東京都＞錦糸町マルイ 8F すみだ産業会館",
+    "setlist": [
+      { "title": "トーホク・ラブ・ストーリー〜恋はいつも突然に〜", "note": "" },
+      { "title": "ワンダフル東北", "note": "" },
+      { "title": "沼れ！マイラバー", "note": "" },
+      { "title": "おぼろ花火", "note": "" }
+    ]
+  },
+
+              {
+    "id": "2024-08-17",
+    "date": "2024.08.17",
+    "slot": "",
+    "type": "フリイベ/リリイベ",
+    "tour": "",
+    "title": "『毎月都内近郊フリー巡業』八月場所＜渋谷＞",
+    "venue": "＜東京都＞タワーレコード渋谷",
+    "setlist": [
+      { "title": "轟", "note": "" },
+      { "title": "Trophy Girl", "note": "" },
+      { "title": "いただきランチャー", "note": "" },
+      { "title": "わざとあざとエキスパート", "note": "" }
+    ]
+  },
+              {
+    "id": "2024-08-18",
+    "date": "2024.08.18",
+    "slot": "",
+    "type": "フリイベ/リリイベ",
+    "tour": "",
+    "title": "『毎月都内近郊フリー巡業』八月場所＜豊洲＞",
+    "venue": "＜東京都＞アーバンドック ららぽーと豊洲",
+    "setlist": [
+      { "title": "シャチョサン", "note": "" },
+      { "title": "沼れ！マイラバー", "note": "" },
+      { "title": "メタハンマー", "note": "" },
+      { "title": "真っ直ぐに、明日がある", "note": "" },
+      { "title": "負けないうた", "note": "" }
+    ]
+  },
+    {
+    "id": "2024-09-06",
+    "date": "2024.09.06",
+    "slot": "",
+    "type": "FES/対バン",
+    "tour": "",
+    "title": "WOWOWプラス presents メタモルフォーゼ Vol.1　いぎなり東北産 × Girls²",
+    "venue": "＜東京都＞LINE CUBE SHIBUYA",
+    "setlist": [
+      { "title": "東京アレルギー", "note": "" },
+      { "title": "伊達サンバ", "note": "" },
+      { "title": "HANA", "note": "" },
+      { "title": "BUBBLE POPPIN", "note": "" },
+      { "title": "服を着て、恋したい", "note": "" },
+      { "title": "沼れ！マイラバー", "note": "" },
+      { "title": "わざとあざとエキスパート", "note": "コラボ" },
+      { "title": "チュワパネ!", "note": "Girls²カバー" },
+      { "title": "天下一品 ～みちのく革命～", "note": "" },
+      { "title": "そして、メタモルフォーゼは終わらない", "note": "Girls²カバー" }
+      ]
+  },
+                {
+    "id": "2024-09-08",
+    "date": "2024.09.08",
+    "slot": "",
+    "type": "フリイベ/リリイベ",
+    "tour": "",
+    "title": "『毎月都内近郊フリー巡業』九月場所",
+    "venue": "＜神奈川県＞TOWER RECORDS mini ビナウォーク海老名",
+    "setlist": [
+      { "title": "服を着て、恋したい", "note": "" },
+      { "title": "恋愛フィルター", "note": "" },
+      { "title": "TOHOKUちゃんぷるー", "note": "" },
+      { "title": "Trophy Girl", "note": "" },
+      { "title": "天下一品 ～みちのく革命～", "note": "" }
+    ]
+  },
+   {
+    "id": "2024-09-15",
+    "date": "2024.09.15",
+    "slot": "",
+    "type": "FES/対バン",
+    "tour": "",
+    "title": "@JAM EXPO 2024 supported by UP-T",
+    "venue": "＜神奈川県＞横浜アリーナ",
+    "setlist": [
+      { "title": "うぢらとおめだづ", "note": "" },
+      { "title": "ゾンビソサエティー", "note": "" },
+      { "title": "あなたは", "note": "" },
+      { "title": "わざとあざとエキスパート", "note": "" },
+      { "title": "沼れ！マイラバー", "note": "" },
+      { "title": "東京アレルギー", "note": "" },
+      { "title": "天下一品 ～みちのく革命～", "note": "" }
+    ]
+  },
+          {
+    "id": "2024-09-29-01",
+    "date": "2024.09.29",
+    "slot": "1部",
+    "type": "単独ライブ",
+    "tour": "",
+    "title": "仙台ワンマンライブ 〜年末への前哨戦〜 追加公演＜1部＞",
+    "venue": "＜宮城県＞仙台電力ホール",
+    "setlist": [
+      { "title": "東京アレルギー", "note": "" },
+      { "title": "おのぼりガール", "note": "" },
+      { "title": "テキーナ", "note": "" },
+      { "title": "ハイテンションサマー！", "note": "" },
+      { "title": "いぎなり魔曲", "note": "" },
+      { "title": "服を着て、恋したい", "note": "" },
+      { "title": "わざとあざとエキスパート", "note": "" },
+      { "title": "トラベル", "note": "" },
+      { "title": "TOHOKUちゃんぷるー", "note": "" },
+      { "title": "おぼろ花火", "note": "" },
+      { "title": "旅の途中", "note": "" },
+      { "title": "Burnin’ Heart", "note": "メドレー" },
+      { "title": "いただきランチャー", "note": "メドレー" },
+      { "title": "HANA", "note": "メドレー" },
+      { "title": "Fly Out", "note": "メドレー" },
+      { "title": "線の物語", "note": "" },
+      { "title": "天下一品 ～みちのく革命～", "note": "" },
+      { "title": "沼れ！マイラバー", "note": "" },
+      { "title": "伊達サンバ", "note": "" },
+      { "title": "チョコスプレー♡", "note": "" }
+    ]
+  },
+           {
+    "id": "2024-09-29-02",
+    "date": "2024.09.29",
+    "slot": "2部",
+    "type": "単独ライブ",
+    "tour": "",
+    "title": "仙台ワンマンライブ 〜年末への前哨戦〜 追加公演＜2部＞",
+    "venue": "＜宮城県＞仙台電力ホール",
+    "setlist": [
+      { "title": "東京アレルギー", "note": "" },
+      { "title": "おのぼりガール", "note": "" },
+      { "title": "テキーナ", "note": "" },
+      { "title": "ハイテンションサマー！", "note": "" },
+      { "title": "いぎなり魔曲", "note": "" },
+      { "title": "服を着て、恋したい", "note": "" },
+      { "title": "わざとあざとエキスパート", "note": "" },
+      { "title": "Trophy Girl", "note": "" },
+      { "title": "TOHOKUちゃんぷるー", "note": "" },
+      { "title": "おぼろ花火", "note": "" },
+      { "title": "旅の途中", "note": "" },
+      { "title": "Burnin’ Heart", "note": "メドレー" },
+      { "title": "いただきランチャー", "note": "メドレー" },
+      { "title": "HANA", "note": "メドレー" },
+      { "title": "Fly Out", "note": "メドレー" },
+      { "title": "負けないうた", "note": "" },
+      { "title": "天下一品 ～みちのく革命～", "note": "" },
+      { "title": "沼れ！マイラバー", "note": "" },
+      { "title": "大勝利宣言", "note": "" },
+      { "title": "チョコスプレー♡", "note": "" }
+    ]
+  },
+   {
+    "id": "2024-10-06-01",
+    "date": "2024.10.06",
+    "slot": "1部",
+    "type": "単独ライブ",
+    "tour": "",
+    "title": "優勝おめでとうイベント 2024＜1部＞",
+    "venue": "＜京都府＞KBSホール",
+    "setlist": [
+      { "title": "大勝利宣言", "note": "" },
+      { "title": "乾杯ニッポン", "note": "" },
+      { "title": "Burnin’ Heart", "note": "" },
+      { "title": "イヤギハジャ", "note": "" },
+      { "title": "愛のうた", "note": "倖田來未カバー" },
+      { "title": "恋愛フィルター", "note": "" },
+      { "title": "チョコスプレー♡", "note": "" },
+      { "title": "わざとあざとエキスパート", "note": "" },
+      { "title": "服を着て、恋したい", "note": "" },
+      { "title": "いぎなり魔曲", "note": "" },
+      { "title": "ぱんださん", "note": "" },
+      { "title": "シャチョサン", "note": "" },
+      { "title": "TOHOKUちゃんぷるー", "note": "" }
+    ]
+  },
+      {
+    "id": "2024-10-06-02",
+    "date": "2024.10.06",
+    "slot": "2部",
+    "type": "単独ライブ",
+    "tour": "",
+    "title": "優勝おめでとうイベント 2024＜2部＞",
+    "venue": "＜京都府＞KBSホール",
+    "setlist": [
+      { "title": "リライトガール", "note": "" },
+      { "title": "Burnin’ Heart", "note": "" },
+      { "title": "うぢらとおめだづ", "note": "" },
+      { "title": "ゾンビソサエティー", "note": "" },
+      { "title": "メタハンマー", "note": "" },
+      { "title": "トーホク・ラブ・ストーリー〜恋はいつも突然に〜", "note": "" },
+      { "title": "東京アレルギー", "note": "" },
+      { "title": "キューティーハニー", "note": "倖田來未カバー" },
+      { "title": "HiGHER,HiGHER!!", "note": "" },
+      { "title": "いぎなり魔曲", "note": "" },
+      { "title": "轟", "note": "" },
+      { "title": "チョコスプレー♡", "note": "" },
+      { "title": "天下一品 ～みちのく革命～", "note": "" }
+    ]
+  },
+                 {
+    "id": "2024-10-13",
+    "date": "2024.10.13",
+    "slot": "",
+    "type": "フリイベ/リリイベ",
+    "tour": "",
+    "title": "Blu-ray「TOHOKU-SAN EXPO」リリースフリーイベント",
+    "venue": "＜宮城県＞泉中央駅前広場 おへそひろば",
+    "setlist": [
+      { "title": "イヤギハジャ", "note": "" },
+      { "title": "トーホク・ラブ・ストーリー〜恋はいつも突然に〜", "note": "" },
+      { "title": "ぱんださん", "note": "" },
+      { "title": "東京アレルギー", "note": "" },
+      { "title": "チョコスプレー♡", "note": "" }
+    ]
+  },
+              {
+    "id": "2024-10-19",
+    "date": "2024.10.19",
+    "slot": "",
+    "type": "フリイベ/リリイベ",
+    "tour": "",
+    "title": "『毎月都内近郊フリー巡業』十月場所",
+    "venue": "＜東京都＞アーバンドック ららぽーと豊洲",
+    "setlist": [
+      { "title": "チョコスプレー♡", "note": "" },
+      { "title": "沼れ！マイラバー", "note": "" },
+      { "title": "Trophy Girl", "note": "" },
+      { "title": "BUBBLE POPPIN", "note": "" },
+      { "title": "青春修学旅行", "note": "" }
+    ]
+  },
+     {
+    "id": "2024-10-26",
+    "date": "2024.10.26",
+    "slot": "",
+    "type": "単独ライブ",
+    "tour": "",
+    "title": "聖和学園短期大学 大学祭「聖翔祭」",
+    "venue": "＜宮城県＞聖和学園短期大学",
+    "setlist": [
+      { "title": "わざとあざとエキスパート", "note": "" },
+      { "title": "沼れ！マイラバー", "note": "" },
+      { "title": "チョコスプレー♡", "note": "" },
+      { "title": "あなたは", "note": "" },
+      { "title": "スズメDANCE", "note": "" },
+      { "title": "メタハンマー", "note": "" },
+      { "title": "いぎなり魔曲", "note": "" },
+      { "title": "天下一品 ～みちのく革命～", "note": "" },
+      { "title": "うぢらとおめだづ", "note": "" }
+    ]
+  },
+     {
+    "id": "2024-10-27",
+    "date": "2024.10.27",
+    "slot": "",
+    "type": "FES/対バン",
+    "tour": "",
+    "title": "エンドー音楽堂presents『ジャスフェス2024』",
+    "venue": "＜宮城県＞仙台駅前EBeanS",
+    "setlist": [
+      { "title": "狂くるどっかーん♡", "note": "" },
+      { "title": "ゾンビソサエティー", "note": "" },
+      { "title": "スズメDANCE", "note": "" },
+      { "title": "東京アレルギー", "note": "" },
+      { "title": "シャチョサン", "note": "" },
+      { "title": "チョコスプレー♡", "note": "" }
+    ]
+  },
+   {
+    "id": "2024-11-02",
+    "date": "2024.11.02",
+    "slot": "",
+    "type": "単独ライブ",
+    "tour": "",
+    "title": "産業能率大学『第59回自由が丘産能祭〜 彩華 〜』",
+    "venue": "＜東京都＞産業能率大学 自由が丘キャンパス",
+    "setlist": [
+      { "title": "沼れ！マイラバー", "note": "" },
+      { "title": "いただきランチャー", "note": "" },
+      { "title": "チョコスプレー♡", "note": "" },
+      { "title": "東京アレルギー", "note": "" },
+      { "title": "服を着て、恋したい", "note": "" },
+      { "title": "いぎなり魔曲", "note": "" },
+      { "title": "轟", "note": "" },
+      { "title": "NIWAKA", "note": "" },
+      { "title": "シャチョサン", "note": "" },
+      { "title": "天下一品 ～みちのく革命～", "note": "" }
+    ]
+  },
+       {
+    "id": "2024-11-16",
+    "date": "2024.11.16",
+    "slot": "",
+    "type": "FES/対バン",
+    "tour": "",
+    "title": "私立恵比寿中学 秋田分校FINAL フィナーレはいつも笑顔で",
+    "venue": "＜秋田県＞あきた芸術劇場ミルハス 大ホール",
+    "setlist": [
+      { "title": "トラベル", "note": "" },
+      { "title": "チョコスプレー♡", "note": "" },
+      { "title": "ワンダフル東北", "note": "" },
+      { "title": "天下一品 ～みちのく革命～", "note": "" },
+      { "title": "うぢらとおめだづ", "note": "" },
+      { "title": "負けないうた", "note": "" },
+      { "title": "YELL", "note": "私立恵比寿中学カバー" },
+      { "title": "結び", "note": "" }
+    ]
+  },
+  {
+    "id": "2024-11-24",
+    "date": "2024.11.24",
+    "slot": "",
+    "type": "フリイベ/リリイベ",
+    "tour": "",
+    "title": "『毎月都内近郊フリー巡業』十一月場所",
+    "venue": "＜千葉県＞ららぽーと TOKYO-BAY",
+    "setlist": [
+      { "title": "チョコスプレー♡", "note": "" },
+      { "title": "沼れ！マイラバー", "note": "" },
+      { "title": "メタハンマー", "note": "" },
+      { "title": "わざとあざとエキスパート", "note": "" },
+      { "title": "チョコスプレー♡", "note": "" }
+    ]
+  },
+    {
+    "id": "2024-12-07",
+    "date": "2024.12.07",
+    "slot": "",
+    "type": "単独ライブ",
+    "tour": "",
+    "title": "いぎなりクリスマス 2024",
+    "venue": "＜宮城県＞仙台PIT",
+    "setlist": [
+      { "title": "トーホク・ラブ・ストーリー〜恋はいつも突然に〜", "note": "" },
+      { "title": "いただきランチャー", "note": "" },
+      { "title": "TOHOKUちゃんぷるー", "note": "" },
+      { "title": "イヤギハジャ", "note": "" },
+      { "title": "ぱんださん", "note": "" },
+      { "title": "真っ直ぐに、明日がある", "note": "" },
+      { "title": "Being", "note": "" },
+      { "title": "ふたりの答え", "note": "" },
+      { "title": "チョコスプレー♡", "note": "" },
+      { "title": "沼れ！マイラバー", "note": "" },
+      { "title": "テキーナ", "note": "" },
+      { "title": "ウィンターのアゲアゲバッコーン！", "note": "" },
+      { "title": "Let’s シンガソング", "note": "" }
+    ]
+  },
+    {
+    "id": "2024-12-08",
+    "date": "2024.12.08",
+    "slot": "",
+    "type": "単独ライブ",
+    "tour": "",
+    "title": "いぎなりクリスマス 2024＜追加公演＞",
+    "venue": "＜宮城県＞仙台PIT",
+    "setlist": [
+      { "title": "トーホク・ラブ・ストーリー〜恋はいつも突然に〜", "note": "" },
+      { "title": "いただきランチャー", "note": "" },
+      { "title": "TOHOKUちゃんぷるー", "note": "" },
+      { "title": "イヤギハジャ", "note": "" },
+      { "title": "ぱんださん", "note": "" },
+      { "title": "真っ直ぐに、明日がある", "note": "" },
+      { "title": "Being", "note": "" },
+      { "title": "ふたりの答え", "note": "" },
+      { "title": "チョコスプレー♡", "note": "" },
+      { "title": "沼れ！マイラバー", "note": "" },
+      { "title": "テキーナ", "note": "" },
+      { "title": "ウィンターのアゲアゲバッコーン！", "note": "" },
+      { "title": "Let’s シンガソング", "note": "" }
+    ]
+  },
+{
+    "id": "2024-12-15",
+    "date": "2024.12.15",
+    "slot": "",
+    "type": "フリイベ/リリイベ",
+    "tour": "",
+    "title": "『毎月都内近郊フリー巡業』十二月場所 千秋楽",
+    "venue": "＜東京都＞東武百貨店 池袋店",
+    "setlist": [
+      { "title": "チョコスプレー♡", "note": "" },
+      { "title": "沼れ！マイラバー", "note": "" },
+      { "title": "うぢらとおめだづ", "note": "" },
+      { "title": "天下一品 ～みちのく革命～", "note": "" },
+      { "title": "結び", "note": "" }
+    ]
+  },
+      {
+    "id": "2024-12-29",
+    "date": "2024.12.29",
+    "slot": "",
+    "type": "単独ライブ",
+    "tour": "",
+    "title": "いぎなり東北産 リベンジライブ",
+    "venue": "＜神奈川県＞パシフィコ横浜 国立大ホール",
+    "setlist": [
+      { "title": "チョコスプレー♡", "note": "" },
+      { "title": "わざとあざとエキスパート", "note": "" },
+      { "title": "シャニムニポジティボー", "note": "" },
+      { "title": "うぢらとおめだづ", "note": "" },
+      { "title": "服を着て、恋したい", "note": "" },
+      { "title": "Trophy Girl", "note": "" },
+      { "title": "大勝利宣言", "note": "" },
+      { "title": "feeling", "note": "" },
+      { "title": "ウィンターのアゲアゲバッコーン！", "note": "" },
+      { "title": "Papa", "note": "メドレー" },
+      { "title": "コンビニエント・エゴ", "note": "メドレー" },
+      { "title": "Chim Chim Chim Knee", "note": "メドレー" },
+      { "title": "メタハンマー", "note": "メドレー" },
+      { "title": "いただきランチャー", "note": "" },
+      { "title": "I decided", "note": "" },
+      { "title": "負けないうた", "note": "" },
+      { "title": "Symphony", "note": "" },
+      { "title": "ナイツオブナインズ", "note": "" },
+      { "title": "東京アレルギー", "note": "メドレー" },
+      { "title": "妄想方程式", "note": "メドレー" },
+      { "title": "Fly Out", "note": "メドレー" },
+      { "title": "BUBBLE POPPIN", "note": "メドレー" },
+      { "title": "No Make", "note": "メドレー" },
+      { "title": "シャチョサン", "note": "" },
+      { "title": "沼れ！マイラバー", "note": "" },
+      { "title": "Let’s シンガソング", "note": "" },
+      { "title": "いぎなり魔曲", "note": "" },
+      { "title": "ワンダフル東北", "note": "" },
+      { "title": "天下一品 ～みちのく革命～", "note": "" }
+    ]
+  },
+  {
+    "id": "2024-12-31",
+    "date": "2024.12.31",
+    "slot": "",
+    "type": "FES/対バン",
+    "tour": "",
+    "title": "第8回 ももいろ歌合戦",
+    "venue": "＜東京都＞日本武道館",
+    "setlist": [
+      { "title": "沼れ！マイラバー", "note": "パフォーマンス：≠ME・いぎなり東北産" },
+      { "title": "初日", "note": "パフォーマンス：柏木由紀・高城れに・私立恵比寿中学・いぎなり東北産・浪江女子発組合" },
+      { "title": "ザ☆ピ～ス！", "note": "演者全員" }
+    ]
+  }
+]
