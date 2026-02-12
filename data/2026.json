@@ -244,5 +244,22 @@
       { "title": "あーぐれす", "note": "律月・橘プロデュース" },
       { "title": "ウィンターのアゲアゲバッコーン！", "note": "律月・橘プロデュース" }
     ]
+  },
+      {
+    "id": "2026-02-11",
+    "date": "2026.02.11",
+    "slot": "",
+    "type": "FES/対バン",
+    "tour": "",
+    "title": "Idol Valentine Fes 2026",
+    "venue": "＜千葉県＞LaLa arena TOKYO-BAY",
+    "setlist": [
+      { "title": "服を着て、恋したい", "note": "" },
+      { "title": "デコ！", "note": "" },
+      { "title": "わざとあざとエキスパート", "note": "" },
+      { "title": "HiGHER,HiGHER!!", "note": "ショート" },
+      { "title": "うぢらとおめだづ", "note": "ショート" },
+      { "title": "バレンタイン・キス", "note": "オールキャスト" }
+    ]
   }
 ]
