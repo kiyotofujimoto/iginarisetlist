@@ -244,22 +244,32 @@ async function init() {
   // --------------------------
   // 年度変更時
   // --------------------------
-  yearSelect.addEventListener("change", async () => {
-    lives = await loadYear(yearSelect.value);
+yearSelect.addEventListener("change", async () => {
+  lives = await loadYear(yearSelect.value);
 
-    selectedType = "";
-    searchWord = "";
-    liveSearchWord = "";
+  // 入力中の検索条件は保持（入力欄から再取得）
+  searchWord = songSearch.value.trim();
+  liveSearchWord = liveSearch ? liveSearch.value.trim() : "";
 
+  // typeの候補は年度で変わるので作り直し
+  const prevType = typeSelect.value;
+  renderTypeSelect();
+
+  // 以前選んでたtypeが新年度に存在するなら維持、無ければ解除
+  const exists = Array.from(typeSelect.options).some((o) => o.value === prevType);
+  if (exists) {
+    typeSelect.value = prevType;
+    selectedType = prevType;
+  } else {
     typeSelect.value = "";
-    songSearch.value = "";
-    if (liveSearch) liveSearch.value = ""; // ★追加
-    liveSelect.value = "";
+    selectedType = "";
+  }
 
-    renderTypeSelect();
-    applyFilters();
-    resultEl.innerHTML = "";
-  });
+  // ライブ選択は一旦クリア（内容が変わるから）
+  liveSelect.value = "";
+  applyFilters();
+  resultEl.innerHTML = "";
+});
 
   // --------------------------
   // 形態変更時
