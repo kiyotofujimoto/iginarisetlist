@@ -431,5 +431,22 @@
       { "title": "沼れ！マイラバー", "note": "" },
       { "title": "うぢらとおめだづ", "note": "" }
     ]
+  },
+    {
+    "id": "2026-03-15",
+    "date": "2026.03.15",
+    "slot": "",
+    "type": "FES/対バン",
+    "tour": "GIG TAKAHASHI FINAL TOUR",
+    "title": "GIG TAKAHASHI FINAL TOUR〜10年間の感謝を込めて〜 東京公演",
+    "venue": "＜東京都＞KANDA SQUARE HALL",
+    "setlist": [
+      { "title": "天下一品 ～みちのく革命～", "note": "" },
+      { "title": "あーぐれす", "note": "" },
+      { "title": "うぢらとおめだづ", "note": "" },
+      { "title": "らゔ♡戦セーション", "note": "" },
+      { "title": "いただきランチャー", "note": "" },
+      { "title": "シャチョサン", "note": "" }
+    ]
   }
 ]
