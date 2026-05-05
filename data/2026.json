@@ -259,7 +259,7 @@
       { "title": "わざとあざとエキスパート", "note": "" },
       { "title": "HiGHER,HiGHER!!", "note": "ショート" },
       { "title": "うぢらとおめだづ", "note": "ショート" },
-      { "title": "バレンタイン・キス", "note": "オールキャスト" }
+      { "title": "バレンタイン・キス", "note": "出演者全員" }
     ]
   },
        {
@@ -644,6 +644,39 @@
       { "title": "あと3センチ", "note": "" },
       { "title": "らゔ♡戦セーション", "note": "" },
       { "title": "桜プロミス", "note": "" }
+    ]
+  },
+      {
+    "id": "2026-05-02",
+    "date": "2026.05.02",
+    "slot": "",
+    "type": "FES/対バン",
+    "tour": "",
+    "title": "茨城ロボッツ × LuckyFes コラボ企画「LuckyFes Half Time Show」",
+    "venue": "＜茨城県＞アダストリアみとアリーナ",
+    "setlist": [
+      { "title": "天下一品 ～みちのく革命～", "note": "" },
+      { "title": "らゔ♡戦セーション", "note": "" }
+    ]
+  },
+  {
+    "id": "2026-05-03",
+    "date": "2026.05.03",
+    "slot": "",
+    "type": "FES/対バン",
+    "tour": "",
+    "title": "Parallel World 2026",
+    "venue": "＜東京都＞豊洲PIT",
+    "setlist": [
+      { "title": "デコ！", "note": "" },
+      { "title": "沼れ！マイラバー", "note": "" },
+      { "title": "あと3センチ", "note": "" },
+      { "title": "あーぐれす", "note": "" },
+      { "title": "さいしょのシングルです！", "note": "" },
+      { "title": "いぎなり魔曲", "note": "" },
+      { "title": "天下一品 ～みちのく革命～", "note": "" },
+      { "title": "負けないうた", "note": "" },
+      { "title": "わざとあざとエキスパート", "note": "出演者全員" }
     ]
   }
 ]
