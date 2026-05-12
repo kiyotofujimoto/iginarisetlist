@@ -678,5 +678,24 @@
       { "title": "負けないうた", "note": "" },
       { "title": "わざとあざとエキスパート", "note": "出演者全員" }
     ]
+  },
+  {
+    "id": "2026-05-07",
+    "date": "2026.05.07",
+    "slot": "",
+    "type": "FES/対バン",
+    "tour": "",
+    "title": "BEEEEM FES Vol.3",
+    "venue": "＜東京都＞LIQUIDROOM",
+    "setlist": [
+      { "title": "らゔ♡戦セーション", "note": "" },
+      { "title": "いただきランチャー", "note": "" },
+      { "title": "わざとあざとエキスパート", "note": "" },
+      { "title": "デコ！", "note": "" },
+      { "title": "あーぐれす", "note": "" },
+      { "title": "いぎなり魔曲", "note": "" },
+      { "title": "シャチョサン", "note": "" },
+      { "title": "天下一品 ～みちのく革命～", "note": "" }
+    ]
   }
 ]
