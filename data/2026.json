@@ -793,5 +793,42 @@
       { "title": "いただきランチャー", "note": "" },
       { "title": "青春修学旅行", "note": "" }
     ]
-          }
+          },
+  {
+    "id": "2026-06-06",
+    "date": "2026.06.06",
+    "slot": "",
+    "type": "FES/対バン",
+    "tour": "",
+    "title": "LadySteady×かわいいにむちゅ♡",
+    "venue": "＜東京都＞豊洲PIT",
+    "setlist": [
+      { "title": "わざとあざとエキスパート", "note": "" },
+      { "title": "チョコスプレー♡", "note": "" },
+      { "title": "この夏のヒロWin！", "note": "" },
+      { "title": "Trophy Girl", "note": "" },
+      { "title": "服を着て、恋したい", "note": "" },
+      { "title": "いただきランチャー", "note": "" },
+      { "title": "天下一品 ～みちのく革命～", "note": "" },
+    ]
+  },
+    {
+    "id": "2026-06-07",
+    "date": "2026.06.07",
+    "slot": "",
+    "type": "FES/対バン",
+    "tour": "",
+    "title": "CHAGU CHAGU ROCK FESTIVAL 2026",
+    "venue": "＜岩手県＞ツガワ未来館アピオ 岩手産業文化センター",
+    "setlist": [
+      { "title": "ワンダフル東北", "note": "" },
+    　{ "title": "いただきランチャー", "note": "" },
+      { "title": "うぢらとおめだづ", "note": "" },
+      { "title": "この夏のヒロWin！", "note": "" },
+      { "title": "わざとあざとエキスパート", "note": "" },
+      { "title": "あーぐれす", "note": "" },
+      { "title": "BUBBLE POPPIN", "note": "" },
+      { "title": "天下一品 ～みちのく革命～", "note": "" },
+    ]
+  }
 ]
