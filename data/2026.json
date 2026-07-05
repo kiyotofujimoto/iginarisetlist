@@ -905,5 +905,30 @@
       { "title": "わざとあざとエキスパート", "note": "" },
       { "title": "BUBBLE POPPIN", "note": "" }
     ]
+  },
+      {
+    "id": "2026-06-30",
+    "date": "2026.06.30",
+    "slot": "",
+    "type": "FES/対バン",
+    "tour": "",
+    "title": "いぎなり東北産 × パンダライオン《TOHOKU STARS LIVE》",
+    "venue": "＜神奈川県＞CLUB CITTA",
+    "setlist": [
+      { "title": "BUBBLE POPPIN", "note": "" },
+      { "title": "パリピ Is Dead！", "note": "パンダライオンコラボ" },
+      { "title": "パーリー☆ピーポー♪", "note": "パンダライオンコラボ" },
+      { "title": "HANA", "note": "" },
+      { "title": "百花繚乱物語", "note": "" },
+      { "title": "ハイテンションサマー！", "note": "" },
+      { "title": "TOHOKUちゃんぷるー", "note": "" },
+      { "title": "Papa", "note": "" },
+      { "title": "ナイツオブナイン", "note": "" },
+      { "title": "シャチョサン", "note": "" },
+      { "title": "いぎなり魔曲", "note": "" },
+      { "title": "伊達サンバ", "note": "" },
+      { "title": "ワンダフル東北", "note": "" },
+      { "title": "天下一品 ～みちのく革命～", "note": "アンコール" }
+    ]
   }
 ]
