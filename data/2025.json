@@ -813,7 +813,7 @@
     "slot": "",
     "type": "FES/対バン",
     "tour": "",
-    "title": "TOKYO IDOL FESTIVAL 2025 supported by にしたんクリニック",
+    "title": "TOKYO IDOL FESTIVAL 2025【HOT STAGE】",
     "venue": "＜東京都＞お台場・青海周辺エリア",
     "setlist": [
       { "title": "おのぼりガール", "note": "" },
@@ -826,17 +826,28 @@
       ]
   },
    {
-    "id": "2025-08-02",
+    "id": "2025-08-02-01",
     "date": "2025.08.02",
     "slot": "",
     "type": "FES/対バン",
     "tour": "",
-    "title": "TOKYO IDOL FESTIVAL 2025 supported by にしたんクリニック",
+    "title": "TOKYO IDOL FESTIVAL 2025【SKY STAGE】",
     "venue": "＜東京都＞お台場・青海周辺エリア",
     "setlist": [
       { "title": "沼れ！マイラバー", "note": "" },
       { "title": "あーぐれす", "note": "" },
-      { "title": "ハイテンションサマー！", "note": "" },
+      { "title": "ハイテンションサマー！", "note": "" }
+      ]
+  },
+    {
+    "id": "2025-08-02-02",
+    "date": "2025.08.02",
+    "slot": "",
+    "type": "FES/対バン",
+    "tour": "",
+    "title": "TOKYO IDOL FESTIVAL 2025【HEAT GARAGE】",
+    "venue": "＜東京都＞お台場・青海周辺エリア",
+    "setlist": [
       { "title": "背徳のエビデンス", "note": "" },
       { "title": "No Make", "note": "" },
       { "title": "いただきランチャー", "note": "" },
