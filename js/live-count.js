@@ -10,6 +10,16 @@ function escapeHtml(str) {
     .replace(/'/g, "&#39;");
 }
 
+// ==============================
+// 集計対象外の曲
+// ==============================
+/**
+ * ランキング・披露回数検索から除外する曲か判定する
+ */
+function isExcludedSong(title) {
+  return normalizeText(title) === normalizeText("いぎなり魔曲");
+}
+
 /**
  * 検索用の正規化
  * - 大文字/小文字を区別しない
@@ -423,8 +433,12 @@ async function init() {
     });
 
   // 曲マスタ読み込み
-  const raw = await loadSongsRaw();
-  const songMaster = extractSongTitles(raw);
+　const raw = await loadSongsRaw();
+
+　// 「いぎなり魔曲」は披露回数の集計対象外なので、検索候補にも表示しない
+　const songMaster = extractSongTitles(raw).filter(
+  (title) => !isExcludedSong(title)
+　);
 
   // ============================
   // ★追加：曲名マスタSet（正規化済み）
@@ -469,6 +483,9 @@ async function init() {
           const title = String(song.title ?? "").trim();
           if (!title) continue;
 
+          // 「いぎなり魔曲」はランキング集計の対象外
+  　　　　　if (isExcludedSong(title)) continue;
+          
           const key = normalizeText(title);
           if (!key) continue;
 
@@ -506,6 +523,10 @@ async function init() {
     for (const live of lives) {
       for (const song of live.setlist ?? []) {
         const t = String(song.title ?? "");
+
+        // 集計対象外の曲は披露回数検索にも含めない
+        if (isExcludedSong(t)) continue;
+        
         if (normalizeText(t) === q) {
           matched.push({
             date: live.date,
