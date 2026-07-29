@@ -249,24 +249,21 @@ body {
 
 .bgm-item {
   display: flex;
-  justify-content: center;
   align-items: center;
-  gap: 0;
-  padding: 10px 0;
+  gap: 12px;
+  margin: 12px 0;
+}
+
+.bgm-item::before,
+.bgm-item::after {
+  content: "";
+  flex: 1;
+  border-top: 1px solid #ccc;
 }
 
 .bgm-title {
-  color: #888;
-  font-size: 12px;
-  letter-spacing: 0.05em;
-}
-
-.bgm-title::before {
-  content: "── ";
-}
-
-.bgm-title::after {
-  content: " ──";
+  color: #777;
+  font-size: 13px;
 }
 
 /* ==============================
