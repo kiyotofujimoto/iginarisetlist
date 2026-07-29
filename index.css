@@ -247,6 +247,27 @@ body {
   margin-left: 4px;
 }
 
+.bgm-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  padding: 10px 0;
+}
+
+.bgm-title {
+  color: #888;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+}
+
+.bgm-title::before {
+  content: "── ";
+}
+
+.bgm-title::after {
+  content: " ──";
+}
 
 /* ==============================
   フッター
