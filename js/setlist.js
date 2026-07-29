@@ -180,8 +180,9 @@ function renderResult(live) {
               // 「いぎなり魔曲」はBGM扱い。
               // 番号を付けず、通常曲とは別デザインで表示する。
               if (
-                normalizeText(song.title) ===
-                normalizeText("いぎなり魔曲")
+                normalizeText(song.title).startsWith(
+                  normalizeText("いぎなり魔曲")
+                )
               ) {
                 return `
                   <li class="bgm-item">
