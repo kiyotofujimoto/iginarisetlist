@@ -172,17 +172,39 @@ function renderResult(live) {
       </div>
 
       <ol class="setlist">
-        ${(live.setlist ?? [])
-          .map(
-            (song, index) => `
-              <li>
-                <span class="track-no">${index + 1}</span>
-                <span class="track-title">${song.title}</span>
-                ${song.note ? `<span class="note">（${song.note}）</span>` : ""}
-              </li>
-            `
-          )
-          .join("")}
+        ${(() => {
+          let trackNo = 1;
+
+          return (live.setlist ?? [])
+            .map((song) => {
+              // 「いぎなり魔曲」はBGM扱い。
+              // 番号を付けず、通常曲とは別デザインで表示する。
+              if (
+                normalizeText(song.title).startsWith(
+                  normalizeText("いぎなり魔曲")
+                )
+              ) {
+                return `
+                  <li class="bgm-item">
+                    <span class="bgm-title">⚾️ ${song.title} ⚾️</span>
+                  </li>
+                `;
+              }
+
+              return `
+                <li>
+                  <span class="track-no">${trackNo++}</span>
+                  <span class="track-title">${song.title}</span>
+                  ${
+                    song.note
+                      ? `<span class="note">（${song.note}）</span>`
+                      : ""
+                  }
+                </li>
+              `;
+            })
+            .join("");
+        })()}
       </ol>
     </div>
   `;
