@@ -186,7 +186,7 @@ function renderResult(live) {
               ) {
                 return `
                   <li class="bgm-item">
-                    <span class="bgm-title">🎵 ${song.title}</span>
+                    <span class="bgm-title">⚾️${song.title}⚾️</span>
                   </li>
                 `;
               }
