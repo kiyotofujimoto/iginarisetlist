@@ -251,7 +251,8 @@ body {
   display: flex;
   align-items: center;
   gap: 12px;
-  margin: 12px 0;
+  margin: 6px 0;
+  padding: 4px 0;
 }
 
 .bgm-item::before,
