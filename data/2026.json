@@ -1095,7 +1095,7 @@
     "slot": "",
     "type": "FES/対バン",
     "tour": "",
-    "title": "六TOKYO IDOL FESTIVAL 2026【HOT STAGE】",
+    "title": "TOKYO IDOL FESTIVAL 2026【HOT STAGE】",
     "venue": "＜東京都＞お台場・青海周辺エリア",
     "setlist": [
       { "title": "この夏のヒロWin！", "note": "" },
@@ -1182,6 +1182,55 @@
       { "title": "この夏のヒロWin！", "note": "" },
       { "title": "レベちな、かまちょ☆", "note": "" },
       { "title": "天下一品 ～みちのく革命～", "note": "" }
+    ]
+  },
+  {
+    "id": "2026-08-08",
+    "date": "2026.08.08",
+    "slot": "",
+    "type": "単独ライブ",
+    "tour": "",
+    "title": "11周年イベント《11回目の真夏のヒロイン》＠東武動物公園",
+    "venue": "＜埼玉県＞東武動物公園 イベントステージ HOLA!",
+    "setlist": [
+      { "title": "この夏のヒロWin！", "note": "" },
+      { "title": "溶ける前に、君に。", "note": "" },
+      { "title": "おぼろ花火", "note": "" },
+      { "title": "おのぼりガール", "note": "" },
+      { "title": "デコ！", "note": "メンバー着替えタイム" },
+      { "title": "ニュートロ", "note": "" },
+      { "title": "No Make", "note": "" },
+      { "title": "永遠に∞", "note": "" },
+      { "title": "永遠に∞", "note": "コール講座後" },
+      { "title": "レベちな、かまちょ☆", "note": "" },
+      { "title": "わざとあざとエキスパート", "note": "" },
+      { "title": "青春修学旅行", "note": "" },
+      { "title": "ハイテンションサマー！", "note": "" },
+      { "title": "伊達サンバ", "note": "" },
+      { "title": "ウィンターのアゲアゲバッコーン！", "note": "" },
+      { "title": "伊達サンバ", "note": "" },
+      { "title": "BUBBLE POPPIN", "note": "" },
+      { "title": "天下一品 ～みちのく革命～", "note": "" },
+      { "title": "永遠に∞", "note": "" }
+    ]
+  },
+  {
+    "id": "2026-08-10",
+    "date": "2026.08.10",
+    "slot": "",
+    "type": "FES/対バン",
+    "tour": "",
+    "title": "LuckyFes’26",
+    "venue": "＜茨城県＞国営ひたち海浜公園",
+    "setlist": [
+      { "title": "いただきランチャー", "note": "" },
+      { "title": "あーぐれす", "note": "" },
+      { "title": "うぢらとおめだづ", "note": "" },
+      { "title": "この夏のヒロWin！", "note": "" },
+      { "title": "わざとあざとエキスパート", "note": "" },
+      { "title": "いぎなり魔曲", "note": "" },
+      { "title": "天下一品 ～みちのく革命～", "note": "" },
+      { "title": "永遠に∞", "note": "" }
     ]
   }
 ]
