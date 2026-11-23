@@ -1478,5 +1478,84 @@
       { "title": "天下一品 ～みちのく革命～", "note": "" },
       { "title": "負けないうた", "note": "" }
     ]
+  },
+      {
+    "id": "2026-10-24",
+    "date": "2026.10.24",
+    "slot": "",
+    "type": "単独ライブ",
+    "tour": "",
+    "title": "東北学院大学祭「六軒丁祭」",
+    "venue": "＜宮城県＞東北学院大学 土樋キャンパス 特設ステージ",
+    "setlist": [
+      { "title": "沼れ！マイラバー", "note": "" },
+      { "title": "らゔ♡戦セーション", "note": "" },
+      { "title": "おねがいテレパシー", "note": "" },
+      { "title": "わざとあざとエキスパート", "note": "" },
+      { "title": "メタハンマー", "note": "" },
+      { "title": "いただきランチャー", "note": "" },
+      { "title": "Yes!東京", "note": "EBiDANカバー" },
+      { "title": "あーぐれす", "note": "" },
+      { "title": "うぢらとおめだづ", "note": "" },
+      { "title": "天下一品 ～みちのく革命～", "note": "" },
+      { "title": "シャチョサン", "note": "" },
+      { "title": "永遠に∞", "note": "" }
+    ]
+  },
+    {
+    "id": "2026-10-31",
+    "date": "2026.10.31",
+    "slot": "",
+    "type": "FES/対バン",
+    "tour": "",
+    "title": "SPOOKY PUMPKIN 2026 〜PURO ALL NIGHT HALLOWEEN PARTY〜",
+    "venue": "＜東京都＞サンリオピューロランド ENTERTAINMENT STAGE",
+    "setlist": [
+      { "title": "ゾンビソサエティー", "note": "" },
+      { "title": "らゔ♡戦セーション", "note": "" },
+      { "title": "SNSは6時間", "note": "" },
+      { "title": "わざとあざとエキスパート", "note": "" },
+      { "title": "天下一品 ～みちのく革命～", "note": "" },
+      { "title": "永遠に∞", "note": "" },
+      { "title": "うぢらとおめだづ", "note": "" }
+    ]
+  },
+  　{
+    "id": "2026-11-03",
+    "date": "2026.11.03",
+    "slot": "",
+    "type": "単独ライブ",
+    "tour": "",
+    "title": "立教大学学園祭 "Rikkyo Idol Stage" ワンマンライブ",
+    "venue": "＜東京都＞立教大学池袋キャンパス タッカーホール",
+    "setlist": [
+      { "title": "服を着て、恋したい", "note": "" },
+      { "title": "東京アレルギー", "note": "" },
+      { "title": "この夏のヒロWin！", "note": "" },
+      { "title": "おねがいテレパシー", "note": "" },
+      { "title": "SNSは6時間", "note": "" },
+      { "title": "Yes!東京", "note": "EBiDANカバー" },     
+      { "title": "背徳のエビデンス", "note": "" },
+      { "title": "シャチョサン", "note": "" },
+      { "title": "天下一品 ～みちのく革命～", "note": "" },
+      { "title": "永遠に∞", "note": "" },
+      { "title": "わざとあざとエキスパート", "note": "" },
+      { "title": "うぢらとおめだづ", "note": "" }
+    ]
+  },
+  {
+    "id": "2026-11-21",
+    "date": "2026.11.21",
+    "slot": "",
+    "type": "フリイベ/リリイベ",
+    "tour": "",
+    "title": "福島県民優先ミニライブ",
+    "venue": "​​​​​​＜福島県＞福島・アティ郡山",
+    "setlist": [
+      { "title": "永遠に∞", "note": "" },
+      { "title": "シャニムニポジティポー", "note": "" },
+      { "title": "わざとあざとエキスパート", "note": "" },
+      { "title": "BUBBLE POPPIN", "note": "" }
+    ]
   }
 ]
